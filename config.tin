@@ -1,0 +1,3 @@
+#split 1 1
+#config {command echo} {off};
+#config {repeat enter} off;

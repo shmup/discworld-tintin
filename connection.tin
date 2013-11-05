@@ -1,0 +1,6 @@
+#event {SESSION CONNECTED}
+{
+  #var {session[name]} {%0};
+};
+
+#session {discworld} {discworld.starturtle.net} {4242}
