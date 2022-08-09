@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # requires https://github.com/jhawthorn/fzy
 
+OPENER=$([[ "$OSTYPE" != "darwin"* ]] && echo xdg-open || echo open )
+
 BOARDS=(
 	"ankh+morpork+council"
 	"djelibeybi+council"
@@ -27,4 +29,4 @@ SELECTION=$(printf "%s\n" "${BOARDS[@]}" | fzy -l 40)
 
 [[ -z $SELECTION ]] && exit 0
 
-xdg-open "https://discworld.starturtle.net/lpc/secure/boards.c?type=subject&threaded=0&board=$SELECTION"
+eval "$OPENER 'https://discworld.starturtle.net/lpc/secure/boards.c?type=subject&threaded=0&board=$SELECTION'"

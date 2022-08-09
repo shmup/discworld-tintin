@@ -1,8 +1,8 @@
 #split 0 1;
 
 /* fuzzy filters w/ https://github.com/jhawthorn/fzy */
-#alias {maps} {#system ./docs/maps.sh };
-#alias {boards} {#system ./docs/boards.sh };
+#alias {maps} {#system ./scripts/maps.sh };
+#alias {boards} {#system ./scripts/boards.sh };
 
 /* if on macos, change xdg-open to open */
 #alias {db} {#system xdg-open "https://quow.co.uk/cow.php?t=Items&s=%0"};
