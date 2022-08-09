@@ -1,4 +1,4 @@
-.PHONY: run
+.PHONY: all run build-docs clean test
 
 all: run
 
@@ -17,3 +17,6 @@ build-docs:
 		  "https://tintin.mudhalla.net/manual/"
 	rm -rf manual
 	mv tmp/manual/tintin.mudhalla.net/manual docs/manual
+
+clean: ; @echo TODO
+test: ; @echo TODO
