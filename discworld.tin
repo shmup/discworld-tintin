@@ -1,0 +1,21 @@
+#split 0 1;
+
+/* fuzzy filters w/ https://github.com/jhawthorn/fzy */
+#alias {maps} {#system ./docs/maps.sh };
+#alias {boards} {#system ./docs/boards.sh };
+
+/* if on macos, change xdg-open to open */
+#alias {db} {#system xdg-open "https://quow.co.uk/cow.php?t=Items&s=%0"};
+#alias {db-place} {#system xdg-open "https://quow.co.uk/cow.php?t=Places&s=%0"};
+#alias {db-npc} {#system xdg-open "https://quow.co.uk/cow.php?t=NPCs&s=%0"};
+
+#tab {db }; #tab {db-place }; #tab {db-npc }; #tab {boards };
+
+#alias reload {
+  #read discworld.tin;
+  #showme {<cfa>reloaded!};
+}
+
+#if {"@discworld{}" !== ""} {
+  #session discworld discworld.starturtle.net 4242;
+}

@@ -1,0 +1,4 @@
+docs/*
+!docs/boards.sh
+!docs/maps.sh
+manual.html
