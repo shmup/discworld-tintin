@@ -2,11 +2,9 @@
 
 all: setup
 
-# attach to discworld or do a real setup
 setup:
-	@tmux attach -t discworld &> /dev/null || \
-		(mkdir -p logs && touch logs/chat.log && \
-		./scripts/new-tmux.sh)
+	mkdir -p logs && touch logs/chat.log
+	./scripts/new-tmux.sh
 
 run:
 	tt++ discworld.tin
@@ -26,4 +24,4 @@ build-docs:
 	mv tmp/manual/tintin.mudhalla.net/manual docs/manual
 
 clean: ; @echo TODO
-test: ; @checkmake Makefile
+test: ; @echo TODO
