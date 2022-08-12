@@ -1,10 +1,8 @@
 ### tintin++ stuff discworld mud
 
-run `make` to connect to the mud
+run `make` to default to `make setup` which uses existing tmux session
 
-aliases like `maps` and `boards` fuzzy filter with https://github.com/jhawthorn/fzy
-
-ain't do a whole lot right now
+run `make standalone-setup` to start a new tmux session
 
 -----
 

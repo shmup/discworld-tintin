@@ -6,6 +6,10 @@ setup:
 	mkdir -p logs && touch logs/chat.log
 	./scripts/new-tmux.sh
 
+standalone-setup:
+	mkdir -p logs && touch logs/chat.log
+	./scripts/new-tmux.sh standalone
+
 run:
 	tt++ discworld.tin
 
