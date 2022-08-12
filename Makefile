@@ -1,10 +1,14 @@
 .PHONY: all run build-docs clean test
 
-all: run
+all: setup
 
-logs: ; mkdir -p logs
+# attach to discworld or do a real setup
+setup:
+	@tmux attach -t discworld &> /dev/null || \
+		(mkdir -p logs && touch logs/chat.log && \
+		./scripts/new-tmux.sh)
 
-run: logs
+run:
 	tt++ discworld.tin
 
 build-docs:
@@ -22,4 +26,4 @@ build-docs:
 	mv tmp/manual/tintin.mudhalla.net/manual docs/manual
 
 clean: ; @echo TODO
-test: ; @echo TODO
+test: ; @checkmake Makefile
