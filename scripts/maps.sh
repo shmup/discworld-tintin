@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# requires https://github.com/jhawthorn/fzy
+# requires https://github.com/junegunn/fzf
 
 FUZZ="fzf --no-color --no-sort --info=hidden"
 OPENER=$([[ "$OSTYPE" != "darwin"* ]] && echo xdg-open || echo open )

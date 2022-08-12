@@ -3,7 +3,7 @@
 #config {convert meta};
 #variable {chat_file} {logs/chat.log};
 
-/* fuzzy filters w/ https://github.com/jhawthorn/fzy */
+/* fuzzy filters w/ https://github.com/junegunn/fzf */
 #alias {help-tt} {#script ./scripts/help-tt.sh };
 #alias {manual} {#system ./scripts/manual-browse.sh};
 #alias {maps} {#system ./scripts/maps.sh };
