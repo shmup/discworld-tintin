@@ -2,7 +2,10 @@
 
 all: run
 
-run: ; tt++ discworld.tin
+logs: ; mkdir -p logs
+
+run: logs
+	tt++ discworld.tin
 
 build-docs:
 	rm -rf docs/manual

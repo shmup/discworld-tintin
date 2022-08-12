@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # requires https://github.com/jhawthorn/fzy
 
+FUZZ="fzf --no-color --no-sort --info=hidden"
 OPENER=$([[ "$OSTYPE" != "darwin"* ]] && echo xdg-open || echo open )
 
 MAPS=(
@@ -13,7 +14,7 @@ MAPS=(
 	"Uberwald"
 )
 
-SELECTION=$(printf "%s\n" "${MAPS[@]}" | fzy -l 40)
+SELECTION=$(printf "%s\n" "${MAPS[@]}" | $FUZZ)
 
 [[ -z $SELECTION ]] && exit 0
 

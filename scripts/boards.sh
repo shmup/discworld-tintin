@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # requires https://github.com/jhawthorn/fzy
 
+FUZZ="fzf --no-color --no-sort --info=hidden"
 OPENER=$([[ "$OSTYPE" != "darwin"* ]] && echo xdg-open || echo open )
 
 BOARDS=(
@@ -25,7 +26,7 @@ BOARDS=(
 	"wizardsguild"
 )
 
-SELECTION=$(printf "%s\n" "${BOARDS[@]}" | fzy -l 40)
+SELECTION=$(printf "%s\n" "${BOARDS[@]}" | $FUZZ)
 
 [[ -z $SELECTION ]] && exit 0
 
