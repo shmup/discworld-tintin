@@ -1,0 +1,147 @@
+You currently have the following aliases:
+
+Default category:
+.plan: headknockin doorframes w/ my pal Donk $*$
+.plan<+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+>;You: pet Donk the dun horse.;Donk the dun
+horse adoringly gives you a horse kiss.;<+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+> $*$
+.project: fartin around with https://github.com/shmup/badteeths_plugins $*$
+cooldown: remove fluffy cloak 1;put fluffy cloak in backpack 1 $*$
+gs: $ifarg:group say $*$else$group shields$endif$
+kkk: rt-paint;wp me;wp donk;st-paint;k $*$
+lanfear: teach me $1$ levels of $2$ from all;learn $2$ from lanfear
+lightup: remove yellow stone ring;wear yellow stone ring $*$
+loop: wc;guard $*$ against all;guard stop;vurdere helmet;unsheath;unsheath2;judge weapon 1 against weapon
+2;sheath;sheath2;search;put all in backpack;rt-paint;wp me;st-paint
+st-paint: put paint 1 in forager's belt 1;unsheath $*$
+teachers: $ifarg1:$ifarg2:$ifarg3:teach me $2$ levels of $3$ from all;learn $3$ from $1$else$teach me max
+levels of $2$ from all;learn $2$ from $1$endif$else$who $*$endif$else$who lanfear,club teacher$endif$
+warmup: get fluffy cloak 1 from backpack 1;wear fluffy cloak 1 $*$
+barb: HublandishBarbarians $*$          set: category feedup $*$
+cp: cost primaries $*$                  strm: storm $*$ at a walk with sword
+gh: group history $*$                   tcls: talker colour list $*$
+adh: ad health $*$  h: history $*$      hh: help here $*$   hsk: hskills $*$
+
+The category "status":
+cc: condition my all $ifarg:& all in my all$endif$ damaged sorting up
+cu: coverage unprotected $*$            stats: score stats $*$
+ia: inventory armours $*$
+wx: temp brief $*$
+
+The category "toggle":
+lookoff: options output look = brief $*$
+lookon: options output look = verbose $*$
+walkoff: options personal travel = journey $*$
+walkon: options personal travel = walk $*$
+
+The category "misc":
+spamsays: say Spam is a brand of canned precooked meat products made by Hormel Foods Corporation. It was
+first introduced in 1937 and gained popularity worldwide after its use during World War II.[1];say By
+2003, Spam was sold in 41 countries on six continents and trademarked in over 100 countries.[2] In 2007,
+the seven billionth can of Spam was sold.[3];say According to its label, Spam's basic ingredients are pork
+shoulder meat, with ham meat added, salt, water, modified potato starch as a binder, sugar, and sodium
+nitrite as a preservative.;say Natural gelatin forms during cooking in its tins on the production
+line.[4];say By the early 1970s the name "Spam" was often misused to describe any tinned meat product
+containing pork, such as pork luncheon meat. $*$
+
+The category "inventory":
+bget: get $*$ from backpack 1
+bput: put $*$ in backpack 1
+fetch: get $*$ from backpack
+gcc: get coins from every corpse $*$
+gpup: get blue bottle from backpack $*$
+hpup: get amber botle from backpack $*$
+sget: get $*$ from large satchel 1
+sput: put $*$ in large satchel 1
+vget: get $*$ from drawer
+vput: put $*$ in drawer
+gm: get money $*$
+
+The category "chatting":
+1: $ifarg:1 $*$ $else$talker history 1$endif$
+2: $ifarg:2 $*$ $else$talker history 2$endif$
+reply: tell reply $*$                   t: $ifarg:t $*$ $else$htell$endif$
+
+The category "look":
+lib: look in backpack 1 $*$             lis: look in saddlebags $*$
+lic: look in corpse $*$                 liv: look in drawer $*$
+lid: look in drawer $*$                 ll: map door text $*$
+
+The category "mount":
+ada: assess donk traits;assess donk needs;assess donk health $*$
+donkoff: ask donk to not assist in combat $*$
+donkon: ask donk to assist in combat $*$
+feedup: buy oats;drop sack;get oats 1 from sack;feed oats 1 to donk;ad $*$
+dm: dismount;lead donk $*$              rt: retrieve $*$ from donk
+dmm: destable my mount $*$              st: stash $*$ on Donk
+rls: ask horse to remember $*$
+ad: assess donk $*$                     md: mount donk $*$
+ld: lead donk $*$                       pd: pet donk $*$
+
+The category "alias":
+ac: $ifarg1: alias show sorted category $1$ $else$ frimble sparky is cool$endif$
+ma: $ifarg2: alias set category $1$ $2$ $else$ifarg1: frimble you need to select a category $else$ frimble
+Syntax ma [alias name] [alias category] $endif$endif$
+lsa: alias sorted category default $*$
+
+The category "movement":
+je: journey e $*$         jnw: journey nw $*$       jsw: journey sw $*$
+jn: journey n $*$         js: journey s $*$         jw: journey w $*$
+jne: journey ne $*$       jse: journey se $*$
+
+The category "loot":
+loot: get coins & every gold jewellery & every silver jewellery & every weapon from corpse 1;put them in
+my backpack 1; bury corpse 1 $*$
+loot2: get silk clothes&satin clothes&fine clothes&velvet clothes&suit clothes&glasses&scabbards&bags&satc
+hels&stilettoes&wizard's hats&vermine robes&outer robes&jewellery&hairpins&himation&whips&switchblades&bar
+s&sowrongs&coins from corpse 1;put them in my backpack 1; bury corpse 1; $*$
+rec: recover $*$ in corpses
+lc: loot corpse $*$       rk: recover key $*$
+
+The category "combat":
+.warcries: Death to wombles!;Victory!;Run away or die $*$
+bhead: behead $arg:target 1$ with nodachi
+gac: get all from corpse; drop them; $*$
+ka: kill all except players & bats & beatific men & beatific women & believers & bessie & camels & cats &
+clouds & cobblers & cows & crows & ceremonial guards & citadel guards & dazed men & dazed women & dogs &
+dragons & every fireflies & swarms & followers & every lights & giggly men & giggly women & golden blossom
+& golden chicken & hags & killers & heavies & hattian guards & hoplites & kang wu & khenmet & khepresh &
+kyakenko & lap-lip & lights & luggages & madmen & monkeys & moths & mounts & every mount & Noc-noc-bang &
+oaks & palms & pets & pines & priestesses & priests & ptarquet & ptyler & receptionists & ryattenoki &
+shady man & sheep shearers & shopkeepers & sinule & skeleton warriors & spacey men & spacey women &
+stallowners & stone palms & summons & tneduts & tomtom & trees & trolls & wasted men & wasted women &
+worshippers & witches & wizards & wisps & Sle-pingh-beuh-tei & Lip-phon & Rahn-fara-wai & Teh-takk-eht &
+Pennie & Ptyler & Phos-phor & Lap-lip & Tag-ahn-ruhn & Ptarquet & Rook & Sandy & Wan-tew-iit & Lip-Bahm &
+Mihk-gran-bohp & Yclept & Pkara & Teh-takk-eht & Lap-lip & Lip-phon Lap-top & Ptuf & Limdul & Phin-lip &
+Ut-lat-khin & Phit-Git & Hin-lop-heds & jack straw & Adelphe & brick & Endos & Ptespi & $*$
+rt-paint: sheath;get paint 1 from forager's belt 1;hold paint 1 $*$
+sheath: put nodachi 1 in nodachi scabbard 1 $*$
+sheath2: put hunting knife in travelling boots $*$
+trash: get all from corpse;bury corpse;drop them $*$
+unsheath: get sword from nodachi scabbard;hold nodachi 1 $*$
+unsheath2: get hunting knife from travelling boots $*$
+wp: warpaint $*$ with paint 1 drawing random
+.warpaints: a SKELETON;BLOOD $*$
+def: tactics attitude defensive $*$
+hth: health wounded $arg:all$
+imp: impale $arg:target 1$ with nodachi
+k: warcry random; kill $*$
+kk: rt-paint;wp me;st-paint;k $*$
+nut: tactics attitude neutral $*$
+off: tactics attitude offensive $*$
+sh: shove $arg:target 1$
+sl: slice $arg:target 1$ with nodachi
+wc: warcry $arg:random$
+wp-go: rt-paint;wp me;st-paint $*$
+ws: wildswing with nodachi 1 $*$
+
+The category "quest":
+qg: quests show next general hint for $*$
+ql: quests show next location hint for $*$
+qq: quests list uncompleted ankh-morpork $*$
+qh: quest show details for $*$          qs: quest show solution for ** $*$
+qi: quests show next item hint for $*$  sq: syntax quests $*$
+q: quest $*$
+
+A total of 114 aliases in 13 categories.
+
+
