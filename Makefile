@@ -4,11 +4,11 @@ all: setup
 
 setup:
 	mkdir -p logs && touch logs/chat.log
-	./scripts/new-tmux.sh
+	./scripts/tmux-setup.sh
 
 standalone-setup:
 	mkdir -p logs && touch logs/chat.log
-	./scripts/new-tmux.sh standalone
+	./scripts/tmux-setup.sh standalone
 
 run:
 	tt++ discworld.tin

@@ -13,7 +13,7 @@
 #tab {talker-log-on}; #tab {talker-log-off};
 
 #function {log_line_to_chat} {
-    #script {ts} {date +"%I:%M%P"};
+    #script {ts} {date +"%H:%M"};
     #line {log} {$chat_file} {$ts[1] \};
     #line {log} {$chat_file}
 };
