@@ -48,34 +48,42 @@ bget: get $*$ from backpack 1
 bput: put $*$ in backpack 1
 fetch: get $*$ from backpack
 gcc: get coins from every corpse $*$
+gm: get money $*$
 gpup: get blue bottle from backpack $*$
 hpup: get amber botle from backpack $*$
 sget: get $*$ from large satchel 1
 sput: put $*$ in large satchel 1
 vget: get $*$ from drawer
 vput: put $*$ in drawer
-gm: get money $*$
 
 The category "chatting":
 1: $ifarg:1 $*$ $else$talker history 1$endif$
 2: $ifarg:2 $*$ $else$talker history 2$endif$
-reply: tell reply $*$                   t: $ifarg:t $*$ $else$htell$endif$
+reply: tell reply $*$
+t: $ifarg:t $*$ $else$htell$endif$
 
 The category "look":
-lib: look in backpack 1 $*$             lis: look in saddlebags $*$
-lic: look in corpse $*$                 liv: look in drawer $*$
-lid: look in drawer $*$                 ll: map door text $*$
+lib: look in backpack 1 $*$
+lic: look in corpse $*$
+lid: look in drawer $*$
+lis: look in saddlebags $*$
+liv: look in drawer $*$
+ll: map door text $*$
 
 The category "mount":
 ada: assess donk traits;assess donk needs;assess donk health $*$
 donkoff: ask donk to not assist in combat $*$
 donkon: ask donk to assist in combat $*$
 feedup: buy oats;drop sack;get oats 1 from sack;feed oats 1 to donk;ad $*$
-dm: dismount;lead donk $*$              rt: retrieve $*$ from donk
-dmm: destable my mount $*$              st: stash $*$ on Donk
+dm: dismount;lead donk $*$
+rt: retrieve $*$ from donk
+dmm: destable my mount $*$
+st: stash $*$ on Donk
 rls: ask horse to remember $*$
-ad: assess donk $*$                     md: mount donk $*$
-ld: lead donk $*$                       pd: pet donk $*$
+ad: assess donk $*$
+md: mount donk $*$
+ld: lead donk $*$
+pd: pet donk $*$
 
 The category "alias":
 ac: $ifarg1: alias show sorted category $1$ $else$ frimble sparky is cool$endif$
@@ -84,9 +92,14 @@ Syntax ma [alias name] [alias category] $endif$endif$
 lsa: alias sorted category default $*$
 
 The category "movement":
-je: journey e $*$         jnw: journey nw $*$       jsw: journey sw $*$
-jn: journey n $*$         js: journey s $*$         jw: journey w $*$
-jne: journey ne $*$       jse: journey se $*$
+je: journey e $*$
+jn: journey n $*$
+jne: journey ne $*$
+jnw: journey nw $*$
+js: journey s $*$
+jse: journey se $*$
+jsw: journey sw $*$
+jw: journey w $*$
 
 The category "loot":
 loot: get coins & every gold jewellery & every silver jewellery & every weapon from corpse 1;put them in
@@ -119,7 +132,7 @@ sheath2: put hunting knife in travelling boots $*$
 trash: get all from corpse;bury corpse;drop them $*$
 unsheath: get sword from nodachi scabbard;hold nodachi 1 $*$
 unsheath2: get hunting knife from travelling boots $*$
-wp: warpaint $*$ with paint 1 drawing random
+wp: warpaint $arg:me$
 .warpaints: a SKELETON;BLOOD $*$
 def: tactics attitude defensive $*$
 hth: health wounded $arg:all$
@@ -138,8 +151,9 @@ The category "quest":
 qg: quests show next general hint for $*$
 ql: quests show next location hint for $*$
 qq: quests list uncompleted ankh-morpork $*$
-qh: quest show details for $*$          qs: quest show solution for ** $*$
-qi: quests show next item hint for $*$  sq: syntax quests $*$
+qh: quest show details for $*$
+qi: quests show next item hint for $*$
+sq: syntax quests $*$
 q: quest $*$
 
 A total of 114 aliases in 13 categories.
