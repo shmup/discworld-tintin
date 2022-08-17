@@ -1,6 +1,7 @@
 #split 0 1;
 
 #config {convert meta};
+#config {verbatim} {on};
 #variable {chat_file} {logs/chat.log};
 
 /* fuzzy filters w/ https://github.com/junegunn/fzf */
