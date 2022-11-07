@@ -18,9 +18,12 @@
     #line {log} {$chat_file}
 };
 
+#nop #action {^({[A-Z][a-z]+}) %2{:|} %3} {#return @log_line_to_chat{};};
+#action {~^\e[38;5;220m({[A-Z][a-z]+}) %2{:|} %3} {#return @log_line_to_chat{};};
+#nop #action {^%1 {tells|asks|exclaims to} %*you{|(?: in \w+)?}: %4} {#return @log_line_to_chat{};};
+#action {~\e[48;5;54m\e[37m %1 {tells|asks|exclaims to} %*you{|(?: in \w+)?}: %4} {#return @log_line_to_chat{};};
 #action {^You {tell|ask|exclaim to} %1:%2} {#return @log_line_to_chat{};};
 #action {^%1 {tells|asks|exclaims to} %*you{|(?: in \w+)?}: %4} {#return @log_line_to_chat{};};
-#action {^(%1) %2{:|} %3} {#return @log_line_to_chat{};};
 #action {^(They Might Be Alts) } {#return @log_line_to_chat{};};
 #action {^(newbiehelpers)} {#return @log_line_to_chat{};};
 #action {^You newbiehelper-tell:%1} {#return @log_line_to_chat{};};
@@ -56,3 +59,8 @@
 };
 
 #class {channels} {close};
+
+#alias {test} {
+    #showme (One) foo wisps: mooooo!;
+    #showme (two) bar wisps: this should not log!;
+}

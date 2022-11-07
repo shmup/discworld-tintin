@@ -22,7 +22,8 @@
   #showme {<cfa>reloaded!};
 };
 
-#read {scripts/channels.tin};
+#alias {metaon} { #config {convert meta} on; };
+#alias {metaoff} { #config {convert meta} off; };
 
 #alias {reconnect} {
   #zap discworld;
@@ -32,3 +33,5 @@
 #if {"@discworld{}" !== ""} {
     reconnect;
 };
+
+#read {scripts/channels.tin};
