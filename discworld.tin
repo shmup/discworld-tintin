@@ -31,6 +31,32 @@
   #session discworld discworld.starturtle.net 4242;
 };
 
+#alias mapon {
+}
+
+#alias mapoff {
+
+}
+
+#alias mapsave {
+    #showme "data/discworld.map saved.";
+    #map write data/discworld.map;
+}
+
+#alias mapload {
+    #showme "data/discworld.map loaded.";
+    #map read data/discworld.map;
+}
+
+#alias mm {
+    #map map;
+}
+
+#alias mapinfo {
+    #showme "data/discworld.map loaded.";
+    #map info;
+}
+
 #if {"@discworld{}" !== ""} {
     reconnect;
 };
