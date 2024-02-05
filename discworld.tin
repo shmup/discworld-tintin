@@ -9,6 +9,7 @@
 #alias {manual} {#system ./scripts/manual-browse.sh};
 #alias {maps} {#system ./scripts/maps.sh };
 #alias {boards} {#system ./scripts/boards.sh };
+#alias {help-ls} {#system ./scripts/help-ls.sh };
 #tab {help-tt} #tab {manual}; #tab {boards}; #tab {maps};
 
 /* if on macos, change xdg-open to open */
