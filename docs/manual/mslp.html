@@ -1,0 +1,199 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/mslp.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual mslp </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+<a href='event.html'>Event</a><br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+<a href='lists.html'>Lists</a><br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+<a href='map.html'>Map</a><br>
+<a href='mapping.html'>Mapping</a><br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+MSLP<br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+<a href='pcre.html'>PCRE</a><br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+<a href='screen.html'>Screen</a><br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         MSLP
+
+</span><span style='color:#AAA'>
+         MSLP (Mud Server Link Protocol) requires enabling #config mouse on,
+         and creating the appropriate LINK events.
+
+         The simplest link can be created by surrounding a keyword with the
+         &bsol;e[4m and &bsol;e[24m tags.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #substitute {&bsol;b{n|e|s|w|u|d}&bsol;b} {&bsol;e[4m%1&bsol;[24m}
+
+         This would display 'Exits: n, e, w.' as 'Exits: n, e, w.'.
+
+         When clicked this would trigger the PRESSED LINK MOUSE BUTTON ONE
+         event of which %4 will hold the link command and %6 holds the
+         link name, which in the case of a simple link will be empty.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #event {PRESSED LINK MOUSE BUTTON ONE} {#send {%4}}
+
+         Keep in mind that if you change PRESSED to DOUBLE-CLICKED the link
+         will only work if the text does not scroll in between clicks.
+
+         If you want to create a complex link use an OSC code.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #sub {&bsol;bsmurf&bsol;b} {&bsol;e]68;1;;say I hate smurfs!&bsol;a&bsol;e[4m%0&bsol;e[24m}
+
+         If you have the LINK event of the previous example set, the %4
+         argument will contain 'say I hate smurfs!'.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #sub {&bsol;bgoblin&bsol;b} {&bsol;e]68;1;SEND;kill goblin&bsol;a&bsol;e[4m%0&bsol;e[24m}
+
+         Notice the previous instance of ;; has been replaced with ;SEND;
+         which will name the link. This will generate a named event.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #event {PRESSED LINK SEND MOUSE BUTTON ONE} {#send {%4}}
+
+         By naming links you can organize things a little bit better instead
+         of tunneling everything through the same event.
+
+         Keep in mind that the server is allowed to use &bsol;e]68;1;&bsol;a as well,
+         subsequently various security measures are in place.
+
+         To create secure links, which are filtered out when send by a server,
+         you need to use &bsol;e]68;2;&bsol;a, and they instead trigger the SECURE LINK
+         event.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #sub {%* tells %*} {&bsol;e]68;2;EXEC;#cursor set tell %1 &bsol;a&bsol;e[4m%0&bsol;e[24m}
+</span><span style='color:#FFF'>       </span><span style='color:#AAA'>  #event {PRESSED SECURE LINK EXEC MOUSE BUTTON ONE} {%4}
+
+         This would make you start a reply when clicking on a tell.
+
+</span><span style='color:#FFF'>Website</span><span style='color:#AAA'>: https://tintin.mudhalla.net/protocols/mslp
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='event.html'>event</a> and <a href='port.html'>port</a>.
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/mslp.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:43 GMT -->
+</html>

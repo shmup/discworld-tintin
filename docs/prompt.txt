@@ -1,0 +1,55 @@
+prompt                        Discworld player help                       prompt
+
+
+Name
+     prompt - Your command prompt.
+
+Syntax
+     prompt "<string>"
+     prompt {off|none}
+     prompt default
+
+Description
+     The prompt is the line that is printed after entering a command.  The
+     "prompt" command allows you to customise this line, or turn it off
+     completely.  The default prompt is "> ".
+
+     By setting your prompt to a string you can customise it.  Certain
+     control codes will be replaced in your string.  These are:
+
+     $hp$                Your current amount of hit points.
+     $maxhp$             Your maximum amount of hit points.
+     $gp$                Your current amount of guild points.
+     $maxgp$             Your maximum amount of guild points.
+     $xp$                Your current amount of experience points.
+     $hp_rp$             A textual description of your current hit point
+                         status.
+     $gp_rp$             A textual description of your current guild point
+                         status.
+     $burden$            Your current burden %.
+     $burden_rp$         A textual description of your current burden.
+     $temp$              An indication of your temperature.
+     $align$             An indication of your alignment.
+     $hurtcolour$        A colour tag representing how hurt you are.  Needs
+                         to be closed with the code %^RESET%^.
+     $newline$           A newline.
+     $combat_attitude$   Your current combat attitude tactics.
+     $combat_response$   Your current combat response tactics.
+
+Examples
+     > prompt
+     Your prompt is set to the default.
+
+     %^BOLD%^RED%^Librarian: %^RESET%^RED%^Not a monkey!%^RESET%^
+
+prompt "$newline$[$hurtcolour$$hp$/$maxhp$ %^ORANGE%^$gp$/$maxgp$ %^YELLOW%^$xp$%^RESET%^] "
+
+     You set your prompt to "[ Hp: $hp$/$maxhp$ ] ".
+
+Prompt (Command) From 1 to 47 of 53 (88%) - return to continue, h for help.
+
+     [ Hp: 2805/2805 ] prompt default
+     You set your prompt to the default value.
+
+See also
+     monitor, score.

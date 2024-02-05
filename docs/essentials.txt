@@ -1,0 +1,231 @@
+essentials                    Discworld Newbie Help                   essentials
+
+
+█▓▒░ DESCRIPTION ░▒▓█
+     This is the essential command list, a 'must read' for all players who
+     are new to Discworld.  It lists those commands you really need to
+     know.
+
+     To find out more about the commands listed use "help <command>" and
+     before asking "how do I do xxx?" remember to try "help xxx".
+
+█▓▒░ CONVENTIONS ░▒▓█
+     Parameters listed in < > are required and should be replaced by the
+     required object or string.  Parameters listed in [ ] are optional.
+     Parameters separated by | are choices.
+
+     Note: You do not need to include the brackets around the parameters
+     when you type them.
+
+     Every command, including those listed below, has a comprehensive
+     helpfile.  Just type "help <command>" to view it.
+
+█▓▒░ GETTING HELP ░▒▓█
+     help [concepts]          show the help index for important concepts
+     help command_list        show the help index for commands
+     help <command>           show the comprehensive helpfile associated
+                              with a command
+     syntax <command>         show the basic usage for a command
+     godmother help           summon your fairy godmother to transport you
+                              back to your starting location.
+     liaisons                 list the liaison creators who are currently
+                              logged in
+     helpers                  list the newbie helpers who are currently
+                              logged in
+     newbie <message>         ask a question on the newbie channel
+
+█▓▒░ NAVIGATION ░▒▓█
+     look [object]            look, or look at something
+     glance [object]          glance, or glance at something (this gives a
+                              shorter description than look)
+     north,south,etc.         Exits are listed in room descriptions just
+                              type the name of the exit
+     follow <person>          start following someone
+     unfollow <person>        stop following someone
+     lose <person>            stop someone following you
+
+█▓▒░ COMMUNICATING ░▒▓█
+     say <message>            say something.  Some npcs respond to saying
+                              things for example: "say help guide" in the
+                              presence of a guide will cause the guide to
+                              respond with instructions
+     tell <person> <message>  speak to another player
+     smile <person>           Discworld has an extensive list of "soul"
+                              commands.  See "help soul" for help on using
+                              the soul or "look soul" for a list of the
+                              several hundred wonderful soul commands
+                              available!
+
+█▓▒░ DOING THINGS ░▒▓█
+     inventory                list the things you have
+     hold <object>            hold something
+     unhold <object>          stop holding something
+     wear <object>            wear an item of clothing
+     remove <object>          remove an item of clothing
+     equip                    wear/hold all your stuff
+     get <object>
+       [from <object>]        get something
+     put <object> in <object> put something in something else
+     drop <object>            drop something
+     give <object> to <person>give an item to someone else (a player, NPC,
+                              or animal)
+     locate <objects>         shows you where all the "objects" are in your
+                              inventory and the room you are in (e.g.
+                              "locate swords"), whether you are holding or
+                              wearing them, and whether you are keeping
+                              them.  It also gives each a number, which you
+                              can use to refer to them (e.g. 'drop sword
+                              2').
+
+█▓▒░ ABOUT YOURSELF ░▒▓█
+     score [stats|quests]     see your score
+     skills                   see your skills
+     commands                 show the guild commands that you know
+     gp                       show information about your guild points
+     brief                    put your display in brief mode
+     verbose                  put your display in verbose mode
+     term [<terminal-type>]   display or change your terminal type
+     term xterm256            enable colour output for most clients
+     options                  This command allows you to change everything
+                              that can be changed about yourself.  It can
+                              configure so many things you should use 'help
+                              options' to find out more about it.
+
+█▓▒░ Reading things ░▒▓█
+     read <object>            Read an object
+     turn a page of <object>  Turn a page of a book or leaflet
+
+█▓▒░ FIGHTING THINGS ░▒▓█
+     consider                 gives you an idea how tough an opponent will
+                              be (read the caveats in the help file!)
+     kill                     attack an opponent
+     tactics                  adjust how you fight
+     wimpy                    set yourself to run away if your hitpoints
+                              get too low
+     monitor                  show a regular display of your status
+     health [<person>]        show the health of the person.
+
+█▓▒░ Advancing ░▒▓█
+     help taskmaster          on Discworld you advance skills by doing
+                              them, the system for this is called the
+                              taskmaster
+     advance                  you can advance at your guild by spending
+                              experience points and money (you can also
+                              learn from other players with the "learn"
+                              command)
+
+█▓▒░ SHOPPING ░▒▓█
+     money                    list the value of all the coins you are
+                              carrying
+     list                     list the items available in the shop
+     browse <item>            look at the details of an item
+     buy <item>               buy something from the shop
+     sell <item>              sell something to the shop
+     value <item>             find out how much the shop will pay you for
+                              an item
+     keep <object>            prevent you from accidentally selling an
+                              object you cherish
+     unkeep <object>          allow an object to be sold after previously
+                              being kept
+
+     Note: buy, list and browse are the only commands used in all shops.
+     Sell and value can only be used in specific stores.
+
+█▓▒░ COMMANDS ░▒▓█
+
+60              crouch          identify        prompt          speak
+accept          debate          idle            protect         spells
+access          defend          ignore          pursue          splash
+achievements    delete          import          put             stand
+advance         deliver         inform          qalias          start
+afk             describe        inventory       quests          stop
+age             drag            keep            queue           su
+alias           draw            kill            quit            surrender
+alias_tutorial  drink           killers         quote           syntax
+allocate        dry             kneel           qwho            tactics
+apply           ealias          languages       rate            tag
+appraise        earmuffs        league          read            take
+arguments       eat             learn           rearrange       talker
+birthdays       email           liaisons        reclaim         taste
+blog            emote           lie             recover         teach
+brief           equip           locate          refer           tell
+bright          events          lockout         refresh         temperature
+bug             examine         look            register        term
+bug_replies     facing          lose            reject          throw
+bug_reporting   finger          lsay            relationship    time
+bugcheck        flip            lsayto          remote          title
+bugs            follow          mail            remove          turn
+burden          friends         mailer          repeat          typo
+bury            frimble         mailinfo        resize          unalias
+calendar        gather          make            restart         unfollow
+cap             get             map             review          unhold
+cast            give            maths           rituals         unidentify
+chenc           glance          mccp            roleplaying     unkeep
+chfn            glcl            meditate        rot13           unprotect
+collect         godmother       memo            rotx            unquest
+colours         gp              money           rows            uptime
+cols            haunt           monitor         save            users
+commands        hcomm           more            say             verbose
+comment         health          mudlist         sayto           watch
+components      help            mxp             score           wear
+concentrate     helpers         news            screenreader    weigh
+condition       hints           nickname        search          wet
+consider        history         offer           sermons         when
+contents        hnewbie         options         sheathe         whisper
+converse        hnewbiehelpers  palette         shields         who
+convert         hold            password        shorten         whoami
+cost            hsay            perform         shout           whois
+count           hskills         permit          show            wimpy
+countries       hsoul           play            signature       withdraw
+coverage        htell           poll            sit
+crawl           idea            position        skillcap
+
+█▓▒░ CONCEPTS ░▒▓█
+
+AKA                       display                   pk_ladder
+TLA                       domain                    pkrules
+abbreviation              edit_help                 playerkilling
+accents                   editor                    playtesters
+achievement_points        enchantment               pottery
+activity                  encodings                 profanity
+administrators            equipment                 punctuation
+advancing                 experience                quests
+adventuring               expressions               quilting
+alignment                 faith                     races
+ankh-morpork              family                    rambler
+architect                 fang                      rating
+ashkente                  faq                       reboot
+automation                fines                     religion
+banishment                gmcp                      rings
+bibliography              groups                    roleplaying
+bonus                     guildpoints               rules
+bug_abuse                 guilds                    security
+calendar                  handcuff                  sheet_music
+capslock                  harassment                shopping
+capture_the_flag          hitpoints                 skills
+carriages                 hong                      socialpoints
+character_ownership       inactivity                soul
+citizenship               invisibility              special
+clubs                     invisible                 special_abilities
+coffee_table              journalist                stats
+colour_list               level                     staves
+combat                    losinglink                sung
+communication             magic                     supplication
+complaints                magistrates               suspension
+compression               mcsweeney                 tang
+concept                   mercy                     taskmaster
+conversions               mudmaking                 temperature
+corpse                    multiplay_allow           terry_pratchett
+covert                    multiplechars             theft
+craft_patterns            mxp                       timezones
+crafting                  nationality               travel
+crafts                    newbie_channel            tshop
+creator                   newbiehelpers             underworld
+creators                  newbiehelpers_policy      usercolour
+credits                   newspaper                 wands
+ctf                       no_score                  warding
+ctf_commands              other                     website
+currency                  parser                    worship
+death                     people                    zmp
+deitypoints               pets                      zmud_colours
+deletion                  pit's_rules

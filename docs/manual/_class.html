@@ -1,0 +1,182 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/_class.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual class </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+<a href='event.html'>Event</a><br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+<a href='lists.html'>Lists</a><br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+<a href='map.html'>Map</a><br>
+<a href='mapping.html'>Mapping</a><br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+<a href='mslp.html'>MSLP</a><br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+<a href='pcre.html'>PCRE</a><br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+<a href='screen.html'>Screen</a><br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         CLASS
+
+</span><span style='color:#FFF'>Command</span><span style='color:#AAA'>: #class </span><span style='color:#FFF'>{</span><span style='color:#AAA'>name</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>optionkill</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>arg</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {assign} {&lt;argument&gt;}
+         </span><span style='color:#AAA'>  Will execute argument with the given class opened.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {clear}
+         </span><span style='color:#AAA'>  Will delete all triggers associated with the given class.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {close}
+         </span><span style='color:#AAA'>  Close the given class, opening the last open class, if any.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {kill}
+         </span><span style='color:#AAA'>  Will clear, close, and remove the class.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {list}
+         </span><span style='color:#AAA'>  List all triggers associated with the given class.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {load}
+         </span><span style='color:#AAA'>  Will load the saved copy of the class from memory.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {open}
+         </span><span style='color:#AAA'>  Open a class, closing a previously opened class. All triggers
+           added afterwards are assigned to this class.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {read} {&lt;filename&gt;
+         </span><span style='color:#AAA'>  Will open the class, read the file, and close afterwards.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {save}
+         </span><span style='color:#AAA'>  Will save all triggers of the given class to memory.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {size} {&lt;variable&gt;}
+         </span><span style='color:#AAA'>  Will store the size of the class in a variable.
+         </span><span style='color:#FFF'>#class {&lt;name&gt;} {write} {&lt;filename&gt;}
+         </span><span style='color:#AAA'>  Will write all triggers of the given class to file.
+         The {kill} option will delete all triggers of the given class.
+
+         Keep in mind that the kill and read option are very fast allowing
+         them to be used to enable and disable classes.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #class extra kill;#class extra read extra.tin
+         Deletes all triggers of 'extra' class if any. Read 'extra.tin' file,
+         all triggers loaded will be assigned to the fresh new 'extra' class.
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='config.html'>config</a>, <a href='debug.html'>debug</a>, <a href='ignore.html'>ignore</a>, <a href='info.html'>info</a>, <a href='kill.html'>kill</a>, <a href='line.html'>line</a> and <a href='message.html'>message</a>.
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/_class.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:40 GMT -->
+</html>

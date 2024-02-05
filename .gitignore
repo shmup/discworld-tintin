@@ -1,6 +1,2 @@
-docs/*
-!docs/boards.sh
-!docs/maps.sh
-!docs/aliases.txt
 manual.html
 logs/

@@ -1,0 +1,10 @@
+QuowBarOptions: options mxp enabled=on;options mxp objectmenus=off;options mxp
+livingmenus=off;options output map frame=off;options output map
+glance=top;options output map glancecity=top;options output map
+look=top;options output map lookcity=top;options output map plain=off;options
+output map reversecolour=off;options output map written=off;options output map
+mxp=off;options combat monitor state=on;options output combat=verbose;options
+output prompt=off;options output shortinlong=on;options output
+usercolour=on;options combat monitor state=on;options output
+skills=branched;cols 80;term ansi;term network;frimble === Disc Config Done!
+=== $*$

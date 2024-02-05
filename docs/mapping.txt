@@ -1,0 +1,408 @@
+#map create 1000000
+#OK: TERRAIN {} HAS BEEN SET TO { } {}.
+#MAP CREATE ROOM     1 {}.
+#MAP: 1000000 ROOM MAP CREATED, USE '#MAP GOTO 1' TO PROCEED.
+
+#map create <size>
+#map resize <size>
+#map destroy
+#map leave (temporarily leave w/o destroying)
+#map write <file>
+#map read <file>
+#map goto <vnum>
+#map map
+
+#map create 1000000
+#map flag vtmap on
+#map flag static off
+
+#map set roomarea mainland
+
+roomarea: roomcolor: roomdata: roomdesc: roomflags: 0 roomname: roomnote:
+roomsymbol: roomterrain: roomweight: 1.000
+
+#map info
+     Total rooms: 1           Total exits: 0            World size: 1000000
+       Direction: 0             Last room: 0             Undo size: 0
+
+   AsciiGraphics: on          AsciiLength: off          AsciiVnums: off
+        AutoLink: on        BlockGraphics: off           Direction: on
+         MudFont: off            Nofollow: off              Static: off
+  SymbolGraphics: off     UnicodeGraphics: off               Vtmap: on
+
+      Map Center:    0    0    0
+      Map Offset:    0    0    0    0
+  Current Offset:    0    0    0    0
+
+
+[AT        ] Execute command at given location
+[CENTER    ] Set the center of the map display
+[COLOR     ] Set the color for given field
+[CREATE    ] Creates the initial map
+[DEBUG     ] Obscure debug information
+[DELETE    ] Delete the room at given direction
+[DESTROY   ] Destroy area or map
+[DIG       ] Create new room at given direction
+[ENTRANCE  ] Change the given exit's entrance
+[EXIT      ] Change the given exit
+[EXITFLAG  ] Change the given exit's flags
+[EXPLORE   ] Save explored path to #path
+[FIND      ] Save found path to #path
+[FLAG      ] Change the map's flags
+[GET       ] Get various room values
+[GLOBAL    ] Set the global exit room
+[GOTO      ] Move to the given room
+[INFO      ] Display map and room information
+[INSERT    ] Insert a room at given direction
+[JUMP      ] Move to the given coordinate
+[LANDMARK  ] Create a global room reference
+[LEAVE     ] Leave the map
+[LEGEND    ] Manipulate the map legend
+[LINK      ] Link room at given direction
+[LIST      ] List matching rooms
+[MAP       ] Display the map
+[MOVE      ] Move to the given direction
+[NAME      ] (obsolete) Use SET ROOMNAME instead
+[OFFSET    ] Set the offset of the vt map
+[READ      ] Read a map file
+[RESIZE    ] Resize the map room vnum range
+[RETURN    ] Return to last known room
+[ROOMFLAG  ] Change the room's flags
+[RUN       ] Save found path to #path and run it
+[SET       ] Set various room values
+[SYNC      ] Read a map file without overwriting
+[TERRAIN   ] Create a terrain type
+[TRAVEL    ] Save explored path to #path and run it
+[UNDO      ] Undo last map action
+[UNINSERT  ] Uninsert room in given direction
+[UNLANDMARK] Remove a landmark
+[UNLINK    ] Remove given exit
+[UNTERRAIN ] Remove a terrain type
+[UPDATE    ] Mark vt map for an auto update
+[VNUM      ] Change the room vnum to given vnum
+[WRITE     ] Save the map to given file
+
+Command: #map
+
+         The map command is the backbone of the auto mapping feature.
+
+         #map at <exit|vnum> <command>
+           Execute the command at the given exit or vnum.
+
+         #map center <x> <y> <z>
+           Sets displaying center of the map viewer, default is 0 0 0.
+
+         #map color <field> [value]
+           Sets the map color for the given color field. Use #map color reset
+           to restore colors to default.
+
+         #map create <size>
+           Creates a new map and room 1. The default size is 50000 rooms.
+
+         #map destroy {area|world} <name>
+           Deletes the map or given area.
+
+         #map delete <exit|vnum>
+           Deletes the room for the given exit or vnum.
+
+         #map dig <exit|vnum> [new|<vnum>]
+           Creates an exit for the given exit name. If no valid exit name
+           is given or no existing room is found a new room is created.
+           Useful for portal links and other alternative forms of
+           transportation. If the 'new' argument is provided all existing
+           rooms are ignored and a new room is created. If a room vnum is
+           given as the second argument an exit will be created leading
+           to the given room vnum. If the room vnum doesn't exist a new
+           room is created.
+
+         #map entrance <exit> <option> <arg> [both]
+           Set the entrance data for the given exit. You must specify a
+           valid two-way exit for this to work.
+
+         #map exit <exit> <option> <arg> [both]
+           Set the exit data. Useful with a closed door where you can
+           set the exit command: '#map exit e command {open east;e}'.
+           Use #map exit <exit> for a list of available options.
+           Use #map exit <exit> save to save all exit data.
+
+         #map exitflag <exit> <AVOID|BLOCK|HIDE|INVIS> [on|off]
+           Set exit flags. See #map roomflag for more info.
+
+         #map explore <exit>
+           Explores the given exit until a dead end or an
+           intersection is found. The route is stored in #path and can
+           subsequently be used with #walk. Useful for long roads.
+
+         #map find <name> <exits> <desc> <area> <note> <terrain> <flag>
+           searches for the given room name. If found the shortest path
+           from your current location to the destination is calculated.
+           The route is stored in #path and can subsequently be used with
+           the various #path commands. If #map flag nofollow is set it
+           will store the exit commands instead of the exit names.
+
+           If <exits> is provided all exits must be matched, if
+           <roomdesc>, <roomarea> or <roomnote> or <roomterrain> or
+           <roomflag> is provided these are matched as well against the
+           room to be found.
+
+           These search options are also available for the at, delete,
+           goto, link, list and run commands.
+
+         #map flag asciigraphics
+           Takes up more space but draws a more detailed
+           map that displays the ne se sw nw exits and room symbols.
+
+         #map flag asciivnums
+           Display room vnums if asciigraphics is enabled.
+
+         #map flag direction
+           Display an arrow on the map showing the direction of your
+           last movement command.
+
+         #map flag fast
+           Limit coordinate searches to a 50 room radius. Useful to
+           speed up map drawing and room creation on large maps.
+
+         #map flag nofollow
+           When you enter movement commands the map will no longer
+           automatically follow along. Useful for MSDP and GMCP
+           automapping scripts. When you use #map find in nofollow
+           mode it will store the exit command instead of the exit
+           name into the path.
+
+         #map flag pancake
+           Makes the map display rooms above or below you. You can use
+           #map color room  for a color gradient.
+
+         #map flag quiet
+           Silence map messages when creating new rooms through movement.
+
+         #map flag static
+           Will make the map static so new rooms are no longer
+           created when walking into an unmapped direction. Useful when
+           you're done mapping and regularly bump into walls accidentally
+           creating a new room. #map dig etc will still work.
+
+         #map flag symbolgraphics
+           Draw a 1x1 map using the defined room symbols.
+
+         #map flag terrain
+           Fill up empty space surrounding rooms with terrain symbols
+
+         #map flag vtgraphics
+           Enables vt line drawing on some terminals
+
+         #map flag vtmap
+           Will enable the vtmap which is shown in the top split
+           screen if you have one. You can create a 16 rows high top
+           screen by using '#split 16 1'.
+
+         #map get <option> <variable> [vnum]
+           Store a map value into a variable, if no vnum is given the
+           current room is used. Use 'all' as the option to store all
+           values as a table.
+
+         #map get roomexits <variable>
+           Store all room exits into variable.
+
+         #map global <room vnum>
+           Set the vnum of a room that contains global
+           exits, for example an exit named 'recall' that leads to the
+           recall location. The room can contain multiple exits, in case
+           there are multiple commands that are similar to recall.
+
+         #map goto <room vnum> [dig]
+           Takes you to the given room vnum, with the
+           dig argument a new room will be created if none exists.
+
+         #map goto <name> <exits> <desc> <area> <note> <terrain>
+           Takes you to the given room name, if you provide exits those
+           must match.
+
+         #map info [save]
+           Gives information about the map and room you are in. If the save
+           argument is given the map data is saved to the info[map] variable.
+
+         #map insert <direction> [roomflag]
+           Insert a room in the given direction. Most useful for inserting
+           void rooms.
+
+         #map jump <x> <y> <z>
+           Jump to the given coordinate, which is relative
+           to your current room.
+
+         #map landmark <name> <vnum> [description] [size]
+           Creates an alias to target the provided room vnum. The
+           description is optional and should be brief. The size
+           determines from how many rooms away the landmark can be
+           seen.
+
+         #map leave
+           Makes you leave the map. Useful when entering a maze. You
+           can return to your last known room using #map return.
+
+         #map legend <legend> [symbols|reset]
+         #map legend <legend> <index> [symbol]
+           There are several legends and sub-legends available for
+           drawing maps to suit personal preference and character sets.
+           Use #map legend all to see the legend as currently defined.
+           Use #map legend <legend> <reset> to set the default legend.
+           Use #map legend <legend> <character list> to create a custom
+           legend. Custom legends are stored in the map file and can be
+           saved and loaded using #map write and #map read.
+
+         #map link <direction> <room name> [both]
+           Links two rooms. If the both
+           argument and a valid direction is given the link is two ways.
+
+         #map list <name> <exits> <desc> <area> <note> <terrain>
+           Lists all matching rooms and their distance. The following
+           search keywords are supported.
+
+           {distance}    <arg> will list rooms within given distance.
+           {roomarea}    <arg> will list rooms with matching area name.
+           {roomdesc}    <arg> will list rooms with matching room desc.
+           {roomexits}   <arg> will list rooms with identical room exits.
+                               Use * as an exit to ignore non pathdir exits.
+           {roomflag}    <arg> will list rooms with matching room flags.
+           {roomid}      <arg> will list rooms with identical id name.
+           {roomname}    <arg> will list rooms with matching room name.
+           {roomnote}    <arg> will list rooms with matching room note.
+           {roomterrain} <arg> will list rooms with matching room terrain.
+           {variable}    <arg> will save the output to given variable.
+
+         #map map <rows> <cols> <append|overwrite|list|variable> <name>
+           Display a drawing of the map of the given height and width.
+           All arguments are optional. If {rows} or {cols} are set to {}
+           or {0} they will use the scrolling window size as the default.
+           If {rows} or {cols} are a negative number this number is
+           subtracted from the scrolling window size.
+
+         #map map <rows> <cols> draw <square>
+           Display a drawing of the map of the given height and width.
+           The square argument exists of 4 numbers formulating the top
+           left corner and bottom right corner of a square.
+
+           If you use {append|overwrite} the map is written to the specified
+           file name which must be given as the 4th argument.
+           If you use {list|variable} the map is saved to the specified
+           variable name.
+
+         #map move <direction>
+           This does the same as an actual movement command, updating your
+           location on the map and creating new rooms. Useful when you are
+           following someone and want the map to follow along. You will need
+           to create actions using '#map move', for this to work.
+
+         #map offset <row> <col> <row> <col>
+           Define the offset of the vtmap as a square. Without an argument
+           it defaults to the entire top split region.
+
+         #map read <filename>
+           Will load the given map file.
+
+         #map resize <size>
+           Resize the map, setting the maximum number of rooms.
+
+         #map return
+           Returns you to your last known room after leaving the map
+           or loading a map.
+
+         #map roomflag <flags> <get|on|off>
+
+         #map roomflag avoid
+           When set, '#map find' will avoid a route leading
+           through that room. Useful for locked doors, etc.
+         #map roomflag block
+           When set the automapper will prevent movement into or through
+           the room. Useful for death traps.
+         #map roomflag hide
+           When set, '#map' will not display the map beyond
+           this room. When mapping overlapping areas or areas that aren't
+           build consistently you need this flag as well to stop
+           auto-linking, unless you use void rooms.
+         #map roomflag invis
+           When set the room will be colored with the INVIS color.
+         #map roomflag leave
+           When entering a room with this flag, you will
+           automatically leave the map. Useful when set at the entrance
+           of an unmappable maze.
+         #map roomflag noglobal
+           This marks a room as not allowing global
+           transportation, like norecall rooms that block recall.
+         #map roomflag void
+           When set the room becomes a spacing room that can
+           be used to connect otherwise overlapping areas. A void room
+           should only have two exits. When entering a void room you are
+           moved to the connecting room until you enter a non void room.
+         #map roomflag static
+           When set the room will no longer be autolinked
+           when walking around. Useful for mapping mazes.
+
+         #map run <room name> [delay]
+           Calculates the shortest path to the destination and walks you
+           there. The delay is optional and requires using braces. Besides
+           the room name a list of exits can be provided for more precise
+           matching.
+
+         #map set <option> <value> [vnum]
+           Set a map value for your current room, or given room if a room
+           vnum is provided.
+
+         #map sync <filename>
+           Similar to #map read except the current map won't be unloaded
+           or overwritten.
+
+         #map terrain <name> <symbol> [flag]
+           Set the terrain symbol and flag.
+
+         #map terrain <name> <symbol> [DENSE|SPARSE|SCANT]
+           Determine symbol density, omit for the default.
+
+         #map terrain <name> <symbol> [NARROW|WIDE|VAST]
+           Determine symbol spread range, omit for the default.
+
+         #map terrain <name> <symbol> [FADEIN|FADEOUT]
+           Determine symbol spread density, omit for the default.
+
+         #map terrain <name> <symbol> [DOUBLE]
+           You're using two characters for the symbol.
+
+         #map travel <direction> <delay>
+           Follows the direction until a dead end or an intersection is
+           found. Use braces around the direction if you use the delay,
+           which will add the given delay between movements.
+           Use #path stop to stop a delayed run.
+
+         #map undo
+           Will undo your last move. If this created a room or a link
+           they will be deleted, otherwise you'll simply move back a
+           room. Useful if you walked into a non-existent direction.
+
+         #map uninsert <direction>
+           Exact opposite of the insert command.
+
+         #map unlandmark <name>
+           Removes a landmark.
+
+         #map unlink <direction> [both]
+           Will remove the exit, this isn't two way so you can have the
+           properly display no exit rooms and mazes.
+           If you use the both argument the exit is removed two-ways.
+
+         #map unterrain <name>
+           Removes a terrain.
+
+         #map update [now]
+           Sets the vtmap to update within the next 0.1 seconds, or
+           instantly with the now argument.
+
+         #map vnum <low> [high]
+           Change the room vnum to the given number, if a range is
+           provided the first available room in that range is selected.
+
+         #map write <filename> [force]
+           Will save the map, if you want to save a map to a .tin file
+           you must provide the {force} argument.
+
+Related: path, pathdir and speedwalk.

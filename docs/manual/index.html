@@ -1,0 +1,401 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:23:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual index </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+<a href='event.html'>Event</a><br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+<a href='lists.html'>Lists</a><br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+<a href='map.html'>Map</a><br>
+<a href='mapping.html'>Mapping</a><br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+<a href='mslp.html'>MSLP</a><br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+<a href='pcre.html'>PCRE</a><br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+<a href='screen.html'>Screen</a><br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         INDEX
+
+</span><span style='color:#AAA'>         On this page you'll find an introduction to using TinTin++. Additional
+         information can be found in the individual help sections.
+</span><span style='color:#5F5'>
+         Starting and Ending
+</span><span style='color:#AAA'>
+         The syntax for starting TinTin++ is: ./tt++ [command file]
+
+         Read more about the command file in the files section below. Remember
+         one thing though. All actions, aliases, substitutions, etc, defined
+         when starting up TinTin++ are inherited by all sessions.
+
+         If you want to exit TinTin++ type '#end' or press ctrl-d on an empty
+         line.
+
+         For the WinTin++ users, if you want to paste text use shift-insert,
+         text is automatically copied upon selection. This is typical Linux
+         behavior, but it can take some getting used to.
+
+</span><span style='color:#5F5'>
+         Basic features
+</span><span style='color:#AAA'>
+         I'll start by explaining some of the very basic and important features:
+
+         All TinTin++ commands starts with a '#'.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #help -- #help is a client command, and isn't send to the server.
+
+         All TinTin++ commands can be abbreviated when typed.
+
+         #he -- Typing #he is the same as typing #help though it's suggested to
+         use at least 3 letter abbreviations just in case another command is
+         added that starts with 'he'.
+
+         All commands can be separated with a ';'.
+
+         n;l dragon;s;say Dan Dare is back! -- do these 4 commands
+         There are 3 ways ';'s can be overruled.
+
+         &bsol;say Hello ;) -- Lines starting with a '&bsol;' aren't parsed by TinTin++.
+         say Hello &bsol;;) -- The escape character can escape 1 letter.
+         #config verbatim on -- Everything is send as is except '#' commands.
+</span><span style='color:#5F5'>
+         Connecting to a server
+</span><span style='color:#FFF'>
+Command</span><span style='color:#AAA'>: #session </span><span style='color:#FFF'>{</span><span style='color:#AAA'>session name</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>server address</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>port</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         Example: #session someone tintin.sourceforge.net 4321
+
+         You can have more than one session, in which case you can switch
+         between sessions typing #&lt;session name&gt;.
+
+         You can get a list of all sessions by typing: #session. The current
+         active session is marked with (active). Snooped sessions with
+         (snooped). MCCP sessions (compression) with (mccp 2) and (mccp 3).
+
+</span><span style='color:#5F5'>
+         Split
+</span><span style='color:#FFF'>
+Command</span><span style='color:#AAA'>: #split
+
+         The split command will create a separated input and output area.
+
+         Using the #prompt command you can capture the prompt and place it on
+         the split line. To get rid of the split interface you can use #unsplit
+         which will restore the terminal settings to default.
+
+</span><span style='color:#5F5'>
+         Alias
+</span><span style='color:#FFF'>
+Command</span><span style='color:#AAA'>: #alias </span><span style='color:#FFF'>{</span><span style='color:#AAA'>name</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>commands</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         The syntax of the #alias command is almost like alias in csh.
+         Use this command to define aliases. The variables %0, %1.. %9 contain
+         the arguments to the aliased command as follows:
+         the %0 variable contains ALL the arguments.
+         the %1 variable contains the 1st argument
+         ....
+         the %9 variable contains the 9th argument
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #alias greet say Greetings, most honorable %1
+
+         If you want an alias to execute more commands, you must use braces.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #alias ws </span><span style='color:#FFF'>{</span><span style='color:#AAA'>wake;stand</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         To delete an alias use the #unalias command.
+
+         WARNING! TinTin++ doesn't baby sit, and hence does not check for
+         recursive aliases! You can avoid recursion by escaping the entire
+         line.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #alias put &bsol;put %1 in %2
+
+         Or by using the send command.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #alias put #send put %1 in %2
+
+
+</span><span style='color:#5F5'>         Action
+
+</span><span style='color:#FFF'>Command</span><span style='color:#AAA'>: #action </span><span style='color:#FFF'>{</span><span style='color:#AAA'>action-text</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>commands</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         Use this command to define an action to take place when a particular
+         text appears on your screen. There are 99 variables you can use as
+         wildcards in the action-text.
+
+         These variables are %1, %2, %3 .... %9, %10, %11 ... %97, %98, %99.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #action </span><span style='color:#FFF'>{</span><span style='color:#AAA'>You are hungry</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>get bread bag;eat bread</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #action </span><span style='color:#FFF'>{</span><span style='color:#AAA'>%1 has arrived.</span><span style='color:#FFF'>}</span><span style='color:#AAA'> shake %1 -- shake hands with people arriving.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #action </span><span style='color:#FFF'>{</span><span style='color:#AAA'>%1 tells you '%2'</span><span style='color:#FFF'>}
+                   {</span><span style='color:#AAA'>tell bob %1 told me '%2'</span><span style='color:#FFF'>}</span><span style='color:#AAA'> -- forward tells.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #action </span><span style='color:#FFF'>{</span><span style='color:#AAA'>tells you</span><span style='color:#FFF'>}</span><span style='color:#AAA'> #bell -- beep on tell.
+
+         You can have TinTin++ ignore actions if you type '#ignore actions on'.
+
+         You can see what commands TinTin++ executes when an action triggers
+         by typing '#debug actions on'.
+
+         You can remove actions with the #unaction command.
+
+</span><span style='color:#5F5'>
+         Highlight
+
+</span><span style='color:#FFF'>Command</span><span style='color:#AAA'>: #highlight </span><span style='color:#FFF'>{</span><span style='color:#AAA'>text</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>color</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         This command works a bit like #action. The purpose of this command is
+         to substitute text from the server with color you provide. This command
+         is a simplified version of the #substitute command.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #high </span><span style='color:#FFF'>{</span><span style='color:#AAA'>Snowy</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>light yellow</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #high </span><span style='color:#FFF'>{</span><span style='color:#AAA'>%*Snowy%*</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>light yellow</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         Use #unhigh to delete highlights.
+
+
+         Speedwalk
+
+         If you type a command consisting ONLY of letters and numbers n, e, s,
+         w, u, d - then this command can be interpreted as a serie of movement
+         commands.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: ssw2n -- go south, south, west, north, north
+
+         If you have problems with typing some commands that actually ONLY
+         consists of these letters, then type them in CAPS. For example when
+         checking the NEWS or when asked to enter NEW as your name.
+
+         You must enable speedwalking with: #config speedwalk on/off.
+
+</span><span style='color:#5F5'>
+         Ticker
+
+</span><span style='color:#FFF'>Command</span><span style='color:#AAA'>: #ticker </span><span style='color:#FFF'>{</span><span style='color:#AAA'>name</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>commands</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>seconds</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         The name can be whatever you want it to be, and is only required for
+         the unticker command. The commands will be executed every x amount of
+         seconds, which is specified in the interval part.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #tick </span><span style='color:#FFF'>{</span><span style='color:#AAA'>tick</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>#delay 50 #show 10 SECONDS TO TICK!;#show TICK!!!</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>60</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         This creates a ticker with the name </span><span style='color:#FFF'>{</span><span style='color:#AAA'>tick</span><span style='color:#FFF'>}</span><span style='color:#AAA'> which will print TICK!!!,
+         as well as print a warning when the next tick will occure.
+
+         You can remove tickers with #untick
+
+</span><span style='color:#5F5'>
+         Command files
+</span><span style='color:#AAA'>
+         When you order TinTin++ to read a command file, it parses all the text
+         in the file. You can use command files to keep aliases/actions in,
+         login to a server (name, password etc..) and basically all kinds of
+         commands.
+
+         You can make the command files with either a text editor (suggested),
+         or use the #write command to write out a file.
+
+         Commands for files:
+
+         #read filename -- read and execute the file.
+
+         #write filename -- write all actions/aliases/substitutes/etc known for
+         the current session to a file.
+
+</span><span style='color:#5F5'>
+         Repeating Commands
+</span><span style='color:#AAA'>
+         You can repeat a command, the syntax is: #number command
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #5 cackle -- if you just killed bob the wizard.
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #10 </span><span style='color:#FFF'>{</span><span style='color:#AAA'>buy bread;put bread bag</span><span style='color:#FFF'>}</span><span style='color:#AAA'> -- repeat these 2 commands 10 times.
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #100 ooc w00t w00t!!!!! -- nochannel yourself.
+
+</span><span style='color:#5F5'>
+         History
+</span><span style='color:#AAA'>
+         TinTin++ has a limited subset of the csh history features.
+
+         ! -- repeat the last command
+         !cast -- repeat the last command starting with cast
+         ctrl-r -- enter the reverse history search mode.
+
+</span><span style='color:#5F5'>
+         Map commands
+</span><span style='color:#AAA'>
+         TinTin++ has a powerful highly configurable automapper. Whenever
+         you type n/ne/e/se/s/sw/w/nw/n/u/d tt++ tries to keep track of your
+         movement.
+
+         Commands for map:
+
+         #map create -- create a map.
+         #map goto 1 -- go to the first room in the map, created by default.
+         #map map -- display the map.
+         #map undo -- undo your last map alteration.
+         #map write &lt;filename&gt; -- save the map to file.
+         #map read &lt;filename&gt; -- load a map from file.
+
+         There are many other map options and it's beyond the scope of this
+         help section to explain everything there is to know, but I'll give
+         a set of commands that will get most people started.
+
+         #map create
+         #split 12 1
+         #map flag unicode on
+         #map flag vt on
+         #map goto 1
+
+         These commands will create a 12 row vt100 split section at the top of
+         your screen where a map drawn using unicode characters is displayed.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #action </span><span style='color:#FFF'>{</span><span style='color:#AAA'>There is no exit in that direction.</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>#map undo</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         The map will be automatically created as you move around.
+
+</span><span style='color:#5F5'>
+         Help
+
+</span><span style='color:#FFF'>Command</span><span style='color:#AAA'>: #help </span><span style='color:#FFF'>{</span><span style='color:#AAA'>subject</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         The help command is your friend and contains the same helpfiles
+         inside TinTin++ as are available on the website. If you type #help
+         without an argument you will see the various available help subjects
+         which try to explain the TinTin++ commands and features in greater
+         detail.
+
+</span><span style='color:#5F5'>
+         Enjoy</span><span style='color:#AAA'>
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='characters.html'>characters</a>, <a href='colors.html'>colors</a>, <a href='coordinates.html'>coordinates</a>, <a href='editing.html'>editing</a>, <a href='escape_codes.html'>escape_codes</a>, <a href='greeting.html'>greeting</a>, <a href='keypad.html'>keypad</a>, <a href='lists.html'>lists</a>, <a href='mapping.html'>mapping</a>, <a href='mathematics.html'>mathematics</a>, <a href='screen_reader.html'>screen_reader</a>, <a href='sessionname.html'>sessionname</a>, <a href='speedwalk.html'>speedwalk</a>, <a href='statements.html'>statements</a>, <a href='suspend.html'>suspend</a> and <a href='time.html'>time</a>.
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:39 GMT -->
+</html>

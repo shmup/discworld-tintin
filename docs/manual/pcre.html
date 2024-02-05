@@ -1,0 +1,338 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/pcre.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual pcre </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+<a href='event.html'>Event</a><br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+<a href='lists.html'>Lists</a><br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+<a href='map.html'>Map</a><br>
+<a href='mapping.html'>Mapping</a><br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+<a href='mslp.html'>MSLP</a><br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+PCRE<br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+<a href='screen.html'>Screen</a><br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         PCRE
+
+</span><span style='color:#AAA'>
+         A regular expression, regex or regexp is a sequence of characters that
+         defines a search pattern. Since the 1980s, different syntaxes for
+         writing regular expressions exist, the two most widely used ones being
+         the POSIX syntax and the similar but more advanced Perl standard.
+         TinTin++ supports the Perl standard known as PCRE (Perl Compatible
+         Regular Expressions).
+
+         Regular expressions are an integral part of TinTin++, but keep in mind
+         that tintin doesn't allow you to use regular expressions directly,
+         instead it uses a simpler intermediate syntax that still allows more
+         complex expressions when needed.
+
+         Commands that utilize regular expressions are: action, alias, elseif,
+         gag, grep, highlight, if, kill, local, math, prompt, regexp, replace,
+         substitute, switch, variable and while. Several other commands use
+         regular expressions in minor ways. Fortunately the basics are very
+         easy to learn.
+
+</span><span style='color:#FFF'>         TinTin++ Regular Expression</span><span style='color:#AAA'>
+
+         The following support is available for regular expressions.
+
+       ^ match start of line.
+       &dollar; match of end of line.
+       &bsol; escape one character.
+
+  %1-%99 match of any text, stored in the corresponding index.
+      %0 should be avoided in the regex, contains all matched text.
+     { } embed a perl compatible regular expression, matches are stored.
+   %!{ } embed a perc compatible regular expression, matches are not stored.
+
+[ ] . + | ( ) ? * are treated as normal text unless used within braces. Keep in
+mind that { } is replaced with ( ) automatically unless %!{ } is used.
+</span><span style='color:#FFF'>
+         TinTin++  Description                            POSIX</span><span style='color:#AAA'>
+      %d Match zero to any number of digits               ([0-9]*?)
+      %D Match zero to any number of non-digits           ([^0-9]*?)
+      %i Matches become case insensitive                  (?i)
+      %I Matches become case sensitive (default)          (?-i)
+      %s Match zero to any number of spaces               ([&bsol;r&bsol;n&bsol;t ]*?)
+      %w Match zero to any number of word characters      ([A-Za-z0-9_]*?)
+      %W Match zero to any number of non-word characters  ([^A-Za-z0-9_]*?)
+      %? Match zero or one character                      (.??)
+      %. Match one character                              (.)
+      %+ Match one to any number of characters            (.+?)
+      %* Match zero to any number of characters           (.*?)
+</span><span style='color:#FFF'>
+         Variables</span><span style='color:#AAA'>
+
+         If you use %1 in an action to perform a match the matched string is
+         stored in the %1 variable which can be used in the action body.
+
+Example: #act {%1 says 'Tickle me'} {tickle %1}
+
+         If you use %2 the match is stored in %2, etc. If you use an unnumbered
+         match like %* or %S the match is stored at the last used index
+         incremented by one.
+
+Example: #act {%3 says '%*'} {#if {&quot;%4&quot; == &quot;Tickle me&quot;} {tickle %3}}
+
+         The maximum variable index is 99. If you begin an action with %* the
+         match is stored in %1. You should never use %0 in the trigger part of
+         an action, when used in the body of an action %0 contains all the parts
+         of the string that were matched.
+
+         To prevent a match from being stored use %!*, %!w, etc.
+</span><span style='color:#FFF'>
+         Perl Compatible Regular Expressions</span><span style='color:#AAA'>
+
+         You can embed a PCRE (Perl Compatible Regular Expression) using curley
+         braces { }, these braces are replaced with parentheses ( ) unless you
+         use %!{ }.
+</span><span style='color:#FFF'>
+         Or</span><span style='color:#AAA'>
+
+         You can separate alternatives within a PCRE using the | character.
+
+Example: #act {%* raises {his|her|its} eyebrows.} {say 42..}
+</span><span style='color:#FFF'>
+         Brackets</span><span style='color:#AAA'>
+
+         You can group alternatives and ranges within a PCRE using brackets.
+
+Example: #act {%* says 'Who is number {[1-9]}?} {say &dollar;number[%2] is number %2}
+
+         The example only triggers if someone provides a number between 1 and
+         9. Any other character will cause the action to not trigger.
+
+Example: #act {%* says 'Set password to {[^0-9]*}&dollar;} {say The password must
+           contain at least one number, not for security reasons, but just to
+           annoy you.} {4}
+
+         When the ^ character is used within brackets it creates an inverse
+         search, [^0-9] matches every character except for a number between 0
+         and 9.
+</span><span style='color:#FFF'>
+         Quantification</span><span style='color:#AAA'>
+
+         A quantifier placed after a match specifies how often the match is
+         allowed to occur.
+
+       ? repeat zero or one time.
+       * repeat zero or multiple times.
+       + repeat once or multiple times.
+     {n} repeat exactly n times, n must be a number.
+    {n,} repeat at least n times, n must be a number.
+   {n,o} repeat between n and o times, n and o must be a number.
+
+Example: #act {%* says 'Who is number {[1-9][0-9]{0,2}}?} {Say &dollar;number[%2] is
+           number %2}
+
+         The example only triggers if someone provides a number between 1 and
+         999.
+
+         </span><span style='color:#FFF'>Parantheses</span><span style='color:#AAA'>
+
+         TinTin Regular Expressions automatically add parenthesis, for example
+         %* translates to (.*?) in PCRE unless the %* is found at the start or
+         end of the line, in which cases it translates to (.*). Paranthesis in
+         PCRE causes a change in execution priority similar to mathematical
+         expressions, but parentheses also causes the match to be stored to a
+         variable.
+
+         When nesting multiple sets of parentheses each nest is assigned its
+         numerical variable in order of appearance.
+
+Example: #act {%* chats '{Mu(ha)+}'} {chat %2ha!}
+
+         If someone chats Muha you will chat Muhaha! If someone chats Muhaha
+         you will chat Muhahaha!
+
+         </span><span style='color:#FFF'>Lazy vs Greedy</span><span style='color:#AAA'>
+
+         By default regex matches are greedy, meaning {.*} will capture as much
+         text as possible.
+
+Example: #regex {bli bla blo} {^{.*} {.*}&dollar;} {#show Arg1=(&amp;1) Arg2=(&amp;2)}
+
+         This will display: Arg1=(bli bla) Arg2=(blo)
+
+         By appending a ? behind a regex it becomes lazy, meaning {.*?} will
+         capture as little text as possible.
+
+Example: #regex {bli bla blo} {^{.*?} {.*?}&dollar;} {#show Arg1=(&amp;1) Arg2=(&amp;2)}
+
+         This will display: Arg1=(bli) Arg2=(bla blo).
+
+         </span><span style='color:#FFF'>Escape Codes</span><span style='color:#AAA'>
+
+         PCRE support the following escape codes.
+</span><span style='color:#FFF'>
+    PCRE Description                                    POSIX</span><span style='color:#AAA'>
+      &bsol;A Match start of string                          ^
+      &bsol;b Match word boundaries                          (^|&bsol;r|&bsol;n|&bsol;t| |&dollar;)
+      &bsol;B Match non-word boundaries                      [^&bsol;r&bsol;n&bsol;t ]
+      &bsol;c Insert control character                       &bsol;c
+      &bsol;d Match digits                                   [0-9]
+      &bsol;D Match non-digits                               [^0-9]
+      &bsol;e Insert escape character                        &bsol;e
+      &bsol;f Insert form feed character                     &bsol;f
+      &bsol;n Insert line feed character                     &bsol;n
+      &bsol;r Insert carriage return character               &bsol;r
+      &bsol;s Match spaces                                   [&bsol;r&bsol;n&bsol;t ]
+      &bsol;S Match non-spaces                               [^&bsol;r&bsol;n&bsol;t ]
+      &bsol;t Insert tab character                           &bsol;t
+      &bsol;w Match letters, numbers, and underscores        [A-Za-z0-9_]
+      &bsol;W Match non-letters, numbers, and underscores    [^A-Za-z0-9_]
+      &bsol;x Insert hex character                           &bsol;x
+      &bsol;Z Match end of string                            &dollar;
+
+         &bsol;s matches one space, &bsol;s+ matches one or multiple spaces.
+
+         </span><span style='color:#FFF'>Color triggers</span><span style='color:#AAA'>
+
+         To make matching easier text triggers (Actions, Gags, Highlights,
+         Prompts, and Substitutes) have their color codes stripped. If you
+         want to create a color trigger you must start the triggers with a ~
+         (tilde). To make escape codes visible use #config {convert meta} on.
+
+Example: #action {~&bsol;e[1;37m%1} {#var roomname %1}
+
+         If the room name is the only line on the server in bright white
+         white color trigger will save the roomname.
+
+
+         This covers the basics. PCRE has more options, most of which are
+         somewhat obscure, so you'll have to read a PCRE manual for additional
+         information.
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='map.html'>map</a> and <a href='path.html'>path</a>.
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/pcre.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:43 GMT -->
+</html>

@@ -1,0 +1,256 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/mapping.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual mapping </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+<a href='event.html'>Event</a><br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+<a href='lists.html'>Lists</a><br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+<a href='map.html'>Map</a><br>
+Mapping<br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+<a href='mslp.html'>MSLP</a><br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+<a href='pcre.html'>PCRE</a><br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+<a href='screen.html'>Screen</a><br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         MAPPING
+
+</span><span style='color:#AAA'>
+         TinTin++ has a powerful automapper that uses a room system similar to
+         Diku MUDs which means that odd map layouts and weird exit
+         configurations aren't a problem. The mapper provides tools to improve
+         the visual map display. For basic path tracking see #help PATH.
+
+</span><span style='color:#FFF'>         #map create [size]
+</span><span style='color:#AAA'>
+         This command creates the initial map. The size is 50,000 by default
+         and can be changed at any time with the #map resize command. If you
+         play a MUD that uses MSDP or GMCP to provide room numbers you'll have
+         to increase it to the highest reported room number. Increasing the
+         size of the map doesn't decrease performance.
+
+</span><span style='color:#FFF'>         #map goto &lt;location&gt;
+</span><span style='color:#AAA'>
+         When you create the map you are not automatically inside the map. By
+         default room number (vnum) 1 is created, so you can go to it using
+         #map goto 1. Once you are inside the map new rooms are automatically
+         created as you move around. Movement commands are defined with the
+         pathdir command. By default n, ne, e, se, s, sw, w, nw, u, d are
+         defined.
+</span><span style='color:#FFF'>
+         #map map &lt;rows&gt; &lt;cols&gt; &lt;append|overwrite|list|variable&gt; &lt;name&gt;
+</span><span style='color:#AAA'>
+         To see the map you can use #map map. It's annoying to have to
+         constantly type #map map however. Instead it's possible to use #split
+         to display a vt100 map. To do so execute:
+         </span><span style='color:#FFF'>#split 16 1
+         #map flag vtmap on</span><span style='color:#AAA'>
+         The first command sets the top split lines to 16 and the bottom split
+         line to 1. If you want a smaller or larger map display you can use a
+         different value than 16.
+
+         If you don't need to display diagonal exits and prefer a more compact
+         look you can use #map flag AsciiGraphics off. This will enable the
+         standard display which uses UTF-8 box drawing characters, results may
+         vary depending on the font used.
+
+         If your terminal supports UTF-8 you can also give #Map flag unicode on
+         a try.
+
+         If you want to display the map in a different location of the screen
+         use something like:
+         </span><span style='color:#FFF'>#split 0 1 0 -80
+         #map offset 1 81 -4 -1</span><span style='color:#AAA'>
+         This will display the map on the right side of the screen, if the
+         width of the screen is wide enough.
+</span><span style='color:#FFF'>
+         #map undo
+</span><span style='color:#AAA'>
+         If you accidentally walk into the wall on your MUD the mapper will
+         still create a new room. You can easily fix this mistake by using
+         #map undo. If you want to move around on the map without moving around
+         on the MUD you can use: #map move {direction}. To delete a room
+         manually you can use: #map delete {direction}. To create a room
+         manually you can use: #map dig {direction}.
+</span><span style='color:#FFF'>
+         #map write &lt;filename&gt;
+</span><span style='color:#AAA'>
+         You can save your map using #map write, to load a map you can use
+         #map read &lt;filename&gt;.
+</span><span style='color:#FFF'>
+         #map set &lt;option&gt; &lt;value&gt;
+</span><span style='color:#AAA'>
+         You can set the room name using #map set roomname &lt;name&gt;. You either
+         have to do this manually or create triggers to set the room name
+         automatically. Once the room name is set you can use #map goto with
+         the room name to visit it. If there are two rooms with the same name
+         #map goto will go to the most nearby room. If you want to always go
+         to the same room you should memorize the room number. You can further
+         narrow down the matches by providing additional arguments, for example:
+</span><span style='color:#FFF'>
+         #map goto {dark alley} {roomexits} {n;e} {roomarea} {Haddock Ville}
+</span><span style='color:#AAA'>
+         You can set the room weight using #map set roomweight {value}. The
+         weight by default is set to 1.0 and it represents the difficulty of
+         traversing the room. If you have a lake as an alternative route, and
+         traversing water rooms is 4 times slower than regular rooms, then you
+         could set the weight of the lake rooms to 4.0. If the lake is 3 rooms
+         wide the total weight is 12. If walking around the lake has a weight
+         less than 12 the mapper will go around the lake, if the weight is
+         greater than 12 the mapper will take a route through the lake.
+
+         You can set the room symbol using #map set roomsymbol {value}. The
+         symbol should be one, two, or three characters, which can be
+         colorized. You can for example mark shops with an 'S' and colorize the
+         'S' depending on what type of shop it is.
+</span><span style='color:#FFF'>
+         #map run &lt;location&gt; &lt;delay&gt;
+</span><span style='color:#AAA'>
+         The run command will have tintin find the shortest path to the given
+         location and execute the movement commands to get there. You can
+         provide a delay in seconds with floating point precision, for example:
+         </span><span style='color:#FFF'>#map run {dark alley} {0.5}</span><span style='color:#AAA'>
+</span><span style='color:#FFF'>
+         #map insert {direction} {flag}
+</span><span style='color:#AAA'>
+         The insert command is useful for adding spacer rooms called void rooms.
+         Often rooms overlap, and by adding void rooms you can stretch out
+         exits. For example: #map insert north void. You cannot enter void rooms
+         once they've been created, so you'll have to use #map info in an
+         adjacent room to find the room vnum, then use #map goto {vnum} to
+         visit.
+
+         It's also possible to align rooms using void rooms. This is easily
+         done using #map insert north void.
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='map.html'>map</a>, <a href='path.html'>path</a> and <a href='pathdir.html'>pathdir</a>.
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/mapping.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:42 GMT -->
+</html>

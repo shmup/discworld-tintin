@@ -1,0 +1,350 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/event.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual event </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+Event<br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+<a href='lists.html'>Lists</a><br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+<a href='map.html'>Map</a><br>
+<a href='mapping.html'>Mapping</a><br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+<a href='mslp.html'>MSLP</a><br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+<a href='pcre.html'>PCRE</a><br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+<a href='screen.html'>Screen</a><br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         EVENT
+
+</span><span style='color:#FFF'>Command</span><span style='color:#AAA'>: #event </span><span style='color:#FFF'>{</span><span style='color:#AAA'>event type</span><span style='color:#FFF'>}</span><span style='color:#AAA'> </span><span style='color:#FFF'>{</span><span style='color:#AAA'>commands</span><span style='color:#FFF'>}</span><span style='color:#AAA'>
+
+         Events allow you to create triggers for predetermined client events.
+
+         Use #event without an argument to see a list of possible events with
+         a brief description. Use #event %* to see the current list of defined
+         events. Use #info {events} {on} to see events get thrown.
+
+         Events, like triggers in general, are case sensitive and event names
+         must be defined using all upper case letters. Only one event can be
+         defined for each event type.
+
+         To enable mouse events use #config mouse_tracking on, to see mouse
+         events use #config mouse_tracking info.
+
+         </span><span style='color:#5F5'>CATCH EVENTS
+
+         </span><span style='color:#FFF'>CATCH &lt;EVENT&gt;
+         </span><span style='color:#AAA'>  Some events can be prefixed with CATCH to interrupt default
+           behavior.
+
+         </span><span style='color:#5F5'>CLASS EVENTS
+
+         </span><span style='color:#FFF'>CLASS ACTIVATED [CLASS],  CLASS_CLEAR [CLASS],  CLASS CREATED [CLASS],
+         CLASS DEACTIVATED [CLASS],  CLASS DESTROYED [CLASS],
+         CLASS_LOAD [CLASS]
+         </span><span style='color:#AAA'>  %0 class name
+
+         </span><span style='color:#5F5'>GAG EVENTS
+
+         </span><span style='color:#FFF'>GAG &lt;EVENT&gt;
+         </span><span style='color:#AAA'>  Some events can be prefixed with GAG to gag default system
+           messages.
+
+         </span><span style='color:#5F5'>INPUT EVENTS</span><span style='color:#AAA'>
+
+         </span><span style='color:#FFF'>EDIT STARTED, EDIT FINISHED
+         </span><span style='color:#AAA'>  %0 name  %1 lines %2 size %3 data
+
+         </span><span style='color:#FFF'>RECEIVED KEYPRESS, PROCESSED KEYPRESS
+         </span><span style='color:#AAA'>  %0 character  %1 unicode index  %2 edit row  %3 edit column
+
+         </span><span style='color:#FFF'>RECEIVED INPUT [NAME]
+         </span><span style='color:#AAA'>  %0 raw text
+
+         </span><span style='color:#FFF'>RECEIVED INPUT CHARACTER
+         </span><span style='color:#AAA'>  %0 character  %1 unicode index  %2 size  %3 width
+
+         SEND OUTPUT            %0 raw text %1 size
+         SENT OUTPUT            %0 raw text %1 size
+
+         </span><span style='color:#5F5'>MAP EVENTS
+
+         </span><span style='color:#FFF'>END OF PATH,  END OF RUN, MAP UPDATED VTMAP
+         </span><span style='color:#AAA'>  These events have no additional arguments.
+
+         </span><span style='color:#FFF'>MAP CREATE EXIT, MAP DELETE EXIT
+         </span><span style='color:#AAA'>  %0 vnum  %1 exit name  %2 exit cmd  %3 exit vnum
+
+         </span><span style='color:#FFF'>MAP CREATE ROOM, MAP DELETE ROOM
+         </span><span style='color:#AAA'>  %0 vnum  %1 name
+
+         </span><span style='color:#FFF'>MAP ENTER MAP, MAP EXIT MAP
+         </span><span style='color:#AAA'>  %0 vnum
+
+         </span><span style='color:#FFF'>MAP ENTER ROOM [VNUM]
+         </span><span style='color:#AAA'>  %0 new vnum  %1 old vnum %2 direction
+
+         </span><span style='color:#FFF'>MAP EXIT ROOM [VNUM]
+         </span><span style='color:#AAA'>  %0 old vnum  %1 new vnum %2 direction
+
+         </span><span style='color:#FFF'>MAP FOLLOW MAP
+         </span><span style='color:#AAA'>  %0 old vnum  %1 new vnum  %2 exit name
+
+         </span><span style='color:#FFF'>MAP REGION &lt;MOUSE&gt;, MAP ROOM &lt;MOUSE&gt;
+         </span><span style='color:#AAA'>  %0 row  %1 col  %2 -row  %3 -col  %5 vnum  %6 info
+
+         </span><span style='color:#5F5'>MOUSE EVENTS</span><span style='color:#AAA'>
+
+         DOUBLE-CLICKED &lt;MOUSE&gt; %0 row %1 col %2 -row %3 -col %4 word %5 line
+         LONG-CLICKED &lt;MOUSE&gt;   %0 row %1 col %2 -row %3 -col %4 word %5 line
+         MOVED &lt;MOUSE&gt;          %0 row %1 col %2 -row %3 -col %4 word %5 line
+         PRESSED &lt;MOUSE&gt;        %0 row %1 col %2 -row %3 -col %4 word %5 line
+         SHORT-CLICKED &lt;MOUSE&gt;  %0 row %1 col %2 -row %3 -col %4 word %5 line
+         RELEASED &lt;MOUSE&gt;       %0 row %1 col %2 -row %3 -col %4 word %5 line
+         SCROLLED &lt;MOUSE&gt;       %0 row %1 col %2 -row %3 -col %4 word %5 line
+         TRIPLE-CLICKED &lt;MOUSE&gt; %0 row %1 col %2 -row %3 -col %4 word %5 line
+
+         </span><span style='color:#FFF'>MAP &lt;MOUSE EVENT&gt;
+         </span><span style='color:#AAA'>  Mouse events can be prefixed with MAP to only trigger when the mouse
+           event occurs inside the VT100 map region.
+
+
+         </span><span style='color:#FFF'>SWIPED [DIR]
+         </span><span style='color:#AAA'>  %0 dir  %1 button  %2 row  %3 col  %4 -row  %5 -col
+                              %6 row  %7 col  %8 -row  %9 -col %10 rows %11 cols
+
+         </span><span style='color:#5F5'>OUTPUT EVENTS
+
+         </span><span style='color:#FFF'>BUFFER UPDATE,  DISPLAY UPDATE
+         </span><span style='color:#AAA'>  These events have no additional arguments.
+
+         RECEIVED LINE          %0 raw text %1 plain text
+         RECEIVED OUTPUT        %0 raw text
+         RECEIVED PROMPT        %0 raw text %1 plain text
+
+         </span><span style='color:#5F5'>PORT EVENTS
+
+         </span><span style='color:#FFF'>CHAT MESSAGE,  PORT MESSAGE
+         </span><span style='color:#AAA'>  %0 raw text  %1 plain text
+
+         </span><span style='color:#FFF'>PORT CONNECTION        </span><span style='color:#AAA'>%0 name %1 ip %2 port
+         </span><span style='color:#FFF'>PORT DISCONNECTION     </span><span style='color:#AAA'>%0 name %1 ip %2 port
+         </span><span style='color:#FFF'>PORT LOG MESSAGE       </span><span style='color:#AAA'>%0 name %1 ip %2 port %3 data %4 plain data
+         </span><span style='color:#FFF'>PORT RECEIVED MESSAGE  </span><span style='color:#AAA'>%0 name %1 ip %2 port %3 data %4 plain data
+
+         </span><span style='color:#5F5'>SCAN EVENTS</span><span style='color:#AAA'>
+
+         SCAN CSV HEADER        %0 all args %1 arg1 %2 arg2 .. %99 arg99
+         SCAN CSV LINE          %0 all args %1 arg1 %2 arg3 .. %99 arg99
+         SCAN TSV HEADER        %0 all args %1 arg1 %2 arg3 .. %99 arg99
+         SCAN TSV LINE          %0 all args %1 arg1 %2 arg3 .. %99 arg99
+
+         </span><span style='color:#5F5'>SCREEN EVENTS</span><span style='color:#AAA'>
+
+         </span><span style='color:#FFF'>SCREEN FOCUS
+         </span><span style='color:#AAA'>  %0 focus (0 or 1)
+
+         SCREEN LOCATION        %0 rows %1 cols  %2 height %3 width
+
+         </span><span style='color:#FFF'>SCREEN MOUSE LOCATION
+         </span><span style='color:#AAA'>  %0 row  %1 col  %2 -row  %3 -col  %4 pix row  %5 pix col
+           %6 -pix row  %7 -pix col  %8 location
+
+         SCREEN RESIZE          %0 rows %1 cols %2 height %3 width
+         SCREEN SPLIT           %0 top row %1 top col %2 bot row %3 bot col
+         SCREEN UNSPLIT         %0 top row %1 top col %2 bot row %3 bot col
+
+         </span><span style='color:#5F5'>SESSION EVENTS</span><span style='color:#AAA'>
+
+         SESSION ACTIVATED      %0 name
+         SESSION CONNECTED      %0 name %1 host %2 ip %3 port %4 file
+         SESSION CREATED        %0 name %1 host %2 ip %3 port %4 file
+         SESSION DEACTIVATED    %0 name
+         SESSION DISCONNECTED   %0 name %1 host %2 ip %3 port
+         SESSION TIMED OUT      %0 name %1 host %2 ip %3 port
+
+
+         </span><span style='color:#5F5'>SYSTEM EVENTS</span><span style='color:#AAA'>
+
+         DAEMON ATTACHED        %0 file %1 pid
+         DAEMON DETACHED        %0 file %1 pid
+         PROGRAM START          %0 startup arguments
+         PROGRAM TERMINATION    %0 goodbye message
+
+         READ ERROR             %0 filename %1 error message
+         READ FILE              %0 filename
+         WRITE ERROR            %0 filename %1 error message
+         WRITE FILE             %0 filename
+
+         SYSTEM CRASH           %0 message
+         SYSTEM ERROR           %0 name %1 system msg %2 error %3 error msg
+         UNKNOWN COMMAND        %0 raw text
+         SIGUSR                 %0 signal
+
+         </span><span style='color:#5F5'>TELNET EVENTS
+
+         </span><span style='color:#FFF'>IAC &lt;EVENT&gt;
+         </span><span style='color:#AAA'>  IAC TELNET events are made visable using #config telnet info.
+
+         </span><span style='color:#FFF'>IAC SB GMCP [MODULE]   %0 module    %1 data  %2 plain data
+         IAC SB MSSP            %0 variable  %1 data
+         IAC SB MSDP            %0 variable  %1 data  %2 plain data
+         IAC SB MSDP [VAR]      %0 variable  %1 data  %2 plain data
+         IAC SB NEW-ENVIRON     %0 variable  %1 data  %2 plain data
+         IAC SB ZMP &lt;VAR&gt;       %0 variable  %1 data
+         IAC SB &lt;VAR&gt;           %0 variable  %1 raw data  %2 plain data
+
+         </span><span style='color:#5F5'>TIME EVENTS
+
+         </span><span style='color:#FFF'>DATE &lt;MONTH-DAY OF MONTH&gt; [HOUR:MINUTE], DAY [DAY OF MONTH],
+         HOUR [HOUR], MONTH [DAY OF MONTH], TIME &lt;HOUR:MINUTE&gt;[:SECOND],
+         WEEK [DAY OF WEEK], YEAR [YEAR]
+         </span><span style='color:#AAA'>  %0 year  %1 month  %2 day of week  %3 day of month  %4 hour
+           %5 minute  %6 second
+
+         </span><span style='color:#5F5'>VARIABLE EVENTS</span><span style='color:#AAA'>
+
+         VARIABLE UPDATE &lt;VAR&gt;  %0 name %1 new value %2 path
+         VARIABLE UPDATED &lt;VAR&gt; %0 name %1 new value %2 path
+
+         </span><span style='color:#5F5'>VT100 EVENTS</span><span style='color:#AAA'>
+
+         VT100 SCROLL REGION    %0 top row %1 bot row %2 rows %3 cols %4 wrap
+
+         To see all events trigger use #event info on. Since this can get
+         rather spammy it's possible to gag event info messages.
+
+</span><span style='color:#FFF'>Example</span><span style='color:#AAA'>: #event {SESSION CONNECTED} {#read mychar.tin}
+
+</span><span style='color:#FFF'>Comment</span><span style='color:#AAA'>: You can remove an event with the #unevent command.
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='button.html'>button</a>, <a href='delay.html'>delay</a> and <a href='ticker.html'>ticker</a>.
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/event.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:42 GMT -->
+</html>

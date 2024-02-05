@@ -1,0 +1,69 @@
+Usercolour                    Discworld player help                   Usercolour
+
+
+Description
+     Usercolour can be used in titles set with a title changer, the
+     Scolorid's Scintillating Scribbling spell, tricks, illusions, and some
+     other user input.  This file explains how to embed usercolour
+     sequences in text.  Other players will only see usercolour if they
+     enable the relevant output option and have a suitable terminal type
+     defined.
+
+     Usercolour sequences use a two character code of the percent character
+     '%' followed by the caret character '^' (%^) to signal to the mud that
+     it should generate coloured output.  This two character code is then
+     combined with usercolour options to indicate that the following text
+     should be coloured, or with "reset" to reset coloured output.
+
+     A usercolour sequence contains of one or more usercolour options,
+     preceded, separated and followed by the %^ character pair.  Options
+     include foreground and background colours, bold, underline and blink.
+
+     The general form is %^OPTION%^, then some text, then %^RESET%^.  There must
+     be no spaces in usercolour sequences.  Using a reset after the coloured text
+     is essential to turn off the coloured output.
+
+An Example
+     The following paragraph contains the text "%^BOLD%^RED%^This is bold red text.%^RESET%^".
+
+     This is bold red text.
+
+     Colours, backgrounds, modifiers and reset must be entered in upper
+     case.  In general it does not matter which order you list a
+     combination of foreground, background and modifiers.  When combining
+     multiple usercolour options, a single %^ code between options is
+     sufficient.
+
+     If you wish to turn off an option, you need to use a reset and then
+     re-activate all the otions you wish to remain active.  For example
+     %^BOLD%^RED%^Librarian: %^RESET%^RED%^Not a monkey!%^RESET%^
+     generates the text: Librarian: Not a monkey!
+
+The Available Colours Etc.
+     Options available for colours are: red, magenta, orange, yellow,
+     green, blue, cyan, white and black.  Options for background colours
+     are: b_red, b_magenta, etc.  Additional modifiers are: bold, flash and
+     underline. Some of these colours may not be supported depending on
+     your terminal type.
+
+     The Plain and Bold Colours
+          red and bold red
+          magenta and bold magenta
+          orange and bold orange
+          yellow and bold yellow
+          green and bold green
+          blue and bold blue
+          cyan and bold cyan
+          white and bold white (white)
+          black and bold black (black)
+
+     Some Exciting Extras
+          b_red (red background)
+          b_blue yellow (yellow text on blue background)
+          red flash (flashing red text) (may not flash on all terminals /
+          clients)
+          red bold b_green underline (bold underlined red text on green
+          background)
+
+See also
+     colours, term, options

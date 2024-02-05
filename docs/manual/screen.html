@@ -1,0 +1,213 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/screen.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual screen </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+<a href='event.html'>Event</a><br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+<a href='lists.html'>Lists</a><br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+<a href='map.html'>Map</a><br>
+<a href='mapping.html'>Mapping</a><br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+<a href='mslp.html'>MSLP</a><br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+<a href='pcre.html'>PCRE</a><br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+Screen<br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         SCREEN
+
+</span><span style='color:#FFF'>Command</span><span style='color:#AAA'>: #screen </span><span style='color:#FFF'>{</span><span style='color:#AAA'>option</span><span style='color:#FFF'>} {</span><span style='color:#AAA'>argument</span><span style='color:#FFF'>}
+
+         </span><span style='color:#AAA'>The screen command offers a variety of screen manipulation
+         commands and utilities.
+
+         </span><span style='color:#FFF'>#screen blur
+         </span><span style='color:#AAA'>  Move the terminal to the back of the stack.
+
+         </span><span style='color:#FFF'>#screen clear [all|scroll region|square] &lt;args&gt;
+         </span><span style='color:#AAA'>  Provide 4 arguments defining the top left and bottom right corner
+           when erasing a square.
+
+         </span><span style='color:#FFF'>#screen focus
+         </span><span style='color:#AAA'>  Move the terminal to the front of the stack.
+
+         </span><span style='color:#FFF'>#screen fullscreen [on|off]
+         </span><span style='color:#AAA'>  Toggles fullscreen mode when used without an argument.
+
+         </span><span style='color:#FFF'>#screen get &lt;option&gt; &lt;var&gt;
+         </span><span style='color:#AAA'>  Get various screen options and save them to &lt;var&gt;. Use #screen
+           get without an argument to see all available options.
+
+         </span><span style='color:#FFF'>#screen info
+         </span><span style='color:#AAA'>  Debugging information.
+
+         </span><span style='color:#FFF'>#screen inputregion &lt;square&gt; [name]
+         </span><span style='color:#AAA'>  Set the input region. The name argument is optional and can be
+           used to create named RECEIVED INPUT [NAME] events.
+
+         </span><span style='color:#FFF'>#screen load &lt;both|label|title&gt;
+         </span><span style='color:#AAA'>  Reload the saved title, label, or both.
+
+         </span><span style='color:#FFF'>#screen minimize &lt;on|off&gt;
+         </span><span style='color:#AAA'>  Minimize with on, restore with off.
+
+         </span><span style='color:#FFF'>#screen maximize [on|off]
+         </span><span style='color:#AAA'>  Maximize with on, restore with off.
+
+         </span><span style='color:#FFF'>#screen move &lt;height&gt; &lt;width&gt;
+         </span><span style='color:#AAA'>  Move the upper left corner of the terminal to pixel coordinate.
+
+         </span><span style='color:#FFF'>#screen raise &lt;event&gt;
+         </span><span style='color:#AAA'>  This will raise several screen events with %1 and %2 arguments.
+
+         </span><span style='color:#FFF'>#screen refresh
+         </span><span style='color:#AAA'>  Terminal dependant, may do nothing.
+
+         </span><span style='color:#FFF'>#screen rescale &lt;height&gt; &lt;width&gt;
+         </span><span style='color:#AAA'>  Resize the screen to the given height and width in pixels.
+
+         </span><span style='color:#FFF'>#screen resize &lt;rows&gt; &lt;cols&gt;
+         </span><span style='color:#AAA'>  Resize the screen to the given height and width in characters.
+
+         </span><span style='color:#FFF'>#screen save &lt;both|label|title&gt;
+         </span><span style='color:#AAA'>  Save the title, label, or both.
+
+         </span><span style='color:#FFF'>#screen scroll &lt;square&gt;
+         </span><span style='color:#AAA'>  Set the scrolling region, changes the split setting.
+
+         </span><span style='color:#FFF'>#screen set &lt;both|label|title&gt;
+         </span><span style='color:#AAA'>  Set the title, label, or both. Only title works on Windows.
+
+         </span><span style='color:#FFF'>#screen swap
+         </span><span style='color:#AAA'>  Swap the input and scroll region.
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='bell.html'>bell</a>
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/screen.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:43 GMT -->
+</html>

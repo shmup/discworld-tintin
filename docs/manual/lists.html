@@ -1,0 +1,458 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/lists.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual lists </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+<a href='event.html'>Event</a><br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+Lists<br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+<a href='map.html'>Map</a><br>
+<a href='mapping.html'>Mapping</a><br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+<a href='mslp.html'>MSLP</a><br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+<a href='pcre.html'>PCRE</a><br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+<a href='screen.html'>Screen</a><br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         LISTS
+
+</span><span style='color:#AAA'>         There are several different types of lists in tintin which behave in a
+         fairly universal manner. To properly explain lists it's easiest to
+         explain the most basic variable type first before discussing more
+         complex types.
+
+       - Basic variable: The standard key = value variable.
+
+       - Simple list: A string that contains semicolon delimited fields.
+         {a;b;c}. Can be saved as a variable.
+
+       - Brace list: A string in which fields are delimited with braces.
+         {a}{b}{c}. Brace lists cannot be stored as a variable because tables
+         use braces as well, they must be stored as a simple list instead.
+
+       - Table: Think of this as variables nested within another variable. Or
+          as variables contained within another variable.
+
+       - List: A table that uses integers for its indexes. Also known as an
+         array. The #list command is a utility command for using tables as
+         arrays.
+</span><span style='color:#5F5'>
+         Simple Variables
+</span><span style='color:#AAA'>
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'>
+         #variable {simple} {Hello World!}
+         #show &dollar;simple
+
+         To see if the 'simple' variable exists you can use &amp;simple which will
+         display 0 if the variable does not exist, or the variable's index if
+         it exists.
+
+         If you have multiple variables they are sorted alphabetically and
+         numerically. While it's not all that relevant for simple variables,
+         the first variable has index 1, the second variable index 2, and so
+         on.
+
+         Variable names need to start with a letter and only exist of letters,
+         numbers, and underscores. If you need to use a non standard variable
+         name this is possible using braces.
+
+</span><span style='color:#FFF'>Example: </span><span style='color:#AAA'>#variable {:)} {Happy Happy!};#show &dollar;{:)}
+
+         Variables can be accessed using their index. While primarily useful
+         for tables it is possible to do this for simple variables. Use +1 for
+         the first variable, +2 for the second variable, etc. Use -1 for the
+         last variable, -2 for the second last variable, etc.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #show The first variable is: &dollar;{+1}
+</span><span style='color:#5F5'>
+         Removing Variables
+</span><span style='color:#AAA'>
+         To remove a variable, use #unvariable or #unvar (every command can be
+         abbreviated). It's possible to remove multiple variables at once
+         using #unvar {var 1} {var 2} {etc}
+
+         Variables are unique to each session, so if you have multiple
+         sessions, removing a variable from one session won't remove it from
+         other sessions.
+
+         If you remove a table variable, all variables contained within that
+         table variable are removed as well.
+</span><span style='color:#5F5'>
+         Simple Lists
+</span><span style='color:#AAA'>
+         A simple list is a string that contains semicolon delimited fields.
+         Commands can be entered as simple lists, for example:
+         #show {a};#show {b} will execute a single line as two commands.
+
+         Several commands take a simple list as their input, these are:
+         #foreach, #line substitute, #path load, #list create, and #highlight.
+</span><span style='color:#5F5'>
+         Brace Lists
+</span><span style='color:#AAA'>
+         A brace list is a string in which fields are delimited with braces.
+         Most commands take a brace list for their arguments, for example:
+         #session {x} {mud.com} {1234} {mud.tin}. The session command takes
+         4 arguments, the 4th argument (command file) is optional.
+
+         Commands that take a simple list as their input will also accept a
+         brace list, keep in mind you'll have to embed the brace list in an
+         extra set of braces, for example: #path load {{n}{s}{w}{w}}, which is
+         identical to: #path load {n;s;w;w}.
+
+         Brace lists cannot be stored as variables because TinTin++ will
+         confuse them with tables. You can convert a brace list to a table
+         variable using: #list {bracelist} {create} {{a}{b}{c}} this will look
+         internally as: {{1}{a}{2}{b}{3}{c}}. You can then convert this table
+         to a simple list using: #list {bracelist} {simplify} {simplelist}
+         which will store {a;b;c} in the &dollar;simplelist variable.
+
+         Braces cannot easily be escaped in TinTin++. Using &bsol;{ or &bsol;} will not
+         work. The reason for this is due to several factors, but primarily
+         backward compatibility. To escape braces you must define them using
+         hexadecimal notation using &bsol;x7B and &bsol;x7D. See #help escape for a list
+         of escape options, and the help file will also remind you of how to
+         escape braces.
+</span><span style='color:#5F5'>
+         Tables
+</span><span style='color:#AAA'>
+         Tables are key/value pairs stored within a variable. Tables are also
+         known as associative arrays, dictionaries, maps, nested variables,
+         structures, and probably a couple of other names. There are several
+         ways to create and access tables.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #variable {friendlist} {{bob}{bob@mail.com} {bubba}{sunset@gmail.com}}
+
+         This will create a friendlist with two entries, the key is the name of
+         the friend, the value is the email address of the friend. You can see
+         the email address of bob using: #show {&dollar;friendlist[bob]}. You can
+         also define this table as following:
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'>
+         #variable {friendlist[bob]} {bob@mail.com}
+         #variable {friendlist[bubba]} {sunset@gmail.com}
+
+         This would create the exact same table as the single line declaration
+         used previously. To see the first key in the table use:
+         *friendlist[+1], to see the first value in the table use:
+         &dollar;friendlist[+1]. To see the size of the table use &amp;friendlist[]. To
+         print a bracelist of all friends use *friendlist[%*], to print a
+         bracelist of all friends whose name starts with the letter 'a' you
+         would use: *friendlist[a%*]. Similarly to see the number of friends
+         you have whose name ends with the letter 'b' you would use:
+         &amp;friendlist[%*b].
+
+         See #help regexp for a brief overview of regular expression options.
+         While TinTin++ supports PCRE (perl-compatible regular expressions), it
+         embeds them within its own regular expression syntax that is simpler
+         and less invasive, while still allowing the full power of PCRE for
+         those who need it.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #unvariable {friendlist[bubba]}
+
+         This would remove {bubba} from the friendlist. To remove the entire
+         friendlist you would use: #unvariable {friendlist}.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #variable {friendlist} {{bob} {{email}{bob@ma.il} {phone}{123456789}}}
+
+         There is no limit to the number of nests, simply add more braces. To
+         see Bob's email in this example you would use:
+         #show {&dollar;friendlist[bob][email]}.
+
+         Lists
+
+         Tables are sorted alphabetically with the exception of numbers which
+         are sorted numerically. If you want to determine the sorting order
+         yourself you can use use the #list command which helps you to use
+         tables as arrays.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #action {%1 chats %2} {#list chats add {%0}}
+
+         Each time a chat is received it's added to the end of the 'chats' list
+         variable. If you type #variable chats this might look like:
+
+         </span><span style='color:#FF5'>#</span><span style='color:#5FF'>VARIABLE </span><span style='color:#A0A'>{</span><span style='color:#FFF'>chats</span><span style='color:#A0A'>}
+         {
+                 {</span><span style='color:#FFF'>1</span><span style='color:#A0A'>} {</span><span style='color:#FFF'>Bubba chats Hi</span><span style='color:#A0A'>}
+                 {</span><span style='color:#FFF'>2</span><span style='color:#A0A'>} {</span><span style='color:#FFF'>Bob chats Hi bub</span><span style='color:#A0A'>}
+                 {</span><span style='color:#FFF'>3</span><span style='color:#A0A'>} {</span><span style='color:#FFF'>Bubba chats Bye</span><span style='color:#A0A'>}
+                 {</span><span style='color:#FFF'>4</span><span style='color:#A0A'>} {</span><span style='color:#FFF'>Bob chats bub bye</span><span style='color:#A0A'>}
+         }
+</span><span style='color:#5F5'>
+         Parsing
+</span><span style='color:#AAA'>
+         There are various ways to parse lists and tables, using either #loop,
+         #foreach, #while, or #&lt;number&gt;.
+
+         #loop takes two numeric arguments, incrementing or decrementing the
+         first number until it matches the second number. The value of the loop
+         counter is stored in the provided variable.
+
+         #foreach takes either a simple list or a brace list as its first
+         argument. Foreach will go through each item in the list and store the
+         value in the provided variable.
+
+         #while will perform an if check on the first argument, if the result
+         is true it will execute the commands in the second argument. Then it
+         performs an if check on the first argument again. It will continue to
+         repeat until the if check returns 0 or the loop is interrupted with a
+         control flow command. It takes special care to avoid infinite loops.
+
+         #&lt;number&gt; will execute the provided argument 'number' times. For
+         example: #4 {#show beep! &bsol;a}
+
+         Here are some examples.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #list friends create {bob;bubba;zorro}
+
+         Internally this looks like {{1}{bob}{2}{bubba}{3}{zorro}} and the
+         list can be parsed in various ways.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #foreach {&dollar;friends[%*]} {name} {#show &dollar;name}
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #foreach {*friends[%*]} {i} {#show &dollar;friends[&dollar;i]}
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #loop {1} {&amp;friends[]} {i} {#show &dollar;friends[+&dollar;i]}
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #math i 1;#while {&amp;friends[+&dollar;i]} {#show &dollar;friends[+&dollar;i];
+         #math i &dollar;i + 1}
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'> #math i 1;#&amp;friends[] {#show &dollar;friends[+&dollar;i];#math i &dollar;i + 1}
+
+         Each of the five examples above performs the same task; printing the
+         three names in the friends list.
+
+         If you want to get a better look at what goes on behind the scenes
+         while executing scripts you can use '#debug all on'. To stop seeing
+         debug information use '#debug all off'.
+</span><span style='color:#5F5'>
+         List Tables
+</span><span style='color:#AAA'>
+         List tables are also known as databases and the #list command has
+         several options to manipulate them.
+
+         For these options to work properly all tables need to have identical
+         keys. Here is an example list table.
+
+         #var {friendlist}
+         {
+             {1}{{name}{bob} {age}{54}}
+             {2}{{name}{bubba} {age}{21}}
+             {3}{{name}{pamela} {age}{36}}
+         }
+
+         To sort the list table by age you would use:
+
+         #list friendlist indexate age
+         #list friendlist order
+
+         To remove everyone whose name starts with a 'b' you would use:
+
+         #list friendlist indexate name
+         #list friendlist filter {} {b%*}
+
+         The filter option only supports regular expressions. To filter
+         using mathematics you would loop through the list backwards:
+
+         #loop &amp;friendlist[] 1 index
+         {
+             #if {&dollar;friendlist[+&dollar;index][age] &lt; 30}
+             {
+                 #list friendlist delete &dollar;index
+             }
+         }
+
+         To add an item to a list table there are two options:
+
+         #list friendlist add {{{name}{hobo} {age}{42}}}
+         #list friendlist insert -1 {{name}{hobo} {age}{42}}
+</span><span style='color:#5F5'>
+         Optimization
+</span><span style='color:#AAA'>
+         TinTin++ tables are exceptionally fast while they remain under 100
+         items. Once a table grows beyond 10000 items there can be performance
+         issues when inserting and removing items in the beginning or middle of
+         the table.
+
+         The plan is to eventually implement an indexable and flexible data
+         structure for large tables.
+
+         If you load a large table from file it's important to make sure it's
+         sorted, when using #write to save a table it's automatically sorted.
+
+         If you notice performance issues on large tables it's relatively easy
+         to create a hash table.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'>
+
+         #alias {sethash}
+         {
+         	#format hash %H %1;
+         	#math hash1 &dollar;hash % 100;
+         	#math hash2 &dollar;hash / 100 % 100;
+         	#var hashtable[&dollar;hash1][&dollar;hash2][%1] %2
+         }
+
+         #function {gethash}
+         {
+         	#format hash %H %1;
+         	#math hash1 &dollar;hash % 100;
+         	#math hash2 &dollar;hash / 100 % 100;
+         	#return &dollar;hashtable[&dollar;hash1][&dollar;hash2][%1]
+         }
+
+         #alias {test}
+         {
+         	sethash bli hey;
+         	sethash bla hi;
+         	sethash blo hello;
+         	#show The value of bla is: @gethash{bla}
+         }
+
+         The above script will rapidly store and retrieve over 1 million items.
+         Looping through a hash table is relatively easy as well.
+
+</span><span style='color:#FFF'>Example:</span><span style='color:#AAA'>
+
+         #alias {showhash}
+         {
+         	#foreach {*hashtable[%*]} {hash1}
+         	{
+         		#foreach {*hashtable[&dollar;hash1][%*]} {hash2}
+         		{
+         			#echo {%-20s = %s}
+                                        {hashtable[&dollar;hash1][&dollar;hash2]}
+                                        {&dollar;hashtable[&dollar;hash1][&dollar;hash2]}
+         		}
+         	}
+        }
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='break.html'>break</a>, <a href='continue.html'>continue</a>, <a href='foreach.html'>foreach</a>, <a href='loop.html'>loop</a>, <a href='parse.html'>parse</a>, <a href='repeat.html'>repeat</a>, <a href='return.html'>return</a> and <a href='while.html'>while</a>.
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/lists.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:42 GMT -->
+</html>

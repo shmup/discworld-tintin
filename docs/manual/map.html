@@ -1,0 +1,450 @@
+
+<html lang='en'>
+	
+<!-- Mirrored from tintin.mudhalla.net/manual/map.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Manual map </title>
+		<link href="https://tintin.mudhalla.net/tintin.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='utf-8'>
+		<meta name="description" content="The TinTin++ Mud Client Manual.">
+	</head>
+
+	<body>
+		<table width='845' height='40' align='top'>
+			<tr>
+				<td width='160'>&nbsp;</td>
+				<td class='titlebar'>TinTin++ Mud Client Manual</td>
+			</tr>
+		</table>
+
+		<table width="160" align="left">
+			<tr>
+				<td class="menubar">
+<a href='https://tintin.mudhalla.net/index.php'>TinTin++</a><br>
+<a href='action.html'>Action</a><br>
+<a href='alias.html'>Alias</a><br>
+<a href='all.html'>All</a><br>
+<a href='bell.html'>Bell</a><br>
+<a href='break.html'>Break</a><br>
+<a href='buffer.html'>Buffer</a><br>
+<a href='button.html'>Button</a><br>
+<a href='case.html'>Case</a><br>
+<a href='cat.html'>Cat</a><br>
+<a href='characters.html'>Characters</a><br>
+<a href='chat.html'>Chat</a><br>
+<a href='_class.html'>Class</a><br>
+<a href='colors.html'>Colors</a><br>
+<a href='commands.html'>Commands</a><br>
+<a href='config.html'>Config</a><br>
+<a href='continue.html'>Continue</a><br>
+<a href='coordinates.html'>Coordinates</a><br>
+<a href='cr.html'>Cr</a><br>
+<a href='cursor.html'>Cursor</a><br>
+<a href='daemon.html'>Daemon</a><br>
+<a href='debug.html'>Debug</a><br>
+<a href='default.html'>Default</a><br>
+<a href='delay.html'>Delay</a><br>
+<a href='draw.html'>Draw</a><br>
+<a href='echo.html'>Echo</a><br>
+<a href='edit.html'>Edit</a><br>
+<a href='editing.html'>Editing</a><br>
+<a href='else.html'>Else</a><br>
+<a href='elseif.html'>Elseif</a><br>
+<a href='end.html'>End</a><br>
+<a href='escape_codes.html'>Escape Codes</a><br>
+<a href='event.html'>Event</a><br>
+<a href='foreach.html'>Foreach</a><br>
+<a href='format.html'>Format</a><br>
+<a href='function.html'>Function</a><br>
+<a href='gag.html'>Gag</a><br>
+<a href='greeting.html'>Greeting</a><br>
+<a href='grep.html'>Grep</a><br>
+<a href='help.html'>Help</a><br>
+<a href='highlight.html'>Highlight</a><br>
+<a href='history.html'>History</a><br>
+<a href='if.html'>If</a><br>
+<a href='ignore.html'>Ignore</a><br>
+<a href='info.html'>Info</a><br>
+<a href='keypad.html'>Keypad</a><br>
+<a href='kill.html'>Kill</a><br>
+<a href='line.html'>Line</a><br>
+<a href='list.html'>List</a><br>
+<a href='lists.html'>Lists</a><br>
+<a href='local.html'>Local</a><br>
+<a href='log.html'>Log</a><br>
+<a href='loop.html'>Loop</a><br>
+<a href='macro.html'>Macro</a><br>
+Map<br>
+<a href='mapping.html'>Mapping</a><br>
+<a href='math.html'>Math</a><br>
+<a href='mathematics.html'>Mathematics</a><br>
+<a href='message.html'>Message</a><br>
+<a href='metric_system.html'>Metric System</a><br>
+<a href='mouse.html'>Mouse</a><br>
+<a href='msdp.html'>MSDP</a><br>
+<a href='mslp.html'>MSLP</a><br>
+<a href='nop.html'>Nop</a><br>
+<a href='parse.html'>Parse</a><br>
+<a href='path.html'>Path</a><br>
+<a href='pathdir.html'>Pathdir</a><br>
+<a href='pcre.html'>PCRE</a><br>
+<a href='port.html'>Port</a><br>
+<a href='prompt.html'>Prompt</a><br>
+<a href='read.html'>Read</a><br>
+<a href='regexp.html'>Regexp</a><br>
+<a href='repeat.html'>Repeat</a><br>
+<a href='replace.html'>Replace</a><br>
+<a href='return.html'>Return</a><br>
+<a href='run.html'>Run</a><br>
+<a href='scan.html'>Scan</a><br>
+<a href='screen.html'>Screen</a><br>
+<a href='screen_reader.html'>Screen Reader</a><br>
+<a href='script.html'>Script</a><br>
+<a href='send.html'>Send</a><br>
+<a href='session.html'>Session</a><br>
+<a href='sessionname.html'>Session Name</a><br>
+<a href='showme.html'>Showme</a><br>
+<a href='snoop.html'>Snoop</a><br>
+<a href='speedwalk.html'>Speedwalk</a><br>
+<a href='split.html'>Split</a><br>
+<a href='ssl.html'>SSL</a><br>
+<a href='statements.html'>Statements</a><br>
+<a href='substitute.html'>Substitute</a><br>
+<a href='suspend.html'>Suspend</a><br>
+<a href='switch.html'>Switch</a><br>
+<a href='system.html'>System</a><br>
+<a href='tab.html'>Tab</a><br>
+<a href='textin.html'>Textin</a><br>
+<a href='ticker.html'>Ticker</a><br>
+<a href='time.html'>Time</a><br>
+<a href='variable.html'>Variable</a><br>
+<a href='while.html'>While</a><br>
+<a href='write.html'>Write</a><br>
+<a href='zap.html'>Zap</a><br>
+				</td>
+			</tr>
+		</table>
+
+		<table width="10" align="left">
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+
+		<table width="70%" align="left">
+<tr><td class='promo'><pre style='white-space:pre-wrap'>
+</span><span style='color:#5F5'>         MAP
+
+</span><span style='color:#FFF'>Command</span><span style='color:#AAA'>: #map
+
+         The map command is the backbone of the auto mapping feature.
+
+         </span><span style='color:#FFF'>#map at &lt;exit|vnum&gt; &lt;command&gt;
+         </span><span style='color:#AAA'>  Execute the command at the given exit or vnum.
+
+         </span><span style='color:#FFF'>#map center &lt;x&gt; &lt;y&gt; &lt;z&gt;
+         </span><span style='color:#AAA'>  Sets displaying center of the map viewer, default is 0 0 0.
+
+         </span><span style='color:#FFF'>#map color &lt;field&gt; [value]
+         </span><span style='color:#AAA'>  Sets the map color for the given color field. Use #map color reset
+           to restore colors to default.
+
+         </span><span style='color:#FFF'>#map create &lt;size&gt;
+         </span><span style='color:#AAA'>  Creates a new map and room 1. The default size is 50000 rooms.
+
+         </span><span style='color:#FFF'>#map destroy {area|world} &lt;name&gt;
+         </span><span style='color:#AAA'>  Deletes the map or given area.
+
+         </span><span style='color:#FFF'>#map delete &lt;exit|vnum&gt;
+         </span><span style='color:#AAA'>  Deletes the room for the given exit or vnum.
+
+         </span><span style='color:#FFF'>#map dig &lt;exit|vnum&gt; [new|&lt;vnum&gt;]
+         </span><span style='color:#AAA'>  Creates an exit for the given exit name. If no valid exit name
+           is given or no existing room is found a new room is created.
+           Useful for portal links and other alternative forms of
+           transportation. If the 'new' argument is provided all existing
+           rooms are ignored and a new room is created. If a room vnum is
+           given as the second argument an exit will be created leading
+           to the given room vnum. If the room vnum doesn't exist a new
+           room is created.
+
+         </span><span style='color:#FFF'>#map entrance &lt;exit&gt; [option] [arg]
+         </span><span style='color:#AAA'>  Set the entrance data for the given exit. You must specify a
+           valid two-way exit for this to work.
+
+         </span><span style='color:#FFF'>#map exit &lt;exit&gt; &lt;option&gt; &lt;arg&gt;
+         </span><span style='color:#AAA'>  Set the exit data. Useful with a closed door where you can
+           set the exit command: '#map exit e command {open east;e}'.
+           Use #map exit &lt;exit&gt; for a list of available options.
+           Use #map exit &lt;eixt&gt; save to save the exit data.
+
+         </span><span style='color:#FFF'>#map exitflag &lt;exit&gt; &lt;AVOID|BLOCK|HIDE|INVIS&gt; [on|off]
+         </span><span style='color:#AAA'>  Set exit flags. See #map roomflag for more info.
+
+         </span><span style='color:#FFF'>#map explore &lt;exit&gt;
+         </span><span style='color:#AAA'>  Explores the given exit until a dead end or an
+           intersection is found. The route is stored in #path and can
+           subsequently be used with #walk. Useful for long roads.
+
+         </span><span style='color:#FFF'>#map find &lt;name&gt; &lt;exits&gt; &lt;desc&gt; &lt;area&gt; &lt;note&gt; &lt;terrain&gt; &lt;flag&gt;
+         </span><span style='color:#AAA'>  searches for the given room name. If found the shortest path
+           from your current location to the destination is calculated.
+           The route is stored in #path and can subsequently be used with
+           the various #path commands. If #map flag nofollow is set it
+           will store the exit commands instead of the exit names.
+
+           If &lt;exits&gt; is provided all exits must be matched, if
+           &lt;roomdesc&gt;, &lt;roomarea&gt; or &lt;roomnote&gt; or &lt;roomterrain&gt; or
+           &lt;roomflag&gt; is provided these are matched as well against the
+           room to be found.
+
+           These search options are also available for the at, delete,
+           goto, link, list and run commands.
+
+         </span><span style='color:#FFF'>#map flag asciigraphics
+         </span><span style='color:#AAA'>  Takes up more space but draws a more detailed
+           map that displays the ne se sw nw exits and room symbols.
+
+         </span><span style='color:#FFF'>#map flag asciivnums
+         </span><span style='color:#AAA'>  Display room vnums if asciigraphics is enabled.
+
+         </span><span style='color:#FFF'>#map flag nofollow
+         </span><span style='color:#AAA'>  When you enter movement commands the map will no longer
+           automatically follow along. Useful for MSDP and GMCP
+           automapping scripts. When you use #map find in nofollow
+           mode it will store the exit command instead of the exit
+           name into the path.
+
+         </span><span style='color:#FFF'>#map flag static
+         </span><span style='color:#AAA'>  Will make the map static so new rooms are no longer
+           created when walking into an unmapped direction. Useful when
+           you're done mapping and regularly bump into walls accidentally
+           creating a new room. #map dig etc will still work.
+
+         </span><span style='color:#FFF'>#map flag vtgraphics
+         </span><span style='color:#AAA'>  Enables vt line drawing on some terminals
+
+         </span><span style='color:#FFF'>#map flag vtmap
+         </span><span style='color:#AAA'>  Will enable the vtmap which is shown in the top split
+           screen if you have one. You can create a 16 rows high top
+           screen by using '#split 16 1'.
+
+         </span><span style='color:#FFF'>#map get &lt;option&gt; &lt;variable&gt; [vnum]
+         </span><span style='color:#AAA'>  Store a map value into a variable, if no vnum is given the
+           current room is used. Use 'all' as the option to store all
+           values as a table.
+
+         </span><span style='color:#FFF'>#map get roomexits &lt;variable&gt;
+         </span><span style='color:#AAA'>  Store all room exits into variable.
+
+         </span><span style='color:#FFF'>#map global &lt;room vnum&gt;
+         </span><span style='color:#AAA'>  Set the vnum of a room that contains global
+           exits, for example an exit named 'recall' that leads to the
+           recall location. The room can contain multiple exits, in case
+           there are multiple commands that are similar to recall.
+
+         </span><span style='color:#FFF'>#map goto &lt;room vnum&gt; [dig]
+         </span><span style='color:#AAA'>  Takes you to the given room vnum, with the
+           dig argument a new room will be created if none exists.
+
+         </span><span style='color:#FFF'>#map goto &lt;name&gt; &lt;exits&gt; &lt;desc&gt; &lt;area&gt; &lt;note&gt; &lt;terrain&gt;
+         </span><span style='color:#AAA'>  Takes you to the given room name, if you provide exits those
+           must match.
+
+         </span><span style='color:#FFF'>#map info [save]
+         </span><span style='color:#AAA'>  Gives information about the map and room you are in. If the save
+           argument is given the map data is saved to the info[map] variable.
+
+         </span><span style='color:#FFF'>#map insert &lt;direction&gt; [roomflag]
+         </span><span style='color:#AAA'>  Insert a room in the given direction. Most useful for inserting
+           void rooms.
+
+         </span><span style='color:#FFF'>#map jump &lt;x&gt; &lt;y&gt; &lt;z&gt;
+         </span><span style='color:#AAA'>  Jump to the given coordinate, which is relative
+           to your current room.
+
+         </span><span style='color:#FFF'>#map landmark &lt;name&gt; &lt;vnum&gt; [description] [size]
+         </span><span style='color:#AAA'>  Creates an alias to target the provided room vnum. The
+           description is optional and should be brief. The size
+           determines from how many rooms away the landmark can be
+           seen.
+
+         </span><span style='color:#FFF'>#map leave
+         </span><span style='color:#AAA'>  Makes you leave the map. Useful when entering a maze. You
+           can return to your last known room using #map return.
+
+         </span><span style='color:#FFF'>#map legend &lt;legend&gt; [symbols|reset]
+         #map legend &lt;legend&gt; &lt;index&gt; [symbol]
+         </span><span style='color:#AAA'>  There are several legends and sub-legends available for
+           drawing maps to suit personal preference and character sets.
+           Use #map legend all to see the legend as currently defined.
+           Use #map legend &lt;legend&gt; &lt;reset&gt; to set the default legend.
+           Use #map legend &lt;legend&gt; &lt;character list&gt; to create a custom
+           legend. Custom legends are automatically saved and loaded by
+           using #map read and #map write.
+
+         </span><span style='color:#FFF'>#map link &lt;direction&gt; &lt;room name&gt; [both]
+         </span><span style='color:#AAA'>  Links two rooms. If the both
+           argument and a valid direction is given the link is two ways.
+
+         </span><span style='color:#FFF'>#map list &lt;name&gt; &lt;exits&gt; &lt;desc&gt; &lt;area&gt; &lt;note&gt; &lt;terrain&gt;
+         </span><span style='color:#AAA'>  Lists all matching rooms and their distance. The following
+           search keywords are supported.
+
+           {distance}    &lt;arg&gt; will list rooms within given distance.
+           {roomarea}    &lt;arg&gt; will list rooms with matching area name.
+           {roomdesc}    &lt;arg&gt; will list rooms with matching room desc.
+           {roomexits}   &lt;arg&gt; will list rooms with identical room exits.
+                               Use * as an exit to ignore non pathdir exits.
+           {roomflag}    &lt;arg&gt; will list rooms with matching room flags.
+           {roomid}      &lt;arg&gt; will list rooms with identical id name.
+           {roomname}    &lt;arg&gt; will list rooms with matching room name.
+           {roomnote}    &lt;arg&gt; will list rooms with matching room note.
+           {roomterrain} &lt;arg&gt; will list rooms with matching room terrain.
+           {variable}    &lt;arg&gt; will save the output to given variable.
+
+         </span><span style='color:#FFF'>#map map &lt;rows&gt; &lt;cols&gt; &lt;append|overwrite|list|variable&gt; &lt;name&gt;
+         </span><span style='color:#AAA'>  Display a drawing of the map of the given height and width.
+           All arguments are optional. If {rows} or {cols} are set to {}
+           or {0} they will use the scrolling window size as the default.
+           If {rows} or {cols} are a negative number this number is
+           subtracted from the scrolling window size.
+
+         </span><span style='color:#FFF'>#map map &lt;rows&gt; &lt;cols&gt; draw &lt;square&gt;
+         </span><span style='color:#AAA'>  Display a drawing of the map of the given height and width.
+           The square argument exists of 4 numbers formulating the top
+           left corner and bottom right corner of a square.
+
+           If you use {append|overwrite} the map is written to the specified
+           file name which must be given as the 4th argument.
+           If you use {list|variable} the map is saved to the specified
+           variable name.
+
+         </span><span style='color:#FFF'>#map move &lt;direction&gt;
+         </span><span style='color:#AAA'>  This does the same as an actual movement command, updating your
+           location on the map and creating new rooms. Useful when you are
+           following someone and want the map to follow along. You will need
+           to create actions using '#map move', for this to work.
+
+         </span><span style='color:#FFF'>#map offset &lt;row&gt; &lt;col&gt; &lt;row&gt; &lt;col&gt;
+         </span><span style='color:#AAA'>  Define the offset of the vtmap as a square. Without an argument
+           it defaults to the entire top split region.
+
+         </span><span style='color:#FFF'>#map read &lt;filename&gt;
+         </span><span style='color:#AAA'>  Will load the given map file.
+
+         </span><span style='color:#FFF'>#map resize &lt;size&gt;
+         </span><span style='color:#AAA'>  Resize the map, setting the maximum number of rooms.
+
+         </span><span style='color:#FFF'>#map return
+         </span><span style='color:#AAA'>  Returns you to your last known room after leaving the map
+           or loading a map.
+
+         </span><span style='color:#FFF'>#map roomflag &lt;flags&gt; &lt;get|on|off&gt;
+         </span><span style='color:#AAA'>
+         </span><span style='color:#FFF'>#map roomflag avoid
+         </span><span style='color:#AAA'>  When set, '#map find' will avoid a route leading
+           through that room. Useful for locked doors, etc.
+         </span><span style='color:#FFF'>#map roomflag block
+         </span><span style='color:#AAA'>  When set the automapper will prevent movement into or through
+           the room. Useful for death traps.
+         </span><span style='color:#FFF'>#map roomflag hide
+         </span><span style='color:#AAA'>  When set, '#map' will not display the map beyond
+           this room. When mapping overlapping areas or areas that aren't
+           build consistently you need this flag as well to stop
+           auto-linking, unless you use void rooms.
+         </span><span style='color:#FFF'>#map roomflag invis
+         </span><span style='color:#AAA'>  When set the room will be colored with the INVIS color.
+         </span><span style='color:#FFF'>#map roomflag leave
+         </span><span style='color:#AAA'>  When entering a room with this flag, you will
+           automatically leave the map. Useful when set at the entrance
+           of an unmappable maze.
+         </span><span style='color:#FFF'>#map roomflag noglobal
+         </span><span style='color:#AAA'>  This marks a room as not allowing global
+           transportation, like norecall rooms that block recall.
+         </span><span style='color:#FFF'>#map roomflag void
+         </span><span style='color:#AAA'>  When set the room becomes a spacing room that can
+           be used to connect otherwise overlapping areas. A void room
+           should only have two exits. When entering a void room you are
+           moved to the connecting room until you enter a non void room.
+         </span><span style='color:#FFF'>#map roomflag static
+         </span><span style='color:#AAA'>  When set the room will no longer be autolinked
+           when walking around. Useful for mapping mazes.
+
+         </span><span style='color:#FFF'>#map run &lt;room name&gt; [delay]
+         </span><span style='color:#AAA'>  Calculates the shortest path to the destination and walks you
+           there. The delay is optional and requires using braces. Besides
+           the room name a list of exits can be provided for more precise
+           matching.
+
+         </span><span style='color:#FFF'>#map set &lt;option&gt; &lt;value&gt; [vnum]
+         </span><span style='color:#AAA'>  Set a map value for your current room, or given room if a room
+           vnum is provided.
+
+         </span><span style='color:#FFF'>#map sync &lt;filename&gt;
+         </span><span style='color:#AAA'>  Similar to #map read except the current map won't be unloaded
+           or overwritten.
+
+         </span><span style='color:#FFF'>#map terrain &lt;name&gt; &lt;symbol&gt; [flag]
+         </span><span style='color:#AAA'>  Set the terrain symbol and flag.
+
+         </span><span style='color:#FFF'>#map terrain &lt;name&gt; &lt;symbol&gt; [DENSE|SPARSE|SCANT]
+         </span><span style='color:#AAA'>  Determine symbol density, omit for the default.
+
+         </span><span style='color:#FFF'>#map terrain &lt;name&gt; &lt;symbol&gt; [NARROW|WIDE|VAST]
+         </span><span style='color:#AAA'>  Determine symbol spread range, omit for the default.
+
+         </span><span style='color:#FFF'>#map terrain &lt;name&gt; &lt;symbol&gt; [FADEIN|FADEOUT]
+         </span><span style='color:#AAA'>  Determine symbol spread density, omit for the default.
+
+         </span><span style='color:#FFF'>#map terrain &lt;name&gt; &lt;symbol&gt; [DOUBLE]
+         </span><span style='color:#AAA'>  You're using two characters for the symbol.
+
+         </span><span style='color:#FFF'>#map travel &lt;direction&gt; &lt;delay&gt;
+         </span><span style='color:#AAA'>  Follows the direction until a dead end or an intersection is
+           found. Use braces around the direction if you use the delay,
+           which will add the given delay between movements.
+           Use #path stop to stop a delayed run.
+
+         </span><span style='color:#FFF'>#map undo
+         </span><span style='color:#AAA'>  Will undo your last move. If this created a room or a link
+           they will be deleted, otherwise you'll simply move back a
+           room. Useful if you walked into a non-existent direction.
+
+         </span><span style='color:#FFF'>#map uninsert &lt;direction&gt;
+         </span><span style='color:#AAA'>  Exact opposite of the insert command.
+
+         </span><span style='color:#FFF'>#map unlandmark &lt;name&gt;
+         </span><span style='color:#AAA'>  Removes a landmark.
+
+         </span><span style='color:#FFF'>#map unlink &lt;direction&gt; [both]
+         </span><span style='color:#AAA'>  Will remove the exit, this isn't two way so you can have the
+           properly display no exit rooms and mazes.
+           If you use the both argument the exit is removed two-ways.
+
+         </span><span style='color:#FFF'>#map unterrain &lt;name&gt;
+         </span><span style='color:#AAA'>  Removes a terrain.
+
+         </span><span style='color:#FFF'>#map update [now]
+         </span><span style='color:#AAA'>  Sets the vtmap to update within the next 0.1 seconds, or
+           instantly with the now argument.
+
+         </span><span style='color:#FFF'>#map vnum &lt;low&gt; [high]
+         </span><span style='color:#AAA'>  Change the room vnum to the given number, if a range is
+           provided the first available room in that range is selected.
+
+         </span><span style='color:#FFF'>#map write &lt;filename&gt; [force]
+         </span><span style='color:#AAA'>  Will save the map, if you want to save a map to a .tin file
+           you must provide the {force} argument.
+
+</span><span style='color:#FFF'>Related</span><span style='color:#AAA'>: <a href='path.html'>path</a>, <a href='pathdir.html'>pathdir</a> and <a href='speedwalk.html'>speedwalk</a>.
+
+	</pre></td></tr>
+		</table>
+	</body>
+
+<!-- Mirrored from tintin.mudhalla.net/manual/map.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Aug 2022 02:25:42 GMT -->
+</html>

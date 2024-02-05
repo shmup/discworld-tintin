@@ -1,0 +1,142 @@
+alias .plan %^RED%^*************************%^RESET%^; * headknockin doorframes w/ my pal Donk;%^RED%^*************************%^RESET%^;
+
+# HELPS
+- help here
+- help essentials
+- help command_list
+- help taskmaster
+- syntax <command>
+- help godmother
+- help concepts
+- skills fighting
+
+get armours from pack;
+put armours in pack;
+
+get weapons from pack;
+judge weapon 1 against weapon 2;
+put weapons in pack;
+
+# items/shops
+list
+keep|unkeep <object> (prevent accidentally selling)
+
+# about self
+score [stats|quests]
+brief, verbose
+skills, commands, gp
+options
+
+# talker
+talker channels
+talker brief/verbose
+1 hi
+1 :twirls you around
+
+# room
+[g]lance
+[l]ook
+
+# fighting
+consider
+tactics
+wimpy
+
+
+hskills
+skills fighting
+health wounded all
+
+hold/unhold, wear/remove
+follow/lose <person>
+
+======
+advance fighting.melee
+advance fi.me by 2
+cost primaries
+
+syntax punch
+syntax tactics
+
+neck is ok while unarmed, but i prefer "options combat tactus focus = none" while unarmed
+
+[!] focus neck is bad now? use focus upper body
+[!] lighter weight weapons are better when ur skill is low
+
+group assist nasrin <- gets more xp?
+
+[c] skills <branch> stats
+
+[q] get a large satchel for a thief on elm st
+
+=====
+
+# commands
+
+## pager
+syntax rows
+rows
+
+## history
+htell
+hcomm (includes souls)
+
+talker history <name>
+
+(One) Venefica wisps: Someone gave me this great alias: "one $ifarg:one $*$ $else$talker history one$endif$"
+
+alias t $ifarg:t $*$ $else$htell$endif$
+alias 1 $ifarg:1 $*$ $else$talker history 1$endif$
+alias 2 $ifarg:2 $*$ $else$talker history 2$endif$
+
+---
+navbug tells you: grflx scale or sea serpent scale armours are some of the best body armour in the game. Made from killing big bad GRFLX queens, or the Sea Serpent from the sailing missions, then turned into custom armour. Usually for sale in a playershop or two. Price around $500-700
+----
+Theresa tells you: The farmers are good low level xp, the zoons are good low level loot, and the area is small and has a very high npc population, higher than most areas
+Theresa tells you: most of the areas with autoattacking npcs are signposted. theonly one near OC is gloomy forest, to the west
+Theresa tells you: Keep valuables in containers, though, some areas have npc thieves who will pickpocket open inventory
+Theresa tells you: (not oc tho, iirc)
+======================
+(One) Geryon wisps: I recommend a minimum of 280 bonus in tactics ... something to work toward
+=============================================
+You whisper into the wooden bracelet.
+(One) badteeth wisps: Is there a convenient syntax to sell a silver ring, and not the one I'm wearing
+(One) MrWolfie wisps: sell silver ring except worn?
+sell silver ring except worn
+You sell a silver ring for 3 Lancre shillings, 1 Lancre sixpence, 1 Lancre tuppence and 1 Lancre ha'penny.
+J. Smyttles the shopkeeper says with an Ohulan accent: There you go, thanks for the business.
+(One) Bream wisps: or just "sell rings" and you won't sell anything you're wearing
+(One) Zaiet wisps: sell ring 2 also tends to work for me
+(One) cheeky wisps: sell unworn silver ring!
+(One) cheeky wisps: "help parser"
+(One) Presto wisps: I was gonna say, "unworn" works
+J. Smyttles the shopkeeper mutters something about business being slow lately under his breath.
+chat One, MrWolfie's is what I tried and that's a cool negator. But that there are all these options is cool
+You whisper into the wooden bracelet.
+(One) badteeth wisps: One, MrWolfie's is what I tried and that's a cool negator. But that there are all these options is cool
+(One) Valter wisps: intelligence is banned? why?
+chat Cool parser, will read
+You whisper into the wooden bracelet.
+(One) badteeth wisps: Cool parser, will read
+======
+23:17:42: Aengel tells you: riposte is a bad special, stab (best one imho), slice/slash is where you want to be
+23:18:16: Aengel tells you: riposte is preparation, then wait until you succeed with a parry, then check if you trigger the special, check special if it's enough to hit etc.
+23:18:48: Aengel tells you: wildswing is great,but eats a lot of gp
+23:19:11: Aengel tells you: (depending on how many you're fighting)
+======
+Stamen tells you: My list of items to loot: silk clothes&satin clothes&fine clothes&velvet clothes&suit clothes&glasses&scabbards&bags&satchels&stilettoes&wizard's hats&vermine robes&outer robes&jewellery&hairpins&himation&whips&switchblades&bars&sowrongs&coins
+
+ once and they're good forever.
+Stamen tells you: As for Sto Lat... I actually spend a lot of time here, really enjoy this town. It can be dangerous, though, but not too bad. There are gangs, so avoid the groups of vagrants/highwaymen/etc. They sometimes auto-attack players, but you'll see then chat a bit first then ask you a question. Then they backstab. So, avoid them. The guards are annoying, but you can usually run from them. The other thing to know is that the brawlers will jump into any fight. That's annoying. And the wizzies are tough(ish) but only because they can cast TPA and then powerful offensive spells. You can run from them, or interrupt the spell with a special attack, or just avoid them. And, as with everywhere, the priests are annoying and very hard to kill. Don't kill the shopkeepers, they blacklist you. And there's one "large beggar" running around here. He destroys people, so don't attack him
+1 :nods
+You whisper into the wooden bracelet.
+(One) badteeth wisps that he nods
+An overly-cute child arrives from the east.
+Brother Stamen's confused squirrel scans the horizon for invading grey squirrels to fight off.
+Stamen tells you: Carters, thieves, brawlers, children, birds, noblemen, noblewomen, judges, executioners, butchers are all good targets, but do `consider` them first, some are tougher than others
+reply This is some good stuff! I may have just stumbled right away onto the safe one then, killing thieves (appropriate for my level). I have had wizard success, and then Not wizard success, heh. That's about all I've tried so far
+
+Stamen tells you: Carters, thieves, brawlers, children, birds, noblemen, noblewomen, judges, executioners, butchers are all good targets, but do `consider` them first, some are tougher than others
+---
+
+
