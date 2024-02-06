@@ -1,3 +1,12 @@
+Needs organized:
+#alias {chill} { #ticker {chill} {loop2} {940}; #ticker; }
+#alias {woke} { #unticker {chill}; #ticker; }
+
+
+  😴
+----------
+
+
 > qalias
 
 You have the following aliases:

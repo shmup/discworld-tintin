@@ -1,0 +1,27 @@
+>ask my horse to learn a route
+The skewbald horse needs to have learned this location first in order to
+start learning a route here.
+>ask my horse to learn location stable 1
+The skewbald horse looks around carefully, committing this place to memory.
+>ask my horse to learn a route
+You need to be mounted on the skewbald horse to teach it a route.
+>mount my horse
+The skewbald horse is not wearing a saddle.
+>buy lancrastian saddle
+You buy the Lancrastian saddle.
+>get saddle
+You get a Lancrastian saddle from a muddy stable.
+>dress my horse with saddle
+You dress the skewbald horse with the Lancrastian saddle.
+>mount my horse
+You mount the skewbald horse.
+>ask my horse to learn a route
+The skewbald horse starts watching its surroundings closely.
+>south
+You open the south door.
+Hp: 6025 (6110) Gp: 500 (500) Xp: 1114681
+As you ride the skewbald horse through the door, you strike your head hard
+on the doorframe and are sent tumbling out of the saddle.
+The skewbald horse, seeing you dismount, decides not to learn a route after
+all.
+

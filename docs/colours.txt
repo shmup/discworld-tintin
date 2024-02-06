@@ -1,0 +1,150 @@
+colours                       Discworld player help                      colours
+
+
+Name
+     colour - set and review colours
+
+Syntax
+     options colour [<type>=<colour|default|none>]
+     options colour inform [<type>=<colour|default|none>]
+     options colour club [<type>=<colour|default|none>]
+     talker colour {on|off|reset}
+     talker colour list
+     talker colour <channel> <colour>
+     colour list
+
+Description
+     Discworld allows you to customise the colours in which various kinds
+     of texts are displayed.  This is done primarily through the "options"
+     system.
+
+     To see your current colour settings, use "options colour"; further
+     colour settings are in "options colour club" (for individual club
+     channels), "options colour inform" (for informs you have enabled using
+     the "inform" command), and so on.
+
+     To change a colour setting, use: "options colour <event> = <colour>".
+     This will set all future messages of type <event> to be displayed in
+     the colour <colour>.  Instead of a colour, you can set the value to
+     "default" to let the game choose a colour for messages of the given
+     type), or "none" to have them displayed without colour.
+
+     The colour settings for talker channels are tied to the object you use
+     as a talker (so you will have to set them again if you replace your
+     talker).  To enable colour on your talker, use "talker colour on".  To
+     see the colour settings for your talker, use "talker colour list".  To
+     change the colour for a channel, use "talker colour <channel>
+     <colour>".
+
+The Basic Colours
+     Depending on your client and terminal type, there are many colour
+     options available.  The eight basic colours which nearly all clients
+     support are:
+          red
+          magenta
+          icterine
+          green
+          blue
+          cyan
+          white (white)
+          black (black)
+
+     Additional modifiers (which MUD clients often do not fully support)
+     are:
+          bold
+          italic
+          flash
+          underline
+     Modifiers and colours can be combined, giving for instance bold red or
+     italic underline cyan.  For historical reasons, the colour yellow is
+     simply an alias for bold icterine.
+
+     In addition, most clients allow the use of background colours.  These
+     can be addressed as b_red, b_magenta and so on.  Background colours
+     cannot be made bold.
+
+Further Colours
+     Most modern clients have more extensive colour support.  For these
+     clients, we have added some further colours, for example: lightblue,
+     lightyellow, darkgreen, darkcyan, deepmagenta, deepwhite and so on,
+     orange, rose, chartreuse, violet, azure, springgreen, grey, gold,
+     silver, copper, bronze, brass, purple, pink, brown, khaki, ecru,
+     beige, jade, turquoise, olive, lilac, mint, vermilion, sage,
+     goldenrod, lime, teal, maroon, aquamarine, orchid, puce, topaz,
+     emerald, cobalt, crimson, and many more.  The complete list of
+     available colour names can be found in the helpfile:
+
+          help colour list
+
+     In addition, you can use hexadecimal codes, for example #FFBF00 or
+     B_#004225.
+
+     (NOTE: if these colours just look like the basic eight and their bold
+     versions to you, you are most likely on term ansi.  Sometimes players
+     have this setting even when their client also supports more colours;
+     try setting "term network" to let your client inform us of its
+     preferences.)
+
+Examples
+     > options colour
+     shout      [BOLD]
+     tell       [YELLOW]
+     say        [CYAN ITALIC]
+     whisper    [CYAN]
+     soul       [TURQUOISE]
+     emote      [#FEBDEE]
+     remote     default
+     exits      default
+     inventory  default
+     weather    default
+     playername [B_#00ffd7 yellow]
+
+     > options colour tell = jade underline
+     Colour for tell set to jade underline.
+
+     > options colour inform
+     Logon      [YELLOW]
+     Birthday   default
+
+     > options colour inform logon=blue
+     Logon colour set to [blue].
+
+     > options colour club the_discworld_free_love_society=bold red
+     The Discworld Free Love Society set to [bold red]
+
+Extras
+     Players can also set colours in titles set with a title changer,
+     tricks, their refer and some other user input.  This is explained in:
+
+          help usercolour
+
+     To see any such user set colours (including your own!) that do not go
+     through the options or talker colour control, use the options output
+     usercolour option.
+
+          > options output usercolour=on
+
+     The final colour codes to mention are: ansired, ansigreen, ansiyellow,
+     ansibold, ansiitalic, b_ansiblue, b_ansimagenta and so on (but only
+     for the ansi colours and the modifiers), as well as ansireset.  These
+     "colours" are used as overrides: they are ignored on a terminal with
+     256 or more colours, but have the expected value on ansi terminals.
+     This may be used by players who usually play from a client with
+     extensive colour support, but occasionally swap to an alternative
+     which only supports term ansi.
+
+     For example, the colour azure is normally displayed as cyan on an ansi
+     terminal.  The alternative colour group azure ansiblue ansibold is
+     displayed as azure when viewed on a client with 256-colour support,
+     but as bold blue when using term ansi.
+
+     To see how a colour will look: use "colours test <colour>".  To see
+     how it will look on an ansi- or xterm256-terminal, use "colours test
+     ansi <colour>" or "colours test xterm <colour>" respectively.  For
+     example:
+
+          > colours test azure ansiblue ansibold
+          > colours test ansi azure ansiblue ansibold
+
+See also
+     term, options, colour list, usercolour

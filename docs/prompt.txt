@@ -1,3 +1,12 @@
+Current prompt:
+"$newline$[hp $hurtcolour$$hp$/$maxhp$ %^RESET%^gp %^ORANGE%^$gp$/$maxgp$ %^RESET%^xp %^YELLOW%^$xp$ %^BLUE%^$burden$ %^RESET%^] "
+[hp 1878/1878 gp 267/267 xp 701571 48% ]
+
+"$newline$[hp $hurtcolour$$hp$/$maxhp$ %^RESET%^gp %^ORANGE%^$gp$/$maxgp$ %^RESET%^xp %^YELLOW%^$xp$ %^BLUE%^$burden$ %^ORANGE%^$temp$ %^RESET%^] "
+------------------------------------------------
+
+
+
 prompt                        Discworld player help                       prompt
 
 
@@ -40,16 +49,20 @@ Examples
      > prompt
      Your prompt is set to the default.
 
-     %^BOLD%^RED%^Librarian: %^RESET%^RED%^Not a monkey!%^RESET%^
-
-prompt "$newline$[$hurtcolour$$hp$/$maxhp$ %^ORANGE%^$gp$/$maxgp$ %^YELLOW%^$xp$%^RESET%^] "
-
+     > prompt "[ Hp: $hp$/$maxhp$ ] "
      You set your prompt to "[ Hp: $hp$/$maxhp$ ] ".
 
-Prompt (Command) From 1 to 47 of 53 (88%) - return to continue, h for help.
+     [ Hp: 2805/2805 ] prompt "<$servertime$> "
+     You set your prompt to "<$servertime$> ".
 
-     [ Hp: 2805/2805 ] prompt default
+     <Mon May  8 15:31:56 2023> prompt default
      You set your prompt to the default value.
+
+     >
+
+     %^BOLD%^RED%^Librarian: %^RESET%^RED%^Not a monkey!%^RESET%^
+
+     "$newline$[$hurtcolour$$hp$/$maxhp$ %^ORANGE%^$gp$/$maxgp$ %^YELLOW%^$xp$%^RESET%^] "
 
 See also
      monitor, score.
