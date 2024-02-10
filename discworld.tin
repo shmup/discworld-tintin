@@ -20,6 +20,7 @@
 
 #alias reload {
   #read discworld.tin;
+  #map read map/discworld.map;
   #showme {<cfa>reloaded!};
 };
 
@@ -37,6 +38,10 @@
 #alias mapoff {
 
 }
+
+#event {MAP ENTER ROOM} {
+    #map map 26 98 a data/map.txt;
+};
 
 #alias mapsave {
     #showme "data/discworld.map saved.";
