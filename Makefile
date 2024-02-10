@@ -1,17 +1,6 @@
-.PHONY: all run build-docs clean test
+.PHONY: map all build-docs chat run setup standalone-setup clean test
 
 all: setup
-
-setup:
-	mkdir -p logs && touch logs/chat.log
-	./scripts/tmux-setup.sh
-
-standalone-setup:
-	mkdir -p logs && touch logs/chat.log
-	./scripts/tmux-setup.sh standalone
-
-run:
-	tt++ discworld.tin
 
 build-docs:
 	rm -rf docs/manual
@@ -26,6 +15,24 @@ build-docs:
 		  "https://tintin.mudhalla.net/manual/"
 	rm -rf manual
 	mv tmp/manual/tintin.mudhalla.net/manual docs/manual
+
+chat:
+	tail -f logs/chat.log
+
+play:
+	tt++ discworld.tin
+
+map:
+	tail -f data/map.txt
+
+setup:
+	mkdir -p logs && touch logs/chat.log
+	./scripts/tmux-setup.sh
+
+
+standalone-setup:
+	mkdir -p logs && touch logs/chat.log
+	./scripts/tmux-setup.sh standalone
 
 clean: ; @echo TODO
 test: ; @echo TODO
