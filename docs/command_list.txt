@@ -1,0 +1,48 @@
+Command list, try "help concepts" for a list of concepts.
+
+60              crouch          identify        prompt          speak
+accept          debate          idle            protect         spells
+access          defend          ignore          pursue          splash
+achievements    delete          import          put             stand
+advance         deliver         inform          qalias          start
+afk             describe        inventory       quests          stop
+age             drag            keep            queue           su
+alias           draw            kill            quit            surrender
+alias_tutorial  drink           killers         quote           syntax
+allocate        dry             kneel           qwho            tactics
+apply           ealias          languages       rate            tag
+appraise        earmuffs        league          read            take
+arguments       eat             learn           rearrange       talker
+birthdays       email           liaisons        reclaim         taste
+blog            emote           lie             recover         teach
+brief           equip           locate          refer           tell
+bright          events          lockout         refresh         temperature
+bug             examine         look            register        term
+bug_replies     facing          lose            reject          throw
+bug_reporting   finger          lsay            relationship    time
+bugcheck        flip            lsayto          remote          title
+bugs            follow          mail            remove          turn
+burden          friends         mailer          repeat          typo
+bury            frimble         mailinfo        resize          unalias
+calendar        gather          make            restart         unfollow
+cap             get             map             review          unhold
+cast            give            maths           rituals         unidentify
+chenc           glance          mccp            roleplaying     unkeep
+chfn            glcl            meditate        rot13           unprotect
+collect         godmother       memo            rotx            unquest
+colours         gp              money           rows            uptime
+cols            haunt           monitor         save            users
+commands        hcomm           more            say             verbose
+comment         health          mudlist         sayto           watch
+components      help            mxp             score           wear
+concentrate     helpers         news            screenreader    weigh
+condition       hints           nickname        search          wet
+consider        history         offer           sermons         when
+contents        hnewbie         options         sheathe         whisper
+converse        hnewbiehelpers  palette         shields         who
+convert         hold            password        shorten         whoami
+cost            hsay            perform         shout           whois
+count           hskills         permit          show            wimpy
+countries       hsoul           play            signature       withdraw
+coverage        htell           poll            sit
+crawl           idea            position        skillcap

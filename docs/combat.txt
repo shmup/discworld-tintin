@@ -1,0 +1,27 @@
+bhead:      behead $arg:target 1$ with nodachi
+imp:        impale $arg:target 1$ with nodachi
+
+hth:        health wounded $arg:all$
+
+def:        tactics attitude defensive $*$
+nut:        tactics attitude neutral $*$
+off:        tactics attitude offensive $*$
+
+gac:        get all from corpse; drop them; $*$
+loot
+
+.warcries:  Death to wombles!;Victory!;Run away or die $*$
+.warpaints: a SKELETON;BLOOD $*$
+ka:         kill all except players & bats & beatific men & beatific women & believers & bessie & camels & cats & clouds & cobblers & cows & crows & ceremonial guards & citadel guards & dazed men & dazed women & dogs & dragons & every fireflies & swarms & followers & every lights & giggly men & giggly women & golden blossom & golden chicken & hags & killers & heavies & hattian guards & hoplites & kang wu & khenmet & khepresh & kyakenko & lap-lip & lights & luggages & madmen & monkeys & moths & mounts & every mount & Noc-noc-bang & oaks & palms & pets & pines & priestesses & priests & ptarquet & ptyler & receptionists & ryattenoki & shady man & sheep shearers & shopkeepers & sinule & skeleton warriors & spacey men & spacey women & stallowners & stone palms & summons & tneduts & tomtom & trees & trolls & wasted men & wasted women & worshippers & witches & wizards & wisps & Sle-pingh-beuh-tei & Lip-phon & Rahn-fara-wai & Teh-takk-eht & Pennie & Ptyler & Phos-phor & Lap-lip & Tag-ahn-ruhn & Ptarquet & Rook & Sandy & Wan-tew-iit & Lip-Bahm & Mihk-gran-bohp & Yclept & Pkara & Teh-takk-eht & Lap-lip & Lip-phon Lap-top & Ptuf & Limdul & Phin-lip & Ut-lat-khin & Phit-Git & Hin-lop-heds & jack straw & Adelphe & brick & Endos & Ptespi & $*$
+kk:         rt-paint;wp me;st-paint;k $*$
+rt-paint:   sheath;get paint 1 from forager's belt 1;hold paint 1 $*$
+sheath:     put nodachi 1 in nodachi scabbard 1 $*$
+sheath2:    put hunting knife in travelling boots $*$
+trash:      get all from corpse;bury corpse;drop them $*$
+unsheath:   get sword from nodachi scabbard;hold nodachi 1 $*$
+unsheath2:  get hunting knife from travelling boots $*$
+wc:         warcry $arg:random$
+wp:         warpaint $arg:me$ drawing random
+wp-go:      rt-paint;wp me;st-paint $*$
+A total of 20 aliases.
+

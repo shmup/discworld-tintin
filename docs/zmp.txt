@@ -1,0 +1,77 @@
+ZMP                           Discworld Player Help                          ZMP
+
+
+Name
+     Zenith Mud Protocol
+
+Description
+     ZMP is a mud client protocol which, unlike for instance MXP, does not
+     have pre-defined behaviour.  MUDs can use it to send extra information
+     to the player.  Players can write client plugins to use this
+     information.
+
+     This help file does not explain the way ZMP works; information about
+     this is available on the internet, or in the documentation of various
+     mud clients.  It does explain the features supported by Discworld.
+
+So What Should I Send?
+     After ZMP is successfully negotiated, your client should send:
+        zmp.ident <client> <version>
+
+     That's the only thing that you need to send (and if you don't,
+     Discworld is quite forgiving).  In return, you will receive an
+     identification from Discworld.  Other communication is initiated by
+     the server.
+
+     In particular, Discworld may send zmp.check <command> commands.  On
+     receiving such a query, your client should respond with one of the
+     following:
+        * zmp.support <command>
+        * zmp.no-support <command>
+
+     You may also send zmp.support commands unasked, to avoid the small
+     delay the first time the mud tries to send you some zmp information.
+
+And What Do I Get?
+     Discworld sends six things that you may find interesting, provided
+     your client claims to support them:
+        * char.login
+        * char.info
+        * char.vitals
+        * room.info
+        * room.map
+        * room.writtenmap
+
+     The first two of these are sent when you log in.  Here, char.login
+     supplies the name of your character, and char.info supplies some
+     additional static information such as guild and character role.
+
+     The third (char.vitals) is sent whenever you send a command (much like
+     the prompt) and supplies your hitpoints, guildpoints, experience
+     points and burden.
+
+     The other three are sent whenever you look, glance or enter a room.
+     Here, room.info sends some information on the current room: the room
+     name, room identifier and its status (e.g. inside, outside,
+     underwater).  The two map commands send a small minimap to your
+     client, which may be empty if vision is bad (for instance in the case
+     of snow).  Unless you have maps set to plain (see options output map),
+     the "room.map" command will include colour codes.
+
+On Triggers and Timers
+     Although it should never be necessary, you may be inclined to use a
+     trigger to send for instance the ZMP ident command.  This is allowed,
+     provided only ZMP communication is sent.
+
+     Triggers and timers which send anything that could make your character
+     unidle are not allowed.  This includes blank lines!  So you may not,
+     for instance, automatically send a blank line every 10 seconds to keep
+     your Char.Vitals updated.  If you set up ZMP triggers, make sure they
+     do not accidentally do this.
+
+Notes
+     The definition on the ZMP protocol is mirrored on
+     http://discworld.starturtle.net/external/protocols/zmp.html
+
+See Also
+     mxp, gmcp, automation

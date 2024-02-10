@@ -1,0 +1,74 @@
+calendar                     Discworld concepts help                    calendar
+
+
+Name
+     calendar - show the Discworld days for the coming Roundworld week
+
+Syntax
+     calendar
+
+Description
+     The calendar command lists which Discworld days will occur on which
+     real life days for the coming week.
+
+     Note that one Discworld day equals slightly more than 7 hours in "real
+     life".
+
+     The output of the calendar command can be confusing if you don't know
+     anything about the Discworld year so here are the very basics:
+
+     A Discworld common year has 400 days and 13 months; it covers the
+     usual seasons spring, summer, autumn and winter. Two common years
+     (called Prime and Secundus) form a Discworld astronomical year (ie,
+     the time it takes for the Disc to make one complete turn).
+
+     For example, the 21st Grune Secundus UC 2030 is the 21st day of the
+     month Grune in the second common year of the astronomical year 2030.
+
+     The Discworld seasons are:
+     Spring Prime
+     Summer Prime
+     Autumn Prime
+     Spindlewinter
+     Spring Secundus
+     Summer Secundus
+     Autumn Secundus
+     Backspindlewinter
+
+     The Discworld months are:
+     Offle          32 days
+     February       32 days
+     March          32 days
+     April          32 days
+     May            32 days
+     June           32 days
+     Grune          32 days
+     August         32 days
+     Spune          32 days
+     Sektober       32 days
+     Ember          32 days
+     December       32 days
+     Ick            16 days
+
+     The Discworld days are:
+     Monday
+     Tuesday
+     Wednesday
+     Thursday
+     Friday
+     Saturday
+     Sunday
+     Octeday
+
+
+     There are also a number of Special Days on Discworld:
+     Hogswatchday             Friday 1st Offle Prime
+     Crueltide                Friday 1st Offle Secundus
+     Small Gods Day           Thursday 24th June Prime
+     Alls Fallow              Thursday 24th June
+                              Secundus
+     Soul Cake Tuesday        Tuesday 23rd August
+     Sektober Fools' Day      Tuesday 1st Sektober
+
+See also
+     time, calendar (player help)

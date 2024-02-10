@@ -1,0 +1,61 @@
+=======SKILLS=======Level/Bonus=================================================
+adventuring.........    -    -          | | baking..........   10   52
+| movement..........    -    -          | | butchering......   10   52
+| | riding..........    -    -          | | preserving......   10   52
+| | | horse.........  132  214          | | brewing.........   10   52
+| evaluating........    -    -          | | distilling......   10   52
+| | weapons.........   25  118          | medicine..........   27  122
+| | armour..........   27  123          | | firstaid........   51  169
+| perception........   25  118          | | diagnosis.......   15   78
+| direction.........   28  125          | | treatment.......   15   78
+| health............   86  193          | | | disease.......   15   78
+| points............   52  170          | | | injury........   15   78
+covert..............    5   25          | | | poison........   15   78
+| stealth...........    5   25          | arts..............   13   68
+| hiding............    5   26          | | design..........   10   52
+| lockpick..........    5   25          | | calligraphy.....   10   52
+| manipulation......    5   26          | | drawing.........   10   52
+| casing............    5   26          | | painting........   42  159
+| items.............    5   26          | | printing........   10   52
+| points............    5   26          | | sculpture.......   10   52
+crafts..............   13    -          | | theatre.........    0    0
+| smithing..........   10   52          | music.............   10   52
+| | gold............   10   52          | | instruments.....   10   52
+| | silver..........   10   52          | | special.........   10   52
+| | black...........   10   52          | | theory..........   10   52
+| | gem.............   10   52          | | performance.....   10   52
+| | locks...........   10   52          | points............   12   62
+| mining............   10   52          faith...............    5   26
+| | gem.............   10   52          | rituals...........    5   26
+| | ore.............   10   52          | items.............    5   26
+| | mineral.........   10   52          | points............    5   26
+| hunting...........   13   67          fighting............   80  187
+| | tracking........   15   78          | melee.............   39  153
+| | fishing.........   15   78          | | dagger..........   11   56
+| | trapping........   15   78          | | sword...........   11   56
+| | foraging........   10   52          | | heavy-sword.....  237  271
+| carpentry.........   11   57          | | axe.............   11   57
+| | furniture.......   10   52          | | mace............   14   73
+| | coopering.......   10   52          | | flail...........    8   41
+| | turning.........   10   52          | | polearm.........   11   58
+| | whittling.......   15   78          | | misc............   12   62
+| pottery...........   10   51          | range.............    9   46
+| | forming.........   10   51          | unarmed...........   98  196
+| | glazing.........   10   51          | | striking........  101  198
+| | staining........   10   51          | | grappling.......   96  195
+| | firing..........   10   51          | defence...........  102  199
+| materials.........   26  119          | | parrying........  192  244
+| | tanning.........   22  109          | | blocking........   14   72
+| | leatherwork.....   88  191          | | dodging.........  102  195
+| | weaving.........   10   52          | special...........  105  201
+| | spinning........   10   52          | | weapon..........  178  240
+| | needlework......   16   83          | | unarmed.........   50  166
+| | dyeing..........   10   52          | | tactics.........  142  223
+| husbandry.........   13   68          | | mounted.........   50  166
+| | plant...........   10   52          | points............  131  215
+| | animal..........   17   89          magic...............    5   26
+| | | grooming......   21  107          | spells............    5   26
+| | | breeding......   15   79          | methods...........    5   26
+| | | slaughtering..   15   79          | items.............    5   26
+| culinary..........   10   52          | points............    5   26
+| | cooking.........   10   52

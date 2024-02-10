@@ -1,0 +1,51 @@
+Your fighting commands are:
+   bash       bob        feint      kick       shove      stab       wildswing
+   beat       charge     guard      pierce     slash      storm
+   behead     chop       hack       punch      slice      trip
+   berserk    crush      impale     riposte    smash      warcry
+Your crafts commands are:
+   bandage        fix            leatherwork    warpaint
+Your adventuring commands are:
+   judge    mount    vurdere
+Your current commands are:
+   rearrange
+
+
+
+
+
+
+behead
+chop
+crush
+feint
+guard
+pierce
+slash
+slice
+smash
+stab
+
+
+bob - bucket filled w/ water & an apple
+
+beat - attempt to knock opponen't weapon aside (20 fgp)
+
+shove - throw opponent off balance (30 fighting gp)
+trip - throw opponent off balance (30 fighting gp)
+
+impale - launch special impale attack on someone (35-45 fgp based on zone)
+hack   - launch special hack attack on someone
+punch  - launch special punch attack on someone 
+kick
+
+riposte - parry into a thrust
+
+berserk - oozaru
+
+wildswing - several opponents
+
+warcry - shock opponent
+
+storm - run down someone w/ horse
+charge
