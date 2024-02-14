@@ -2,68 +2,51 @@
 
 #config {convert meta};
 #config {verbatim} {on};
-#variable {chat_file} {logs/chat.log};
+#config buffer_size 1000000;
 
-/* fuzzy filters w/ https://github.com/junegunn/fzf */
-#alias {help-tt} {#script ./scripts/help-tt.sh };
-#alias {manual} {#system ./scripts/manual-browse.sh};
-#alias {maps} {#system ./scripts/maps.sh };
-#alias {boards} {#system ./scripts/boards.sh };
-#alias {help-ls} {#system ./scripts/help-ls.sh };
+#var chat_file {logs/chat.log};
+#var tindir {$info[SYSTEM][CWD]};
+
+/* █▓▒░ TABBED ░▒▓█ */
 #tab {help-tt} #tab {manual}; #tab {boards}; #tab {maps};
+#tab {db }; #tab {db-place }; #tab {db-npc };
 
-/* if on macos, change xdg-open to open */
+/* █▓▒░ FUZZY LISTS ░▒▓█ */
+#alias {help-tt} {#script ./scripts/help-tt.sh };
+#alias {manual}  {#system ./scripts/manual-browse.sh};
+#alias {maps}    {#system ./scripts/maps.sh };
+#alias {boards}  {#system ./scripts/boards.sh };
+#alias {help-ls} {#system ./scripts/help-ls.sh };
+
+/* █▓▒░ IDLE ░▒▓█ */
+#alias {woke}    {#unticker chill; #ticker;}
+#alias {chill}   {#ticker chill loop2 540; #ticker;}
+
+/* █▓▒░ QUOW ░▒▓█ */
 #alias {db} {#system xdg-open "https://quow.co.uk/cow.php?t=Items&s=%0"};
 #alias {db-place} {#system xdg-open "https://quow.co.uk/cow.php?t=Places&s=%0"};
 #alias {db-npc} {#system xdg-open "https://quow.co.uk/cow.php?t=NPCs&s=%0"};
-#tab {db }; #tab {db-place }; #tab {db-npc };
 
+/* █▓▒░ RELOAD ░▒▓█ */
 #alias reload {
   #read discworld.tin;
-  #map read map/discworld.map;
   #showme {<cfa>reloaded!};
 };
 
+/* █▓▒░ META TOGGLE ░▒▓█ */
 #alias {metaon} { #config {convert meta} on; };
 #alias {metaoff} { #config {convert meta} off; };
 
+/* █▓▒░ RECONNECT ░▒▓█ */
 #alias {reconnect} {
-  #zap discworld;
-  #session discworld discworld.starturtle.net 4242;
+ #zap discworld;
+ #session discworld discworld.starturtle.net 4242;
 };
 
-#alias mapon {
-}
-
-#alias mapoff {
-
-}
-
-#event {MAP ENTER ROOM} {
-    #map map 26 98 a data/map.txt;
-};
-
-#alias mapsave {
-    #showme "data/discworld.map saved.";
-    #map write data/discworld.map;
-}
-
-#alias mapload {
-    #showme "data/discworld.map loaded.";
-    #map read data/discworld.map;
-}
-
-#alias mm {
-    #map map;
-}
-
-#alias mapinfo {
-    #showme "data/discworld.map loaded.";
-    #map info;
-}
+/* █▓▒░ BASIC TRIGGERS ░▒▓█ */
+#action {The light surrounding you flickers and winks out.} {woke};
+#nop #read scripts/zmp.tin;
 
 #if {"@discworld{}" !== ""} {
-    reconnect;
+ reconnect;
 };
-
-#read {scripts/channels.tin};
