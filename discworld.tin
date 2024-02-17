@@ -1,5 +1,13 @@
 #split 0 1;
 
+#event {SESSION CONNECTED} {
+  #history read input.txt;
+};
+
+#event {SESSION DISCONNECTED} {
+  #history write input.txt;
+};
+
 #config {convert meta};
 #config {verbatim} {on};
 #config {command color} {cyan};
