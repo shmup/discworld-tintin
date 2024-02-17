@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from graphviz import Graph
+import sys
 
 config = {
     'font_name': 'Pragmata Pro',
@@ -22,7 +23,16 @@ G.attr('edge', color=config['edge_color'])
 
 added_nodes, added_edges = set(), set()
 
-with open('rls.txt') as file:
+if len(sys.argv) > 1:
+    input_source = open(sys.argv[1])
+elif not sys.stdin.isatty():
+    input_source = sys.stdin
+else:
+    print("Usage: script.py <filename> or pass data via stdin",
+          file=sys.stderr)
+    sys.exit(1)
+
+with input_source as file:
     for line in file:
         parts = line.strip().replace(' and ',
                                      ', ').replace('connected to ',
@@ -50,5 +60,8 @@ with open('rls.txt') as file:
             if edge not in added_edges:
                 G.edge(*edge)
                 added_edges.add(edge)
+
+if len(sys.argv) > 1:
+    input_source.close()
 
 G.render(config['output_filename'], format='png')
