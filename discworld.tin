@@ -2,6 +2,7 @@
 
 #config {convert meta};
 #config {verbatim} {on};
+#config {command color} {cyan};
 #config buffer_size 1000000;
 
 #var chat_file {logs/chat.log};
