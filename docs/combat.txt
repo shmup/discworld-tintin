@@ -25,3 +25,8 @@ wp:         warpaint $arg:me$ drawing random
 wp-go:      rt-paint;wp me;st-paint $*$
 A total of 20 aliases.
 
+
+
+wc
+wp-go
+imp / bhead

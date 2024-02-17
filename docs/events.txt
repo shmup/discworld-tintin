@@ -1,0 +1,52 @@
+#event {CATCH SCREEN FILL} {}
+#event {CATCH SCREEN SPLIT FILL} {}
+#event {IAC SB ZMP char.info IAC SE} {}
+#event {IAC SB ZMP char.info} {}
+#event {IAC SB ZMP char.login IAC SE} {}
+#event {IAC SB ZMP char.login} {}
+#event {IAC SB ZMP char.vitals IAC SE} {}
+#event {IAC SB ZMP char.vitals} {}
+#event {IAC SB ZMP clacks.overhead IAC SE} {}
+#event {IAC SB ZMP clacks.overhead} {}
+#event {IAC SB ZMP room.info IAC SE} {}
+#event {IAC SB ZMP room.info} {}
+#event {IAC SB ZMP room.map IAC SE} {}
+#event {IAC SB ZMP room.map} {}
+#event {IAC SB ZMP room.writtenmap IAC SE} {}
+#event {IAC SB ZMP room.writtenmap} {}
+#event {IAC SB ZMP zmp.check} {}
+#event {IAC SB ZMP zmp.ident IAC SE} {}
+#event {IAC SB ZMP zmp.ident} {}
+#event {IAC SB ZMP zmp.input} {}
+#event {IAC SB ZMP zmp.no-support} {}
+#event {IAC SB ZMP zmp.ping IAC SE} {}
+#event {IAC SB ZMP zmp.support} {}
+#event {IAC SB ZMP zmp.time} {}
+#event {IAC WILL ZMP} {}
+#event {MAP ENTER ROOM} {}
+#event {MAP MOVED MOUSE BUTTON THREE} {}
+#event {MAP PRESSED MOUSE BUTTON THREE} {}
+#event {MAP RELEASED MOUSE BUTTON THREE} {}
+#event {MAP SHORT-CLICKED MOUSE BUTTON ONE} {}
+#event {MAP SHORT-CLICKED MOUSE BUTTON THREE} {}
+#event {MAP SHORT-CLICKED MOUSE BUTTON TWO} {}
+#event {MAP UPDATED VTMAP} {}
+#event {MOVED MOUSE BUTTON ONE} {}
+#event {PRESSED MOUSE BUTTON ONE} {}
+#event {PRESSED SECURE LINK exec MOUSE BUTTON ONE}}
+#event {PRESSED SECURE LINK room MOUSE BUTTON ONE} {}
+#event {PRESSED SECURE LINK room MOUSE BUTTON THREE} {}
+#event {PRESSED SECURE LINK send MOUSE BUTTON ONE}}
+#event {PRESSED SECURE LINK show_room MOUSE BUTTON ONE} {}
+#event {PRESSED SECURE LINK url MOUSE BUTTON ONE} {}
+#event {PROCESSED KEYPRESS} {}
+#event {PROGRAM TERMINATION} {}
+#event {RECEIVED INPUT} {}
+#event {RECEIVED KEYPRESS} {}
+#event {RELEASED MOUSE BUTTON ONE} {}
+#event {SCREEN RESIZE} {}
+#event {SCROLLED MOUSE WHEEL DOWN} {}
+#event {SCROLLED MOUSE WHEEL UP} {}
+#event {SEND OUTPUT} {}
+#event {SESSION DISCONNECTED} {}
+#event {SHORT-CLICKED MOUSE BUTTON ONE} {}

@@ -1,0 +1,101 @@
+ q : quest
+qg : quests show next general hint for
+qh : quest show details for
+qi : quests show next item hint for
+ql : quests show next location hint for
+qq : quests list uncompleted ankh-morpork
+sq : syntax quests
+
+
+
+quests show next                            Show the next hint of the specified
+       {general|location|item|npc} hint     type for the quest.
+       for <quest>
+quests show [all]                           Show all hints of the specified
+       {general|location|item|npc} hints    type for the quest.
+       for <quest>
+quests show {general|location|item|npc}     Show the first hint of the
+       hint for <quest>                     specified type for the quest.
+quests show {solution|location|item|npc}    Show the full solution or location,
+       [details] for <quest>                item or NPC details for the quest.
+quests list sub-areas in <area>             List the sub-areas in an area.
+quests show details for <quest>             Show information for the quest.
+quests list interleaved all [quests]        List all quests in alphabetical
+                                            order, with the ones you've
+                                            completed highlighted.
+quests list {uncompleted|completed} <area>  List all the quests you've not yet
+       [quests]                             done or those you have done in a
+                                            particular area.
+quests list interleaved <area> [quests]     List the quests in an area in
+                                            alphabetical order, with the ones
+                                            you've completed highlighted.
+quests list {uncompleted|completed}         List all the quests you've not yet
+       [quests]                             done or those you have done.
+quests list all [quests]                    List all quests, with those you've
+                                            completed separated out from those
+                                            you haven't.
+quests list [main] areas                    List the main area groupings for
+                                            quests.
+quests list <area> [quests]                 List the quests in an area, with
+                                            those you've completed separated
+                                            out from those you haven't.
+
+
+You have not yet completed the following quests in Ohulan-Cutash:
+Courageous Courier
+
+
+You have not yet completed the following quests in Ankh-Morpork:
+Actor Advisor                           Keen Observer
+Apprentice Baker                        Know-it-all
+Apprentice Campanologist                Knowledge Seeker
+Apprentice Journalist                   Light Technician
+Apprentice Tanner                       Maintainer of the Balance
+Aquatic Discoverer                      Mapmaker Caretaker
+Auriental Arithmetician                 Master Potter
+Bar Brawl Champion                      Master of Ceremonies
+Barbarian Hero                          Matefinder
+Belt Buckler                            Memento Locater
+Bird Brain                              Midas in Reverse
+Bored of the Ring                       Natty Dresser
+Bush Whacker                            Occult Apprentice
+Cadaver Corroder                        Onna Rocks!
+Cat Reliever                            Pandora's Playmate
+Cocktail Shaker                         Pest Controller
+Coffee Bean                             Pigeon Fancier
+Coin Collector                          Plumber's Mate
+Competent Banisher                      Polite Shopper
+Connoisseur of the Arts                 Potter's Friend
+Corn Popper                             Practical Joker
+Courageous Courier                      Proficient Horticulturalist
+Courteous Visitor                       Prolific Paster
+Crossbow Caretaker                      Prompt
+Crypt Robber                            Public Informer
+Daddy's Little Helper                   Punching Bag
+Demon Friend                            Quiet Leader
+Deputy Deliverer                        Radiant Adventurer
+Distant Exhibitionist                   Rock Star
+Dog Gone Emancipator                    Saboteur's Tool
+Doppleganger                            Sentimentalist
+Down to Earth                           Short Changed
+Dressed Up to the Nines                 Sign Reader
+Electrick Marstar                       Skippy
+Electrickally Marstered                 Slimy Saviour
+Errand Runner                           Soft-Soled
+Executive Chatter                       Spring Artificer
+Expert Balancer                         Stage Handy
+Explorer Extraordinaire                 Stylish Adventurer
+Finder Not Keeper                       Sympathetic
+Fish Fingered                           Top Scorer
+Flexible                                Touchingly Thoughtful
+Flower Powered                          Trophy Hunter
+Foolish Flyer                           True Alchemist
+Furniture Hauler                        Upbeat Enforcer
+Future Diviner                          Valued Customer
+Gatherer of Fluff                       Very, Very Lucky
+Gemmy's Mate                            Veteran Explorer
+Green Tongue                            Walleyed
+Guide to the Undead                     Warming Saviour
+Handyperson                             Weight Watcher
+Heart of Gold                           Wine Connoisseur
+Hearts Tendered

@@ -1,0 +1,105 @@
+describe                      Discworld player help                     describe
+
+
+Name
+     describe - set your description
+
+Syntax
+     describe clear
+     describe edit
+     describe main <description>
+     describe zone {face|hair|abdomen|head|feet|back|hands|chest|legs|arms|neck}
+     clear
+     describe zone {face|hair|abdomen|head|feet|back|hands|chest|legs|arms|neck}
+     <description>
+     describe zone covered
+     {face|hair|abdomen|head|feet|back|hands|chest|legs|arms|neck} clear
+     describe zone covered
+     {face|hair|abdomen|head|feet|back|hands|chest|legs|arms|neck} <description>
+     describe main pronoun {on|off}
+     describe zones clear
+
+Description
+     The describe command is used to put a line about you in your long
+     description that players see when they look at you.  It is also used
+     in your reference.
+
+     In the zone descriptions the use of the $NEW_LINE$ will insert a
+     newline into the output while $OBJECTS$ will insert the list of
+     objects covering the specified zone (that can be seen).
+
+       "describe" with no parameters will print your current description.
+
+       "describe clear" will clear your description.
+
+       "describe zones clear" will clear your zones' descriptions.
+
+       "describe edit" will drop you into the editor you have chosen and
+       allows you to edit your description.
+
+       "describe main <description>" will change the main description that
+       people see when looking at you.
+
+       "describe zone <body part>" will change the description of the body
+       part specified, as listed in "syntax describe".   This is dynamic,
+       so if you e.g. wear gloves, the description for your hands won't be
+       added to what people see when they look at you.  In other words, if
+       you wear nothing (you spry nudist you), all your zone descriptions
+       will be displayed.  This could be used to role-play having a tattoo,
+       a scar, a birthmark or something else of interest on a specific body
+       part, for instance.
+
+       To clear the description for a given body part, use "describe zone
+       <body part> clear".
+
+       You can use the "covered" version of this to describe how your zone
+       looks when it is covered by something.  This lets you do things like
+       describing your eyes when they are covered by a mask.
+
+       "describe main pronoun {on|off}" will change whether your
+       description will start with either "She" or "He" automatically,
+       effectively letting what you enter into e,g, "describe main
+       <description>" start without a pronoun (if this option is turned
+       off) or with a pronoun (if this option is on).
+
+     You can describe zones of your body which will allow the descriptions
+     to be optionally displayed if those zones are covered with clothes or
+     not.  The zone descriptions are added together as if they are
+     sentences, so if you do not use a complete (or multiple) sentence for
+     your zone descriptions they will not look right.
+
+     In the zone descriptions (only here) if you put $NEW_LINE$ into the
+     text it will be replaced with a new line.  A main must be set before
+     the zone descriptions will be shown.
+
+Examples:
+     > describe main is a burly looking man with a tattoo.
+     Ok.
+
+     > describe
+     Usage: describe <string>
+     describe edit
+     describe clear
+     description reads : Turrican is a frog.
+
+     > describe clear
+     Description cleared.
+
+     > describe main pronoun on
+     > describe main looks fluffy.
+     For a guy this makes the description read: He looks fluffy.
+     For a girl, it will be: She looks fluffy.
+
+     > describe main pronoun off
+     > describe main This is a wizard if ever you saw one.
+     For a guy this make the description read: This is a wizard if ever you saw
+     one.
+     For a girl, it will be: This is a wizard if ever you saw one.
+
+     > describe main He looks like a giant ape!
+     For a guy this makes the description read: He looks like a giant ape!
+     For a girl (yes, the first word is "He" in this case!), it will be: He
+     looks like a giant ape!
+
+See also
+     chfn, look, editor, refer, coverage

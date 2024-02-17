@@ -2,7 +2,7 @@ Current prompt:
 "$newline$[hp $hurtcolour$$hp$/$maxhp$ %^RESET%^gp %^ORANGE%^$gp$/$maxgp$ %^RESET%^xp %^YELLOW%^$xp$ %^BLUE%^$burden$ %^RESET%^] "
 [hp 1878/1878 gp 267/267 xp 701571 48% ]
 
-"$newline$[hp $hurtcolour$$hp$/$maxhp$ %^RESET%^gp %^ORANGE%^$gp$/$maxgp$ %^RESET%^xp %^YELLOW%^$xp$ %^BLUE%^$burden$ %^ORANGE%^$temp$ %^RESET%^] "
+prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^GRAY%^$temp$%^GAINSBORO%^> "
 ------------------------------------------------
 
 
