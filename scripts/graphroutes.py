@@ -16,6 +16,16 @@ config = {
     'background_color': '#dddddd'
 }
 
+if len(sys.argv) > 1:
+    input_source = open(sys.argv[1])
+elif not sys.stdin.isatty():
+    input_source = sys.stdin
+else:
+    script_name = sys.argv[0]
+    print(f"Usage: {script_name} <filename> or pass data via stdin",
+          file=sys.stderr)
+    sys.exit(1)
+
 G = Graph('G', filename='network.gv', engine='neato')
 G.attr(bgcolor=config['background_color'])
 G.attr('node', fontcolor=config['node_color'])
@@ -23,21 +33,17 @@ G.attr('edge', color=config['edge_color'])
 
 added_nodes, added_edges = set(), set()
 
-if len(sys.argv) > 1:
-    input_source = open(sys.argv[1])
-elif not sys.stdin.isatty():
-    input_source = sys.stdin
-else:
-    print("Usage: script.py <filename> or pass data via stdin",
-          file=sys.stderr)
-    sys.exit(1)
+
+def parse_connected_nodes(line):
+    parts = (line.strip()
+                .replace(' and ', ', ')
+                .replace('connected to ', '').split(', '))
+    return parts[0], parts[1:]
+
 
 with input_source as file:
     for line in file:
-        parts = line.strip().replace(' and ',
-                                     ', ').replace('connected to ',
-                                                   '').split(', ')
-        node, connected_nodes = parts[0], parts[1:]
+        node, connected_nodes = parse_connected_nodes(line)
 
         if node not in added_nodes:
             G.node(node,
