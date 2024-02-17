@@ -47,6 +47,11 @@
         #return @log_line_to_chat{};
     };
 };
+#action {^(Warriors) %1 wisps{:|} %2} {
+    #if {"$talker_log_toggle" == "1"} {
+        #return @log_line_to_chat{};
+    };
+};
 #action {^(Wizards) %1 wisps{:|} %2} {
     #if {"$talker_log_toggle" == "1"} {
         #return @log_line_to_chat{};
