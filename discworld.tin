@@ -1,5 +1,7 @@
 #split 0 1;
 
+#unaction {%*};
+
 #event {SESSION CONNECTED} {
   #history read input.txt;
 };
