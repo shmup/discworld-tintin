@@ -10,16 +10,17 @@ Needs organized:
 > qalias
 
 You have the following aliases:
-   .plan, .project, .warcries, .warpaints, 1, 2, ac, ad, ada, adh,
-   afterinventory, barb, bget, bhead, bput, cc, cp, cu, def, dm, dmm, donkoff,
-   donkon, feedup, fetch, gac, gcc, gh, gm, gpup, gs, h, hh, hpup, hsk, hth, ia,
-   imp, je, jn, jne, jnw, js, jse, jsw, jw, k, ka, kk, kkk, lanfear, lc, ld,
-   lib, lic, lid, lightup, lis, liv, ll, lookoff, lookon, loop, loot, loot2,
-   lsa, ma, md, nut, off, pd, q, qg, qh, qi, ql, qq, rec, reply, rk, rls, rt,
-   rt-paint, set, sget, sh, sheath, sheath2, sl, spamsays, sput, sq, st,
-   st-paint, stats, strm, t, tcls, teachers, trash, unsheath, unsheath2, vget,
-   vput, walkoff, walkon, warmoff, warmon, wc, wp, wp-go, ws, wx
-A total of 113 aliases.
+   .plan, .project, .warcries, .warpaints, 1, 2, ac, ad, ada, adh, bget, bhead,
+   bput, cc, cp, cu, def, dm, dmm, donkoff, donkon, draw, feedup, fetch, gac,
+   gcc, gh, gm, gpup, gs, h, hh, hpup, hsk, hth, hub, ia, imp, je, jn, jne, jnw,
+   js, jse, jsw, jw, k, ka, kk, kkk, lanfear, lc, ld, lib, lic, lid, lightup,
+   lis, liv, ll, lookoff, lookon, loop, loop2, loot, loot2, lsa, ma, md, nut,
+   off, pd, q, qg, qh, qi, ql, qq, rec, reply, rk, rls, rt, rt-paint, set, sget,
+   sh, sheath, sheath2, sl, spamsays, sput, sq, st, st-paint, stats, strm, t,
+   tcls, teachers, trash, unsheath, unsheath2, vget, vput, walkoff, walkon, war,
+   warmoff, warmon, wb, wc, wp, wp-go, wrap, ws, ww, wx
+A total of 118 aliases.
+
 
 --------------------------------------------------------------------------------
 

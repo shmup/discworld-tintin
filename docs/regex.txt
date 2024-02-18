@@ -1,0 +1,68 @@
+#help regex
+Command: #regexp {string} {expression} {true} {false}
+
+         Compares the string to the given regular expression.
+
+         The expression can contain escapes, and if you want to match a literal
+         \ character you'll have to use \\ to match a single backslash.
+
+         Variables are stored in &1 to &99 with &0 holding the matched
+         substring.
+
+         The #regex command is not a proper statement like #if, when using
+         #return or #break in the {true} argument it won't terminate any loop
+         the #regex command is nested within.
+
+       ^ force match of start of line.
+       $ force match of end of line.
+       \ escape one character.
+  %1-%99 lazy match of any text, available at %1-%99.
+      %0 should be avoided in triggers, and if left alone lists all matches.
+     { } embed a raw regular expression, matches are stored to %1-%99.
+   %!{ } embed a raw regular expression, matches are not stored.
+         [ ] . + | ( ) ? * are treated as normal text unlessed used within
+         braces. Keep in mind that { } is replaced with ( ) automatically
+         unless %!{ } is used.
+
+         Of the following the (lazy) match is available at %1-%99 + 1
+
+      %a match zero or more characters including newlines.
+      %A match zero or more newlines.
+      %c match zero or more ansi color codes.
+      %d match zero or more digits.
+      %D match zero or more non digits.
+      %s match zero or more spaces.
+      %S match zero or more non spaces.
+      %w match zero or more word characters.
+      %W match zero or more non word characters.
+
+      Experimental (subject to change) matches are:
+
+      %p match zero or more printable characters.
+      %P match zero or more non printable characters.
+      %u match zero or more unicode characters.
+      %U match zero or more non unicode characters.
+
+      If you want to match 1 digit use %+1d, if you want to match between 3
+      and 5 spaces use %+3..5s, if you want to match 0 or more word
+      characters use %+0..w, etc.
+
+      %+ match one or more characters.
+      %? match zero or one character.
+      %. match one character.
+      %* match zero or more characters.
+
+      %i matching becomes case insensitive.
+      %I matching becomes case sensitive (default).
+
+         The match is automatically stored to a value between %1 and %99
+         starting at %1 and incrementing by 1 for every regex. If you use
+         %15 as a regular expression, the next unnumbered regular expression
+         would be %16. To prevent a match from being stored use %!*, %!w, etc.
+
+Example: #regexp {bli bla blo} {bli {.*} blo} {#show &1}
+
+Comment: Like an alias or function #regex has its own scope.
+
+Related: pcre and replace.
+
