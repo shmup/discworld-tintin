@@ -1,2 +1,8 @@
 manual.html
 logs/
+scripts/map
+scripts/mapgo.sh
+scripts/mapping.tin
+scripts/quow
+scripts/util
+input.txt
