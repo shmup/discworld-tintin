@@ -19,6 +19,11 @@ build-docs:
 chat:
 	tail -f logs/chat.log
 
+donk-routes:
+	cat txt/donk_routes.txt | scripts/graphroutes.py
+	mv donk_routes.png pics/
+	rm donk_routes
+
 play:
 	tt++ discworld.tin
 

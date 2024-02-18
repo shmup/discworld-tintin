@@ -1,0 +1,48 @@
+am-bank, connected to am-changer, am-stables, drum and am-vault
+am-changer, connected to drum and am-bank
+am-kingsbridge, connected to drum and am-pets
+am-palace, connected to am-stables
+am-pets, connected to am-kingsbridge, rimwardgate and stables
+am-south
+am-stables, connected to st-west, am-bank, hubwardsgate and am-palace
+am-swstables, connected to pearldock, skund and shonky
+am-vault, connected to curios and am-bank
+brass-neck-market-nw, connected to leaping-mt-trail and hublandish-barb
+butts
+cabbagebridge, connected to pekanford and gloomyforest
+curios, connected to am-vault
+drum, connected to am-changer, am-kingsbridge, am-bank, lanfear and shonky
+forestbridge, connected to oc-west and gloomyforest-east
+gloomyforest, connected to oc-west, gloomyforest-east and cabbagebridge
+gloomyforest-east, connected to forestbridge and gloomyforest
+horseshoes, connected to stables
+hublandish-barb, connected to brass-neck-market-nw and outside-a-cave
+hubwardsgate, connected to am-stables
+hunters, connected to oc-north
+lancre-northern, connected to leaping-mt-trail and regiment
+lanfear, connected to drum
+leaping-mt-trail, connected to lancre-northern and brass-neck-market-nw
+oc-centre, connected to oc-north and oc-stables
+oc-east, connected to regiment, oc-stables and slippery
+oc-north, connected to name hunters and oc-centre
+oc-stables, connected to oc-west, oc-centre and oc-east
+oc-west, connected to forestbridge, gloomyforest and oc-stables
+outside-a-cave, connected to hublandish-barb
+pearldock, connected to am-swstables
+pekanford, connected to wolftrails and cabbagebridge
+regiment, connected to lancre-northern and oc-east
+rimwardgate, connected to am-pets
+shonky, connected to drum and am-swstables
+skund, connected to wolftrails and am-swstables
+slippery, connected to oc-east
+st-centre, connected to st-west, st-stables, st-general, st-courtyard and st-east
+st-courtyard, connected to st-centre
+st-east, connected to stohelit and st-centre
+st-general, connected to st-centre
+st-queensrd, connected to st-stables
+st-stables, connected to st-queensrd and st-centre
+st-west, connected to am-stables and st-centre
+stables, connected to am-pets and horseshoes
+stohelit, connected to st-east
+wolftrails, connected to pekanford and skund
+

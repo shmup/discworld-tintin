@@ -10,7 +10,7 @@ config = {
     'node_margin': '0.1',
     'edge_thickness': '1.5',
     'image_format': 'png',
-    'output_filename': 'donkroutes',
+    'output_filename': 'donk_routes',
     'node_color': '#000000',  # black
     'edge_color': '#0000ff',  # blue
     'background_color': '#dddddd'
