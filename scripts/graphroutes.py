@@ -67,7 +67,4 @@ with input_source as file:
                 G.edge(*edge)
                 added_edges.add(edge)
 
-if len(sys.argv) > 1:
-    input_source.close()
-
 G.render(config['output_filename'], format='png')
