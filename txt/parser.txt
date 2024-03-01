@@ -1,0 +1,45 @@
+discworld mud parser cheat sheet
+
+basic interaction: look at [adjective] [object]
+    - look at blue frog
+
+specific object: [ordinal/number] [adjective] [object]
+    - 1st blue frog, 3 blue frogs
+
+objects in containers: [action] [object] in [container]
+    - look at beer in bottle
+
+multiple objects:
+, for all specified: [action] [object1],[object2]
+    - must find all: look at frog,womble
+    - & for any specified: [action] [object1]&[object2]
+    - finds any: look at frog & womble
+
+location specific:
+in room: [action] [object] here
+    - look at green bottle here
+in inventory: [action] my [object]
+    - look at my shoes
+
+random object: random [group of objects]
+    - look at random flower
+
+all items / except:
+all items: action every group of objects from location/container/etc.
+    - take every coin from corpse
+except specific item(s): action every group of objects except object(s)
+    - take every coin except coin 1
+
+living things:
+use keyword 'living'
+    - look at living beggar
+
+referencing previous objects:
+use 'it', 'them', 'him', 'her'
+    - get it, look socks on her
+
+options:
+ambiguous input control
+    - options input ambiguous = on/off
+and as comma:options input andascomma = on/off
+shorthand expansion:shorthand = on/off

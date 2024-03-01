@@ -1,0 +1,29 @@
+Put this in your vimrc. Now you can use ^n and %p or arrows to search
+through your history.
+
+This means, if you simply press it w/o typing anything, it'll go
+backwards in history order.
+
+If you start to type something, say, "alias", then it'll only show
+input that starts with "alias".
+
+$if mode=emacs
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+$endif
+
+
+Now pair this with much better history in your tintin config:
+
+#event {SESSION CONNECTED} {
+  #history read input.txt;
+};
+
+#event {SESSION DISCONNECTED} {
+  #history write input.txt;
+};
+
+
+

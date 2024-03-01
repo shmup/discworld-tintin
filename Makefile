@@ -35,9 +35,10 @@ setup:
 	./scripts/tmux-setup.sh
 
 
+sync-to-dyngeon:
+	rsync -avzp . dungeon.red:backups/Ark/Games/muds/discworld-tt/
+
+
 standalone-setup:
 	mkdir -p logs && touch logs/chat.log
 	./scripts/tmux-setup.sh standalone
-
-clean: ; @echo TODO
-test: ; @echo TODO

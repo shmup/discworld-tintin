@@ -1,0 +1,2 @@
+alias loot get coins & every gold jewellery & every silver jewellery & every weapon
+from corpse 1;put them in my backpack 1; bury corpse 1

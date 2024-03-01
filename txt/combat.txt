@@ -3,9 +3,6 @@ imp:        impale $arg:target 1$ with nodachi
 
 hth:        health wounded $arg:all$
 
-def:        tactics attitude defensive $*$
-nut:        tactics attitude neutral $*$
-off:        tactics attitude offensive $*$
 
 gac:        get all from corpse; drop them; $*$
 loot
@@ -30,3 +27,15 @@ A total of 20 aliases.
 wc
 wp-go
 imp / bhead
+
+
+
+
+consider, tactics, protect, unprotect, concentrate, monitor, wimpy, kill, stop
+
+concentrate on pinkfish
+concentrate stop
+
+def:        tactics attitude defensive $*$
+nut:        tactics attitude neutral $*$
+off:        tactics attitude offensive $*$

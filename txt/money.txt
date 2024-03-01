@@ -1,0 +1,470 @@
+CONVERSIONS                   Discworld player help                  CONVERSIONS
+{{{
+Lengths
+     There are 12 inches in a foot, 3 feet in a yard, and 5280 feet in a
+     mile (1760 yards).
+
+     An inch is 2.54cm, a foot is 30.5cm, a yard is 91cm, and a mile is
+     1609m.
+
+Weights
+     There are 16 ounces in a pound.
+
+     One ounce is 28g, and one pound is 0.45kg.
+
+Liquids
+     There are 2 cups in a pint, 2 pints in a quart, and 4 quarts in a
+     gallon.
+
+     A cup is 280ml, a pint 570ml, a quart 1.1l, and a gallon 4.5l.
+
+     A gill is a British imperial capacity unit (liquid or dry) equal to 5
+     fluid ounces or 142 cubic centimetres.
+
+          Cups      Pints     Quarts    Gallons
+          4         2         1         -
+          16        8         4         1
+
+Pictorial form
+     http://conversions.wyvyrn.net
+}}}
+
+CONVERT                       Discworld player help                      CONVERT
+{{{
+Name
+     convert - Convert measurement units
+
+Syntax
+     convert <amount> <units> to <other units>
+     convert time <days> days <hours> hours <minutes> minutes to <world>
+     convert money <money> {in|from} <place> {to|in} <place>
+
+Description
+     This command does unit conversion for you, so the rest of the world
+     can tell what those silly Americans are talking about and vice versa.
+     The units that can be converted are:
+
+     Length:      inches (in), feet (ft), yards (yd), rods,
+                  smoots, furlongs (fur), miles (mi),
+                  meters/metres (m)
+     Area:        acres (ac), hectares (ha), square length
+                  units
+     Volume:      fluid ounces (fl oz), gills (gi), cups (c),
+                  pints (pt), quarts (qt), gallons (gal),
+                  hogsheads (hhd), liters/litres (l, L),
+                  cubic length units
+     Weight:      ounces (oz), pounds (lb), stones (st),
+                  tons, gems, debens (db), Discworld pounds
+                  (dw lb), grams (g)
+     Time:        seconds (sec, s), minutes (min), hours
+                  (hr), days, weeks, fortnights, years (yr)
+     Temperature: celcius/celsius (C), fahrenheit (F)
+
+     (Yes, we know grams are mass, not weight, but we are making the
+     possibly dangerous assumption that you live somewhere near the surface
+     of the planet Earth.)
+
+     The abbreviations for temperatures use the capital C and the capital
+     F.  This is actually case sensitive.
+
+     Square length units may be used as for areas, and cubic length units
+     maybe be used for volumes.  For example "convert 50 square feet to
+     square meters" or "convert 10 cubic feet to pints".  "Square" may be
+     abbreviated "sq" or "sq." or you can attach a suffix of "2" or "^2" on
+     the units, as "miles2" or "in^2".  Similarly, "cubic" may be
+     appreviated "cu" or "cu.", or you can use a "3" or "^3" suffix on the
+     unit.
+
+     By default all volume measures are Imperial units.  If you want the
+     version used in the United States, put a "US" in front of it, eg, US
+     fluid ounces.  The hogshead used in this command is the US wine
+     hogshead, which is equivalent to 63 US gallons.
+
+     One smoot is equal to 5 feet, 7 inches.  See also:
+     https://en.wikipedia.org/wiki/Smoot
+
+     The years used in this command are mean tropical years of 365.24218967
+     days.  The miles are international statute miles of 5280 international
+     feet, or precisely 1.609344 km.
+
+     You can also use this command to convert rates, eg, miles per hour to
+     meters per second.  Any of the unit groups can be used in either
+     place.
+
+     The metric prefixes between milli- on the small end and kilo- on the
+     big end are recognized as are their abbreviations.  Prefixes will work
+     with both metric and English units.  This means you can do things like
+     convert 150 US fluid milliounces per second to hectoliters per hour,
+     which is silly, but then, this is Discworld.
+
+     Due to the limitations of the underlying mathematics, conversions that
+     result in very large or very small numbers may not be completely
+     accurate.  For example, the result of converting the speed of light to
+     furlongs per fortnight will be slightly off from the actual value.
+
+Time
+     With the 'convert time' syntax, the command can give an amount of
+     Discworld time in the Roundworld, or vice versa.
+
+Money
+     With the 'convert money' syntax, various amounts of Discworld
+     currencies can be converted to their value in other currencies.  The
+     amount of money should be in the format given by 'money' or 'money
+     brief' in order to be parsable.
+
+Examples
+     > convert 26 celcius to fahrenheit
+     78.8000003
+
+     > convert 80 F to C
+     26.666668
+
+     > convert 186000 miles per second to kilometers per hour
+     1077616896.000000
+
+     Abe Simpson exclaims loudly: My car gets forty rods to the hogshead, and
+     that's the way I likes it!
+
+     > convert 40 rods/hhd to mi/US gal
+     0.001984
+
+     Presto wisps: I must've drank 10 pints of beer last night. :(
+
+     > convert 10 US pints to pints
+     8.326738
+
+     > smirk presto
+
+     > convert money 2 Agatean Empire ten-rhinu from cwc to am
+     20Rh is worth A$24.
+
+     > convert time 3 days 4 hours 42 minutes to roundworld
+     3 days, 4 hours and 42 minutes on the Disc is 23 hours and 36 seconds in
+     the real world.
+
+     > convert time 3:4:42:0 to roundworld
+     3 days, 4 hours and 42 minutes on the Disc is 23 hours and 36 seconds in
+     the real world.
+}}}
+
+CURRENCY                     Discworld Concepts Help                    CURRENCY
+{{{
+Description
+     Each different area of Discworld uses its own currency.  Most major
+     cities will have an office that will exchange foreign currency into
+     local money.
+
+     The Newbie Area uses Pumpkin currency, which is equivalent to
+     Ankh-Morpork coins in value.
+
+Discworld Known Currencies
+     Currency types known to be in use at this time are:
+     Provincial       Brass, Copper, Silver, Gold, and Platinum coins.
+     Agatean Empire   Agatean Empire Rhinu coins and notes.
+     Ankh-Morpork     Penny, Ten-pence, Half-Dollar, Dollar, Ten-Dollar,
+                      Royal and Crown coins.
+     Chee Smeee Blee  Neeet, Zeef, and Deev coins.
+     Djelibeybi       Ptascp, Talon, Toon, Talent, Ra and Thanra coins.
+     Ephebe           Derechmus, Hemiobolus, Obolus, Drachma, Stater,
+                      Decadrachma, Mina and Tyrant coins.
+     Genua            Cent, Livre, Forin, Ducat
+     Howondaland      Wichit beads.
+     Klatch           Para, Two Para, Five Para, Ten Para, Fifty Para,
+                      Dinar, Two Dinar, Five Dinar, Ten Dinar, Fifty Dinar,
+                      Hundred Dinar, Thousand Dinar and Toman coins.
+     Lancre           Farthing, Ha'penny, Penny, Tuppence, Thruppence,
+                      Sixpence, Shilling, Crown, Tencrown, Sovereign, and
+                      Hedgehog coins.
+     Tsort            Para, Five Para, Ten Para, Five Akche, Ten Akche,
+                      Fifty Para, Kuru, Fifty Akche, Dinar, Ten Kuru, Five
+                      Dinar, Ten Dinar, Lira, Talent, Ten Lira and Ten
+                      Tyrant coins.
+     Zchlotia         Zchloty leaden quarter-iotum coins.
+     Newbie Area      Pumpkin Penny and Pumpkin Dollar coins.
+
+Values
+     The values of coins on Discworld is expressed in terms relative to the
+     number of brass coins that each coin is worth, thus:
+
+     Provincial       Brass 1, Copper 10, Silver 100, Gold 2000, Platinum
+                      6000
+     Agatean Empire   Saveloy-rhinu 4, Quarter-rhinu 120, Half-rhinu 240,
+                      Rhinu 480, Ten-rhinu 4800, Fifty-rhinu 24000
+     Ankh-Morpork     Penny 4, Ten-pence 40, Half-Dollar 200, Dollar 400,
+                      Ten-Dollar 4000, Royal 40000, Crown 3200000
+     Chee Smeee Blee  Neeet 3, Zeef 300, Deev 30000
+     Djelibeybi       Ptascp 2, Talon 20, Toon 200, Talent 2000, Ra 20000,
+                      Thanra 100000
+     Ephebe           Derechmus 2, Hemiobolus 8, Obolus 16, Drachma 96,
+                      Stater 192, Decadrachma 960, Mina 9600, Tyrant 96000
+     Genua            Cent 3, Livre 300, Forin 3000, Ducat 30000
+     Howondaland      Wichit bead 1
+     Klatch           Para 5, Two Para 10, Five Para 25, Ten Para 50,
+                      Twenty Para 100, Fifty Para 250, Dinar 500, Two Dinar
+                      1000, Five Dinar 2500, Ten Dinar 5000, Fifty Dinar
+                      25000, Hundred Dinar 50000, Thousand Dinar 500000,
+                      Toman 5000000
+     Lancre           Farthing 3, Ha'penny 6, Penny 12, Tuppence 24,
+                      Thruppence 36, Sixpence 72, Shilling 144, Crown 1728,
+                      Tencrown 17280, Sovereign 20736, Hedgehog 248832
+     Tsort            Heptakche 1, Para 3, Akche 7, Five Para 15, Ten Para
+                      30, Five Akche 35, Ten Akche 70, Fifty Para 150 ,
+                      Kuru 300, Fifty Akche 350, Dinar 700, Ten Kuru 3000,
+                      Five Dinar 3500, Ten Dinar 7000, Lira 30000, Talent
+                      70000, Ten Lira 300000, Ten Talent 700000
+     Zchlotia         Quarter-iotum 2
+     Newbie Area      Pumpkin Penny 4, Pumpkin Dollar 400
+
+Notation
+     Some currencies feature special notation.
+
+     Djelibeybi
+     > DjToon 611.10
+     In Djelibeybi the value of all coins is added together and displayed in
+     DjToon, see section Values for how to get to that number.
+
+     Genua
+     > 1,2,3,4Gd
+     The first number is the amount of Genua ducats, the second forins, the
+     third livres and the fourth cents (from left to right this would be 1
+     ducat, 2 forins, 3 livres and 4 cents).  The highest coin type will be
+     displayed with its symbol of either Gd, Gf, Gl or Gc (where ducat > forin >
+     livre > cents).  E.g. if you have a ducat, it will display Gd etc.
+
+     Lancre
+     > LH 1|2|3|4|5 1/4
+     That is 1 Lancre hedgehog, 2 Lancre sovereigns, 3 Lancre crowns, 4 Lancre
+     shillings and 5 Lancre pennies and 1 Lancre farthing, notated as 1/4 of a
+     penny (see section Values).  The base for Lancre coinage is 12, with each
+     major denomination (seperated by "|" in brief form) being worth twelve
+     times the amount of the next lower denomination.  For example, 1 shilling =
+     12 pennies, and so forth.
+
+
+     Because there are so many currencies in use on the Disc, the
+     information provided here could change without notice.
+}}}
+
+MAKING MONEY             Discworld Getting Started Help             MAKING MONEY
+{{{
+Name
+     Making Money - Some tips to get your purse full.
+
+Introduction
+     Early on, making money can be quite challenging.  But don't worry:
+     once your skills are a little higher and you know a bit more about the
+     ways of the Disc, getting enough money becomes much easier.  This help
+     file will go over some common methods to make money.  Some may be
+     possible for you already, while others may not be.
+
+Loot
+     Looting the money and equipment from slain NPCs, and then selling it
+     to a general store, is arguably the most common form of income.  A
+     pack or sack to store your loot is recommended, and it is a good idea
+     to try and learn what items sell for the most money.  If your skills
+     are too low to kill loot-laden NPCs on your own, you may be able to
+     group with other players and divide the loot.
+
+     It's a good idea to keep an eye on how burdened you are due to the
+     loot you're carrying, as this can have a significant impact on your
+     combat abilities.  Sell loot before you get too burdened, and perhaps
+     deposit the money that you don't immediately need at a bank; large
+     amounts of coins can weigh a lot.
+
+Scavenging
+     Using the "search" command on city streets can turn up all kinds of
+     items - from loose change to damaged equipment and vermin such as rats
+     and cockroaches.  Equipment can be used or sold, while vermin can be
+     killed for XP even if your combat skills are very low.  If you're
+     lucky, you may even find something quite valuable while searching!
+
+     Older players may not bother to loot the corpses of NPCs they kill
+     very thoroughly.  If the killer has moved on or given you permission
+     to loot the corpse, you may be able to grab some loot for yourself.
+     You can use the "recover" command to dig up buried corpses, but
+     remember to "bury" them again once you're done.  Note that it is
+     impolite to loot a corpse of an NPC which you did not kill without
+     permission!
+
+     Items which are in good condition will sell for more than those which
+     are damaged.  It may be worth repairing things before selling them, if
+     you're able.
+
+Theft & Fencing
+     If you have the appropriate skills and commands, you may be able to
+     steal items from shops or NPCs.  Before you do so, you should be aware
+     of the laws and penalties which surround this in the city you're in.
+     Items which have been stolen can not be sold at general stores; they
+     must be fenced.
+
+     A fence is an NPC who will buy items from you, often for more than a
+     general store will offer.  Fences can be found around the Disc, and
+     may offer better prices for the types of items they specialise in.
+
+Jobs
+     Some cities on the Disc offer "jobs", in which you perform a service
+     for an NPC in exchange for money and sometimes even some XP.  While
+     they are similar to quests, jobs can be repeated and will not give you
+     any quest points or creator cards.
+
+     Some jobs require certain skills, equipment or guild membership.
+     Example jobs include repairing streets for the job market in
+     Ankh-Morpork, delivering meals in Bes Pelargic, performing repairs or
+     delivering parcels in Genua, and escort duty in Djelibeybi.
+
+Services
+     There is money to be made in providing services to other players.
+     Some example services include enchanting items, providing
+     transportation, delivering items, scribing magical scrolls or creating
+     magical artifacts.  Many services rely on having certain skills and
+     guild-specific abilities.  Player-established clubs exist to
+     coordinate services.
+
+     Other services do not require in-game skills, such as writing for one
+     of the player-run newspapers, assisting a player-shop owner in
+     acquiring rare stock or helping players to carry heavy furniture
+     items.  Be imaginative and you might even find your own little niche
+     in the economy!
+}}}
+
+MATHS                         Discworld player help                        MATHS
+{{{
+Name
+     maths - Do arithmetic
+
+Syntax
+     maths <calculation>
+
+Description
+     The maths command does arithmetic for you, cos maths is hard!
+
+     This command understands addition (+), subtraction (-), multiplication
+     (*) and division (/).  The normal order of operations is used, ie,
+     multiplication and division, then addition and subtraction.
+     Parentheses may be used to force things to be evaluated before other
+     things.  There are also a number of mathematical functions included,
+     as follows:
+
+     sin( x )       The sine of the angle x, in radians.
+     cos( x )       The cosine of the angle x, in radians.
+     tan( x )       The tangent of the angle x, in radians.
+     asin( x )      The arcsine of a number x between -1 and 1.
+     acos( x )      The arccosine of a number x between -1 and 1.
+     atan( x )      The arctangent of a number x.
+     sqrt( x )      The square root of the number x.
+     floor( x )     The greatest integer lower than x.
+     ceil( x )      The lowest integer greater than x.
+     round( x )     The integer closest to x.
+     pow( x, y )    x to the power of y.
+     exp( x )       e to the power of x.
+     log( x )       The natural logarithm of x.
+
+Example
+     > maths 2 + 3 * 4 + 5
+     19.000000
+
+     > maths (2 + 3) * (4 + 5)
+     45.000000
+
+     Presto wisps: Gosh it's hot outside!  It was 100 today!
+     > alias ftoc maths ($1$ - 32) * 5/9
+     Added alias 'ftoc'.
+
+     > ftoc 100
+     37.777778
+
+     > chat I've seen hotter. :-b
+}}}
+
+MONEY                         Discworld player help                        MONEY
+{{{
+
+Name
+     money - Show how much cash you are carrying
+
+Syntax
+     money
+     money <area name>
+     money <area name> brief
+     money brief
+
+Description
+     This command shows you how much money you are carrying.  When used
+     with no arguments, the command shows all types of money.  If an area
+     name is given, only money of that type will be displayed.  The
+     "provincial" money (ie brass, copper, silver, gold, platinum) is
+     always displayed.  If you ONLY want these types, use "money default".
+
+Note
+     In the past there have been bugs when money is put in containers, and
+     it should not be considered as safe as using banks.  Money stored in
+     vaults will in general not be replaced if it is lost due to bugs.
+
+Example
+     > money
+     Your purse contains one Ankh-Morpork dollar, one brass coin and 10 Lancre
+     crowns.
+
+     > money lancre
+     Your purse contains one brass coin and 10 Lancre crowns.
+}}}
+
+RATE                         Discworld command help                         RATE
+{{{
+Name
+     rate - convert between currencies
+
+Syntax
+     rate <money> [in <currency 1>] {to|in} <currency 2>
+     rate <money> [in <currency 1>] {before|after} [a] <percentage> [percent]
+     [fee] {to|in} <currency 2>
+     rate <coins> as <currency>
+     rate list places
+
+Description
+     This allows you to perform conversions from one kind of currency to
+     another.  Note that only currencies that are currently available allow
+     conversions with this command.
+
+List of Valid Currencies
+     Currency       Valid abbreviations
+     --------       -------------------
+     Ankh-Morpork   ankh-morpork, am, ankh, ankhian, ankh
+                    morpork, morpork, morporkian
+     Counterweight  counterweight continent, agatea,
+     Continent      agatean, bes pelargic, bp,
+                    counterweight, cwc
+     Djelibeybi     djelibeybi, djb, djelian
+     Ephebe         ephebe, ephebian
+     Genua          genua, genuan
+     Klatch         klatch, klatchian, al khali
+     Lancre         lancre, lancrastian, oc
+     Tsort          tsort, tsortean
+     Newbie Area    newbie area, pumpkin, pumpkin town
+     Default        default, provincial
+
+Examples
+     > rate A$1 in Ephebe
+     A$1 is worth S2|8de.
+
+     > rate 1 dollar in Ephebe
+     "1 dollar" appears to be an ambiguous designation.  Please include the
+     'from' currency type.
+
+     > rate 1 dollar in am to ephebe
+     A$1 is worth S2|8de.
+
+     > rate 1 thanra, 1 ra, 1 tooni in djelian in genua
+     DjToon 601.00 is worth 4,0,0,66Gd.
+
+     > rate A$50 after a 3 percent fee in agatea
+     You would need 42Rh 115s to end up with A$50 after a 3% fee.
+
+     > rate A$50 before 3 in agatea
+     A$50 minus a 3% fee is worth 40Rh 50s.
+
+     > rate coins in backpack as djelian
+     1 Agatean Empire rhinu is worth DjToon 2.40 in Djelibeybi.
+}}}
+
+# vim: set foldmethod=marker:

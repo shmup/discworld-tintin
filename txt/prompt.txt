@@ -3,6 +3,19 @@ Current prompt:
 [hp 1878/1878 gp 267/267 xp 701571 48% ]
 
 prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^GRAY%^$temp$%^GAINSBORO%^> "
+
+prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^LIGHTGRAY%^$combat_attitude$ $combat_response$ %^GRAY%^$temp$%^GAINSBORO%^> "
+
+options combat monitor string = %^PETULIAN%^$hp$/$maxhp$ %^HOLYWOOD%^$gp$/$maxgp$ %^FLAMINGO%^$xp$$reset$
+
+<1878/1878hp 266/269gp 219608xp 39% offensive neutral quite comfortable>
+
+
+Hp: 1878 (1878) Gp: 157 (269) Xp: 1919059
+
+
+     $combat_attitude$   Your current combat attitude tactics.
+     $combat_response$   Your current combat response tactics.
 ------------------------------------------------
 
 

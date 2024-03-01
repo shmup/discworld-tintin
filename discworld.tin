@@ -1,6 +1,7 @@
 #split 0 1;
 
 #unaction {%*};
+#unhighlight {%*};
 
 #event {SESSION CONNECTED} {
   #history read input.txt;
@@ -11,6 +12,7 @@
 };
 
 #config {convert meta};
+#config {repeat char} {!};
 #config {verbatim} {on};
 #config {command color} {cyan};
 #config buffer_size 1000000;
@@ -22,6 +24,14 @@
 #tab {help-tt} #tab {manual}; #tab {boards}; #tab {maps};
 #tab {db }; #tab {db-place }; #tab {db-npc };
 
+#alias p1 {
+  prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^LIGHTGRAY%^$combat_attitude$ $combat_response$ %^GRAY%^$temp$%^GAINSBORO%^> "
+};
+
+#alias p2 {
+  prompt "%^PETULIAN%^$hp$/$maxhp$ %^HOLYWOOD%^$gp$/$maxgp$ %^FLAMINGO%^$xp$$reset$"
+};
+
 /* █▓▒░ FUZZY LISTS ░▒▓█ */
 #alias {help-tt} {#script ./scripts/help-tt.sh };
 #alias {manual}  {#system ./scripts/manual-browse.sh};
@@ -31,7 +41,7 @@
 
 /* █▓▒░ IDLE ░▒▓█ */
 #alias {woke}    {#unticker chill; #ticker;}
-#alias {chill}   {#ticker chill loop2 540; #ticker;}
+#alias {chill}   {#ticker chill loop3 240; #ticker;}
 
 /* █▓▒░ QUOW ░▒▓█ */
 #alias {db} {#system xdg-open "https://quow.co.uk/cow.php?t=Items&s=%0"};
@@ -57,6 +67,25 @@
 /* █▓▒░ BASIC TRIGGERS ░▒▓█ */
 #action {The light surrounding you flickers and winks out.} {woke};
 #nop #read scripts/zmp.tin;
+
+#nop You attempt to launch a powerful attack.
+#nop You launch a powerful attack.
+#nop You lose the moment.
+#nop #high {%The dun horse %1} {light cyan}
+#nop #high {^You{|r} %1} {light cyan}
+#nop #high {^You kill the %1} {red}
+#high {^You prepare to launch %1} {red}
+#high {^You attempt to launch %1} {red}
+#high {^You launch %1} {red}
+#high {^You kill the %1} {red}
+#high {^Launching a powerful attack %1} {red}
+#high {^Unleashing a whirlwind %1} {red}
+#high {^Swinging your weapon around %1} {red}
+#high {^The dun horse deals the %1} {light cyan}
+#high {^With one last attack, you %1} {red}
+#high {^Finishing your wildswing attack, you %1} {red}
+
+
 
 #if {"@discworld{}" !== ""} {
  reconnect;

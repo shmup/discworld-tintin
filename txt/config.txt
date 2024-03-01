@@ -1,0 +1,172 @@
+################################ CONFIGURATIONS ################################
+[AUTO TAB      ] [        5000] Buffer lines used for tab completion
+[BUFFER SIZE   ] [     1000000] The size of the scrollback buffer
+[CHARSET       ] [       ASCII] The character set encoding used
+[COLOR MODE    ] [        TRUE] The color code encoding used
+[COLOR PATCH   ] [         OFF] Leave color handling up to the server
+[COMMAND COLOR ] [\e[22;38;5;37m] The color of echoed commands
+[COMMAND ECHO  ] [          ON] Commands are echoed in split mode
+[CONNECT RETRY ] [         0.0] Seconds sessions try to connect on failure
+[HISTORY SIZE  ] [        1000] The size of the command history
+[LOG MODE      ] [         RAW] The data type mode of log files
+[MOUSE         ] [         OFF] Do not generate mouse events.
+[PACKET PATCH  ] [ AUTO TELNET] Seconds to try to patch broken packets
+[RANDOM SEED   ] [  2429444315] Seed value used for random numbers
+[REPEAT CHAR   ] [           !] Character used for repeating commands
+[REPEAT ENTER  ] [         OFF] You send a carriage return on an enter
+[SCREEN READER ] [         OFF] You are not using a screen reader
+[SCROLL LOCK   ] [          ON] You do not see server output while scrolling
+[SPEEDWALK     ] [         OFF] Your input is not scanned for speedwalks
+[TAB WIDTH     ] [           8] Number of spaces used for a tab
+[TELNET        ] [          ON] TELNET support is enabled.
+[TINTIN CHAR   ] [           #] Character used for TinTin++ commands
+[VERBATIM      ] [          ON] Keyboard input is send as is
+[VERBATIM CHAR ] [           \] Character used for verbatim lines
+[VERBOSE       ] [         OFF] Read script files quietly
+[WORDWRAP      ] [          ON] Server output is word wrapped
+################################################################################
+
+
+
+
+Command: #config {option} {argument}
+
+         This allows you to configure various settings, the settings can be
+         written to file with the #write command.
+
+         If you configure the global session (the one you see as you start up
+         tintin) all sessions started will inherite these settings.
+
+         It's advised to make a configuration file to read on startup if you
+         do not like the default settings.
+
+         Use #config without an argument to see your current configuration as
+         well as a brief explanation of each config option.
+
+         The following config options are not listed by default:
+
+         #CONFIG {CHILD LOCK}   {ON|OFF} Enable or disable command input.
+         #CONFIG {CONVERT META} {ON|OFF} Shows color codes and key bindings.
+         #CONFIG {DEBUG TELNET} {ON|OFF} Shows telnet negotiations y/n.
+         #CONFIG {LOG LEVEL}  {LOW|HIGH} LOW logs server output before triggers.
+         #CONFIG {INHERITANCE}  {ON|OFF} Session trigger inheritance y/n.
+         #CONFIG {MCCP}         {ON|OFF} Enable or disable MCCP support.
+
+Related: class and line.
+
+
+
+Command: #line {option} {argument}
+
+         Line options that alter the argument.
+
+         #line json <variable> <argument>
+           The variable is translated to json and the argument is executed
+           with &0 holding the json data.
+
+         #line strip <argument>
+           Argument is executed with all color codes stripped.
+
+         #line substitute <options> <argument>
+           Argument is executed using the provided substitutions, available
+           options are: arguments, braces, colors, escapes, functions, secure,
+           and variables.
+
+         Line options that alter how the line is executed.
+
+         #line background <argument>
+           Prevent new session activation.
+
+         #line capture <variable> <argument.
+           Argument is executed and output stored in <variable>.
+
+         #line convert <argument>
+           Argument is executed with escaped meta characters.
+
+         #line debug <argument>
+           Argument is executed in debug mode.
+
+         #line gag [amount]
+           Gag the next line, or given lines. Use + or - to increase
+           or decrease the current amount.
+
+         #line ignore {argument}
+           Argument is executed without any triggers being checked.
+
+         #line local {argument}
+           Argument is executed with all newly and indirectly
+           created variables being local.
+
+         #line log <filename> [text]
+           Log the next line to file unless the [text] argument is
+           provided.
+
+         #line logmode <option> <argument>
+           Argument is executed using the provided logmode, available
+           modes are: html, plain, and raw.
+
+         #line msdp <argument>
+           Turn the argument into an msdp telnet sequence, starting at the
+           first opening brace. Will turn tintin tables into msdp tables,
+           with semicolons being used to create msdp arrays.
+
+         #line multishot <number> <argument>
+           Argument is executed in multishot mode, all triggers created
+           will only fire the given number of times.
+
+         #line oneshot <argument>
+           Argument is executed in oneshot mode, all triggers created will
+           only fire once.
+
+         #line quiet <argument>
+           Argument is executed with suppression of most system messages.
+
+         #line verbatim <argument>
+           Argument is executed verbatim, prohibiting variable and function
+           substitutions.
+
+         #line verbose <argument>
+           Argument is executed with most system messages enabled.
+
+         When using #line log and logging in html format use \c< \c> \c& \c" to
+         log a literal < > & and ".
+
+
+Command: #class {name} {option} {arg}
+
+         The class command is primarily used to assign groups of triggers and
+         variables a label so they can be easily removed.
+
+         #class {<name>} {assign} {<argument>}
+           Will open the class, execute argument, and close afterwards.
+         #class {<name>} {clear}
+           Will delete all triggers associated with the given class.
+         #class {<name>} {close}
+           Close the given class, opening the last open class, if any.
+         #class {<name>} {kill}
+           Will clear, close, and remove the class.
+         #class {<name>} {list}
+           List all triggers associated with the given class.
+         #class {<name>} {load}
+           Will load the saved copy of the class from memory.
+         #class {<name>} {open}
+           Open a class, closing a previously opened class. All triggers
+           added afterwards are assigned to this class.
+         #class {<name>} {read} {<filename>
+           Will open the class, read the file, and close afterwards.
+         #class {<name>} {save}
+           Will save all triggers of the given class to memory.
+         #class {<name>} {size} {<variable>}
+           Will store the size of the class in a variable.
+         #class {<name>} {write} {<filename>}
+           Will write all triggers of the given class to file.
+
+         Keep in mind that you need to use #class save before using
+         #class clear and #class load
+
+Example: #class rich kill;#class rich read poor.tin
+         Deletes all triggers of 'rich' class if any. Read 'poor.tin' file,
+         all triggers loaded will be assigned to the 'rich' class.
+
+Related: config, debug, ignore, info, kill, line and message.
+

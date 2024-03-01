@@ -1,0 +1,38 @@
+Locations:
+ - Lancre Hunter's Trader
+
+Loitering Within Tent, posted on Fri Feb 9 11:03:20 2024
+Posted by: Guildenstern
+Category: Special
+
+The range of tents available has been expanded, and you can now go camping
+around the Disc! Some highlights:
+
+* Erecting a tent will keep the room it's in loaded, which means that the stuff
+  you leave in it (and outside it) will not be eaten by the inevitable progress
+  of time for a few days - even if you log out.
+
+* WARNING: It can still be picked up by players or NPCs, and a crash or
+  a reboot will destroy it all. Anything you lose like this will not be
+  replaced by Liaisons.
+
+* You will need to re-visit your tent at least once a Discworld week to shore
+  it up, or it will fall down and you will lose your stuff. Looking at it will
+  show you how badly it needs shoring up.
+
+* There are some rooms (mostly in cities) where you won't be able to erect
+  a tent. You also will not be able to erect a tent in the same room as another
+  tent, whether a player tent or an NPC one.
+
+* You will be able to find tents wherever the old wizards' tent hats were sold,
+  in some of the warriors' guild shops, and in the Ankh-Morpork thieves' guild
+  shop. If you already have a tent hat, you should be able to continue using
+  it.
+
+* Campfire kits are also available - once you unpack it you won't be able to
+  move the campfire, but you can light or extinguish it as much as you like
+  provided you have fuel.
+
+* Both tents and campfire kits have their own help files!
+
+* Have fun, and be happy campers!

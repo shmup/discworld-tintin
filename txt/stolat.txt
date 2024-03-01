@@ -1,0 +1,45 @@
+location: sto lat
+danger level: moderate
+
+notes:
+    * do not kill shopkeepers (results in blacklisting)
+    * large beggar present; highly dangerous
+
+consider first, some are tougher than others:
+    carters birds brawlers butchers children
+    executioners judges noblemen noblewomen thieves
+
+threats:
+    gangs (vagrants/highwaymen)
+      * behavior: auto*attack after interaction
+      * countermeasure: AVOIDANCE
+    guards
+      * behavior: annoying, chase players
+      * countermeasure: RUN
+    brawlers
+      * behavior: JOINS FIGHTS
+      * countermeasure: not specified; implied avoidance or caution in fights
+    wizzies (wizards)
+      * abilities: cast tpa, powerful offensive spells
+      * countermeasure: run, interrupt spell, or avoid
+    priests
+      * characteristics: annoying, very hard to kill
+      * countermeasure: not specified; implied avoidance
+
+
+
+Avoid groups of vagrants, highwaymen, etc.
+
+Avoid guards, as they are annoying and will chase you.
+
+Brawlers will join fights, so be cautious when fighting near them.
+
+Wizzies are dangerous, as they can cast powerful offensive spells. Run, interrupt their spell, or avoid them.
+
+Priests are very hard to kill, so avoid them.
+
+Do not kill shopkeepers, as this will result in blacklisting.
+
+There is a large beggar present, who is highly dangerous.
+
+Consider first, as some are tougher than others. Carters, birds, butchers, children, executioners, judges, noblemen, noblewomen
