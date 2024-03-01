@@ -1,1000 +1,998 @@
-reply Look at you go!
-reply Not to mention, playing around with the colors during generation. I'd like to invert the whole thing for _night viewing_ hehe
-reply Oh! I probably built my own connection "obv knows the Moo, maybe was a part of _the Moo_"
-reply That's actually one of my interests, making useful `things` for tt++ that leans on your db, querying X, pathing Y, but doesn't make a lot of decisions so it's easy to integrate w/ your stack
-reply You've prob seen that fella who has done a lot of stuff with your sqlite.db and whatnot, but I do not like their work! 
-reply abso-linking this on my page https://discworld.starturtle.net/external/atlas/amlist.htm
-reply aw i love these old map! glad you linked me
-reply everything is so coupled together, the UI and the functioniality
-reply hm, mind if I pick your brain about something? Guess I won't ask to ask and will just ask: these lovely maps you've generated, the ones we use in the atlas wiki.. 
-reply large print mediums++
-reply thanks for the chatter cowfan quowman
-reply that's running out of my office with crap internet so i hope it loads quickly haha
-rows
-rows 160
-rows 200
-rows 220
-sep10
-sq
-syntax locate
-tell Quow moo
-tell quow merely wondered, as I'm reading "My Tiny Life", or maybe it was when I was reading some old text elsewhere -- you were present in LambdaMOO aye?
-title
-title quest
-twirl Khepresh
-twirl lamia
-unalias nodachi
-unkeep backpack
-war Before I goof again, which camp would be open right now, and would a tent be there? I can't exactly tell what's what with calendar output
-weather
-who asha
-who badteeth
-who him
-who him hung
-who lamia
-who warriors
-wkw
-finger boot
-prompt
-syntax prompt
-prompt on
-alias p1 prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^GRAY%^$temp$%^GAINSBORO%^> "
-unalias p1
-edit
-edit .plan
+#action
+#alias chill
+#config
+#config {repeat char} ;
+#config {repeat char} {;}
+#config {repeat char} {\;}
+#fuf
+#help class
+#help config
+#help line
+#high
+#ticker
+#unfif
+#unhigh
+#unhighlight
+/lc
+1
+1 "keep all in backpack"
+1 (I put 50 bucks in it yesterday)
+1 :cheers for Estie
+1 :chuckles
+1 :gives Noshoes permission to tent knock anytime
+1 :has entered /r/pol
+1 :hugs Valter
+1 :keeps a tent flap open
+1 :lights an incense and leans into Sunday
+1 :who meeeees
+1 Ah. I think it was my dad who taught me
+1 Any other artist*
+1 Anyone got a custom combat monitor string they would share so I can just see what you're into? :P
+1 Anyone had fun with a tent timing out after the described "few days" ?
+1 Are all takeout chinese joints using menus that are just a camera pic and poor quality? lol
+1 Arilulaliley I'm not a parser expert but I am an expert in doing dumb stuff.. so I just use `keep` on everything at once heh
+1 Baby steps towards a real home
+1 But just Alice
+1 Coming from Valter this is hehehe
+1 Crunch once, shame on chair.. 
+1 Crystal Castles?
+1 Dink, you related to my horse, Donk?
+1 Ello Valter
+1 Fair no doubt
+1 Feel that, if you like the chilly, go enjoy Minneapolis
+1 Findlay, just south of Toledo
+1 Haha Paracelsus
+1 Hahaha
+1 Have you ever seen the cops ep w/ the snake charmer? https://www.youtube.com/watch?v=Cg7VNv-tIEM
+1 Heh. I recently started sending everything on this computer to a cheap backblaze b2 
+1 Hehe
+1 Her having a brother here had extra gossip I'm sure.. 
+1 Hi 419
+1 I .. can.. have a village of tents?
+1 I am just summoned back at least 16 years (evidently) bc of current 1's choice of music chater hehe
+1 I am so thankful for these tents hehehe
+1 I definitely appreciate the work! I do think quow's sqlite db should have a tool to interact with it, and then, used however/whever stdout is accepted hehe
+1 I do love my alias categories
+1 I don't know if you can really stick with Joanna long.. you just revisit for nostalgia and enjoy that
+1 I just bought my first one, so I'm poorly reading the Users Manual
+1 I mean, even Lanfear has a tip jar
+1 I moved here from Ohieeeee
+1 I only cloc'd it because I also wanted to see what this dude's ambitious tintin++ stack of dw scripts comes out to
+1 I only this year started doing that with archive.org, checkin the box to recurse the page
+1 I think I just abused 1 blonde redhead album
+1 I will switch moods to dark tunes
+1 I would never!
+1 I'd avoid any other service that might shoot me an ad :P 
+1 I'd tell the disc to choose what's for dinner but I just decided to call in chinese takeout
+1 I'm gonna link a song/video I used to play a lottt: https://www.youtube.com/watch?v=SWSz_PAfgNc
+1 I'm in Traverse City, and mostly consider leaving for Minneaplis if anywhere
+1 Idk, whatever you'd want in the background when you're playing VTES or anything from whitewolf
+1 If I think of that music I'm also going to go back to some stuff like Joanna Newsom <333
+1 Is there a big home owning upkeep? Is it a PITA like IRL?
+1 It's one of my favs
+1 It's really nice, I don't even use it and I think it's a great achievement
+1 Just to move
+1 Just when they gave homes to the poor, someone wants to go and give bears a welcome mat
+1 Lanfear, I can tell you already got it goin' on
+1 Laundry day exceptions?
+1 Link me vampire music, Valter
+1 Love those wild and crazy guys
+1 MT lol
+1 Madonna is notoriously kinda weird/awful, right?
+1 Moving on
+1 My mid 2000's last.fm is actually not only diff, some of it is _embarrassing_ ok
+1 My tent is still standing, phew. Good morning y'all
+1 Nice try convincing us you don't have supernatural vision
+1 Not today, Valter -- I'm here and not here, really
+1 Oh I'm for sure going to be inhaling particulates today
+1 Oh okie right right yos
+1 Oh totally Rienen
+1 Oh totally Rienne
+1 Only if you want to exist in a city
+1 Oops misread 
+1 Or is your radius pretty wide heh
+1 Peach, plum, pear
+1 Pick something Melancholic https://cesspit.dungeon.red/i/UDUYXP.png
+1 Quows stack comes in at ~33k lines. though cloc only sees the xml and not the embedded lua, so I don't get a real accurate metric here hehe
+1 Rootin for ya to find a house that works
+1 Sarah, this is club music. Club music is great, weren't you talkin  about NMH a bit ago haha
+1 See ya Melancholic
+1 Seems friendly
+1 She had a homeless brother here for years, only passed just last year
+1 She's no weirder than any other actor, that when visiting a town for the film fest, has every volunteer instructed to Not make eye contact with her. Just that stuff
+1 Since the genesis of Valter
+1 Since you linked YTM I will def click
+1 So funny. Yeah I kept my 419 
+1 Suppose I misread that and it's only the items dropped in/outside that time out after a few days
+1 That also takes me back Melancholic
+1 There you are. "Do I know you?" No, but that's where you are, you're there
+1 There's actual features I like on ff, esp sending tabs to other devices that auto-open there
+1 This is a bit too custom tailored for me, but it's been nice to study parts: https://code.tubul.net/tt_dw
+1 This song is gonna make me stand up from desk for a bit
+1 Timecheck (10p)
+1 To sway
+1 Ultimately it'll be a stir fry Melancholic
+1 Valter, I can enjoy reality tv sometimes, which is a way of me saying I'm glad you're here
+1 Very good for old web, do a "Discworld MUD" search, end up on Airk's page http://www.gothmudders.com/airk/index2.htm
+1 Wait, you said relatively close! I just jumped the gun
+1 Waiting for the sun to go down so my skin can relax and brain can go fuzzy
+1 We can still listen to Alice if we want to
+1 Well obv :( sorry to remind you
+1 Well part 2 is looking at 1995qualitymenu.jpg and see if I'll try something Different
+1 Well, there's extra XP to be gained if you hunt w/ a horse, cuz it'll help you smash much quicker :P
+1 What about the one in OC?
+1 What do the moving pictures on your eyelids tell you, Valter
+1 Which is a ton of famous people right heh
+1 Who taught you backgammon?
+1 Wouldn't surprise me!!
+1 Y'all lookin at homes in your area?
+1 Ya I like atlasobscura too
+1 Ya, I think they're manual at the moment, and the tar is a few years old
+1 Yes, my tastes have changed :P
+1 You are a thing and I love you
+1 You don't sound bad at all
+1 You may enjoy this search engine for random searches. Been gettin buzz off and on the past few years: https://search.marginalia.nu/
+1 ac: $ifarg1: alias show sorted category $1$ $else$ frimble sparky is cool$endif$
+1 and so, katy perry is mostly misunderstood?
+1 as long as I'm procrastinating, I'm doing okay
+1 b-b-b-bad? 
+1 but may not be a _term_ like software has
+1 does quow have a patreon :P
+1 go to sleep in tent, log out. log in, outside of tent. Need to see a specialist on the disc about sleep walking
+1 good call, I think I'm gonna trigger a new recursive update there later haha
+1 gotta wrap it all useful like :P
+1 hahahah Melancholic
+1 howdy
+1 i'll always remember sparky now
+1 idk if it is, i mean, lambda calculus is kinda all about the concept
+1 lanfera
+1 mud wiki plz load. is there a mirror? 
+1 no doubt no doubt
+1 oh, procrastinating and staying distracted
+1 pretend that my teeth are villains
+1 rat romit
+1 re: losing tent on restarts. I see uptime is 15 days. Any clue what the average uptime is?
+1 right?
+1 sparky gave me my ac alias
+1 take quows sqlite db: add views, maybe but prob not indexes, and some very convenient queries to serve ur TUI needs
+1 tbh, I misread "weird" re: madonna as "kinda shitty to casual people" 
+1 that's so powerful too, "first class functions"
+1 us tintin folks live in da shell
+1 we get our fancy readline, respecting our inputrc and bindings, even when mudd'n hehe
+1 we talkin to the bone levels here?
+1 well, prob don't measure the LOC but it's a fun metric no doubt
+1 wifefam++
+1 yeah most of those are ~600 lines, that minimap.xml is 28k though
+1 yep, may have an even dorkier name say in maths but it works for programmign heh
+5w
 @edit
 @edit .plan
-mm
-ls
+HublandishBarbarian Special barbarian only Ug!
+HublandishBarbarians Special barbarian only Ug!
+a
+ac
+ac alias
+ac combat
+ac combat combat
+acc
+ada
+alias 1
+alias 5w w#w#w#w#w
+alias ac
+alias chill
+alias combat options combat tactics
+alias dig
+alias hub
+alias hub $ifarg:HublandishBarbarians $*$ $else$talker history HublandishBarbarians$endif$
+alias ka
+alias ks wc;kill sailors
+alias loop
+alias loop2
+alias loop3
+alias loop3 loop2;vurdere hauberk;wc
+alias loop3 unsheath;unsheath2;judge weapon 1 against weapon 2;sheath;sheath2;search;wc
+alias loop3 unsheath;unsheath2;judge weapon 1 against weapon 2;sheath;sheath2;vurdere hauberk against gauntlets;search;wc
+alias loop3 unsheath;unsheath2;judge weapon 1 against weapon 2;sheath;sheath2;vurdere hauberk;search;wc
+alias loot
+alias m money brief
+alias p1 prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^GRAY%^$temp$%^GAINSBORO%^> "
+alias rt-paint
+alias st-paint
+alias war
+alias wp
+alias wp-go
+alias wp-me
+alias wrap
+ask donk to learn a route
+b
+backward
+badteeth
+balance
+balance book
+behead
+behead with sword
+bow Kompt
+bow estes
+bow estie
+bow goatherd
+bow yoyo
+buy 3 towels
+buy 5 Ls
+buy AE
+buy AF
+buy AH
+buy AJ
+buy LSov
+buy from Lancre with $20
+buy from Lancre with 1 crown
+buy from Lancre with 2 ten-dollars
+buy from Lancre with A
+buy from Lancre with A$1
+buy from Lancre with Ankh-Morpork
+buy from Lancre with dollars
+buy from lancre
+buy hay
+buy oats
+buy tent
+buy towel
+calendar list special days
+chill
+chillhard
+clean face
+collapse tent
+cols 80
+combat
+commands
+con brawler
+con burner
+con carter
+con child
+con courtier
+con crone
+con dwarf
+con fox
+con gnoll
+con judge
+con merchant
+con priest
+con rook
+con soldier
+con strong
+con thief
+con troll
+con warrior
+con zoon
+d
+deposit 225
+deposit 225 AM
+destable
+destable my mount
+dig
+dig up corpse
+dm
+down
+drop axe
+drop bags
+drop bedroll
+drop bottles
+drop cloak
+drop cloaks
+drop hay
+drop kit
+drop knife
+drop paint
+drop poster
+drop sack
+drop saddle
+drop satchel
+drop satchel 2
+drop sword
+drop t-shirt
+drop tankard
+drop toch
+drop torch
+drop towel
+drop towels
+drop vest
+dry donk
+dry donk with towel
+dry donk with towel 2
+dry me with towel
+dry self with towel
+dry towel
+dryu donk with towel
+e
+edit
+edit .plan
+enter
+enter bedroll
+enter canvas
+enter tent
+eq
+erect tent
+exam map 1
+exit
+exit tent
 feed hay 1 to donk
 feed hay 2 to donk
-sell hay
+feed hay to donk
+feed oats 2 to donk
+feed oats to donk
+feint
+feint at dwarf
+feint at me
+feint at myself
+finger Arilulaliley
+finger Bitterblue
+finger Dink
+finger Estie
+finger Felurian
+finger Fernir
+finger Haloj
+finger Julnar
+finger MarleY
+finger Melancholic
+finger Plevoir
+finger Stamen
+finger airk
+finger badteeth
+finger boot
+finger carol
+finger clanger
+finger cops
+finger dink
+finger felurian
+finger fenir
+finger fernir
+finger fyda
+finger ghastley
+finger goose
+finger gznang
+finger jackloner
+finger janhaku
+finger lanfear
+finger maley
+finger marley
+finger mauve
+finger pithon
+finger ptodium
+finger quoe
+finger quow
+finger sojan
+finger sparky
+finger stamen
+finger storky
+finger story
+finger tulip
+finger yase
+finget storky
+friends
+g
+get 3 ten-dollars from jar
+get all leather from vault
+get all trousers from vault
+get bags
+get bags from donk
+get book from backpack
+get bottles from backpack
+get bug from backpack
+get cards from satchel
+get cloak from backpack
+get cloaks
+get cloaks from vault
+get cloth
+get cloth from donk
+get co
+get earring from backpack
+get gold bar from backpack
+get gold bar from corpse
+get gold bear from corpse
+get gold from backpack
+get gold from corpse
+get gold from dwarf
+get gold jewelery from backpack
+get hay from sack
+get hoof pick from backpack
+get horseshoes from backpack
+get in bedroll
+get into bedroll
+get kit
+get kit from backpack
+get leather from vault
+get leathers from vault
+get lion
+get man cloak
+get mane
+get maps from backpack
+get mask from backpack
+get medallion from backpack
+get money
+get necklace from corpse
+get necklaces from backpack
+get neklaces from backpack
+get oats from backpack
+get oats from bag
 get oats from sack
 get oats from sack 1
-feed oats 2 to donk
-ride to oc-west on donk
-dryu donk with towel
-1 :chuckles
-ride to hunters on donik
-ride to name hunters
-ride to "name hunters"
-ride to name hunters on donk
-ask donk to learn a route
-jne
-options output map lookcity = top
-options output map look = top
-options output map glancecity = top
-options output map glance = top
-buy tent
-ride to oc-north on donk
-locate amulet
-holidays
-holiday
-help date
-help calendar
-calendar list special days
-money brief
-mb
-alias m money brief
-1 I do love my alias categories
-1 sparky gave me my ac alias
-alias ac
-1 ac: $ifarg1: alias show sorted category $1$ $else$ frimble sparky is cool$endif$
-1 i'll always remember sparky now
-finger sparky
-ride to vaults on donk
-get towel
-dry towel
-ring towel
-help towel
-wear backpack
-ride to am-vault on donk
-put kit in backpack
-get co
-get cloaks from vault
-drop cloaks
+get paint 1 from forager's belt
+get paint from backpack
+get paint from forager's belt
+get pairs from vault
+get poster
+get rings
+get rings from backpack
+get saddle
+get saddle from donk
+get satchel from backpack
 get satchel from vault
 get satchels from vault
-look in satchel 1
-look in satchel 2
-drop satchel 2
-put satchels in vault
-get lion
-get mane
-get man cloak
+get shirt from backpack
+get silk from backpack
+get silk from vault
+get silk trousers from vault
+get sword
+get swords from vault
+get t-shirt from backpack
+get tankard from backpack
+get torch
+get towel
+get towel from backpack
+get towel from kit
+get towels from backpack
+get trousers from vault
+get vest from backpack
+get weapons from backpack
+get wooden axe from backpack
+go-go
+groom donk
+groom donk with kit
+guard
+guard exit
+guard exit from zoon
+guard leave
+guard out
+guard s
+guard south
+hang poster
+heath
+help bedroll
+help calendar
+help camp
+help changer
+help combat
+help command
+help concentrate
+help convert
+help currency
+help date
+help exchange
+help hay
+help here
+help horse
+help learn
+help lender
+help lending
+help line
+help money
+help monitor
+help parser
+help pin
+help prompt
+help repeat
+help sign
+help signs
+help skills
+help squelch
+help storm
+help tactics
+help talker
+help tape
+help teach
+help tent
+help towel
+help warpaint
+help weigh
+help weight
+help wrap
+hold paint
+holiday
+holidays
+hth
+hub
+hub Hubug
+hub Special barbarian only Ug
+hub Special barbarian only Ug!
+hub Ug!
+ibnv
+imp
+imp sold
+imp soldier
+imp'
+in
+inv
+je
+jn
+jne
+jw
+ka
+keep all
+keep all in backpack
+keep all worn
+kget cards from satchel
+kick sailor
+kil sailor
+kill all
+kill child
+kill courtier
+kill coutier
+kill dwarf
+kill farmer
+kill gnoll
+kill judge
+kill merchant
+kill peasant
+kill rook
+kill sail
+kill sailor
+kill sailors
+kill zon
+kill zoon
+kill zoons
+kl
+kn
+kout
+ks
+l
+laugh akera
+laugh noshoes
+ld
+learn
+learn fi.me.hs from lanfear
+learn fi.we.hs from lanfear
+learn fighting.melee.heavy from lanfear
+learn fighting.melee.heavy-sword from lanfear
+leave
+leeave
+lib
+lie down on bedroll
+lie on bedrll
+lie on bedroll
+lie on the bedroll
+lis
+list
+liv
+locate amulet
+locate license
+locate paint
+loiot
+lok badteeth
+look Wyrm
+look Wyrn
+look badteeth
+look bedrol
+look bedroll
+look bug
+look burner
+look cards
 look cloak 3
 look cloak 4
 look cloak 5
 look cloak 6
-drop cloak
-liv
-get leathers from vault
-get leather from vault
-get all leather from vault
-get silk from vault
-get all trousers from vault
-get trousers from vault
-options input ambiguous = off
-get pairs from vault
-get swords from vault
-look Wyrn
-look Wyrm
+look crone
+look don
+look donk
+look dwarf
+look e
+look east
+look gnoll
+look here
+look in backpack
+look in backpcak
+look in bags
+look in chest
+look in corpse
+look in satchel
+look in satchel 1
+look in satchel 2
+look in vest
+look jar
+look lumberjack
+look map 1
+look map 3
+look mask
+look me
+look n
+look north
+look nw
+look poster
+look s
+look satchel
+look se
+look statue
+look sw
 look sword 1
-put sword 1 in vault
-drop sword
-get sword
-put sword in vault
-get cloaks
-put cloaks in backpack
-put cloak in bakpack
+look tankard
+look tent
+look troll
+look w
+look wall
+look west
+lookoff
+loop
+loop3
+loot
+loto
+ls
+lsa
+lt
+m
+m a
+m lancre
+ma
+ma combat combat
+ma ww combat
+map
+maps
+mb
+md
+mip
+mm
+money
+money a
+money ankh-morpork
+money brief
+money lancre
+monry\
+mount
+ms ww combat
+n
+ne
+nnw
+nod clanger
+nod crone
+nod lumberjack
+nut
+nw
+off
+options
+options combat
+options combat 
+options combat monitor
+options combat monitor string
+options combat monitor string =
+options combat monitor string = "%^HOLYWOOD%^HP $hp$/$maxhp$ GP $gp$/$maxgp$ XP $xp$"
+options combat monitor string = $hp$/$maxhp$
+options combat monitor string = %^HOLYWOOD%^$hp$/$maxhp$ $gp$/$maxgp$ $xp$
+options combat monitor string = %^HOLYWOOD%^$hp$/$maxhp$ $gp$/$maxgp$ $xp$$reset$
+options combat monitor string = %^HOLYWOOD%^$hp$/$maxhp$ %^PETULIAN%^$gp$/$maxgp$ %^PALEMAGENTA%^$xp$$reset$
+options combat monitor string = %^HOLYWOOD%^HP $hp$/$maxhp$ GP $gp$/$maxgp$ XP $xp$
+options combat monitor string = %^PETULIAN%^$hp$/$maxhp$ %^%HOLYWOOD^$gp$/$maxgp$ %^PALEMAGENTA%^$xp$$reset$
+options combat monitor string = %^PETULIAN%^$hp$/$maxhp$ %^HOLYWOOD%^$gp$/$maxgp$ %^FLAMINGO%^$xp$$reset$
+options combat monitor string = %^PETULIAN%^$hp$/$maxhp$ %^HOLYWOOD%^$gp$/$maxgp$ %^PALEMAGENTA%^$xp$$reset$
+options combat monitor string = default
+options combat monitor string = defaultto slow.
+options combat monitor string = foo
+options combat monitor string test
+options combat tactics
+options input ambiguous = off
+options output map glance = top
+options output map glancecity = top
+options output map look = top
+options output map lookcity = top
+options tactics
+out
+p1
+p2
+pet donk
+pin map
+prompt
+prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ $combat_attitude$ $combat_response %^GRAY%^$temp$%^GAINSBORO%^> "
+prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ $combat_attitude$ $combat_response$ %^GRAY%^$temp$%^GAINSBORO%^> "
+prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^GRAY%^$temp$%^GAINSBORO%^> "
+prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^LIGHTGRAY%^$combat_attitude$ $combat_response$ %^GRAY%^$temp$%^GAINSBORO%^> "
+prompt on
+put 1 ten-dollars in jar
+put bags on donk
+put book in backpack
+put bug in satchel
+put cards in satchel
 put cloack in backpack
-put cloaks on donk
+put cloak in backpack
+put cloak in bakpack
+put cloaks in backpack
 put cloaks in donk
 put cloaks in satchel
+put cloaks on donk
 put clocks in bags
-look statue
-su
-sell
-sell robes
-sell cloaks
-sell trousers
-kn
-ride to am-bank on donk
-balance
-deposit 225
-deposit 225 AM
-rate A10 to L
+put cloth on donk
+put hay in backpack
+put hoof pick in vest
+put horseshoes in saddlebags
+put kit in backpack
+put knife in boots
+put map in backpack
+put map on wall
+put maps in satchel
+put mask in backpack
+put paint in backpack
+put paint in forager's belt
+put paint in pouch
+put pick in bags
+put poster in backpack
+put poster in satchel
+put saddle on donk
+put satchels in vault
+put shoes in bags
+put shoes in saddle
+put sword 1 in vault
+put sword in vault
+put ten-dollars in jar
+put towel in back
+put towel in backpack
+put towel in kit
+put towels in backpack
+quit
 rate A to L
 rate A$1 in L
 rate A$1 in Lancre
-help exchange
-balance book
-help lender
-help lending
-destable
+rate A10 to L
+read blackboard
+read board
+read book
+read map 1
+read map 2
+read map 3
+read poster
+read sign
+refer badteeth
+refer help
+refer lanfear
+refer mothergoose
+refer new
+refer who
+reload
+remove cloak
+remove fest
+remove fluffy
+remove fluffy cloak
+remove mask
+remove ring
+remove saddle from donk
+remove vest
+repair vest
+reply !!!
+reply "The hospital I was born in has been destroyed/ruined/torn apart" lol
+reply I was big into Myspace and aim profiles :P
+reply It's silly is all, nothing to really get. An aesthetic and wordplay
+reply Nice nice. Well _technically_ I did all my school in McComb Ohio, only mentioning it because .. god, if you know about "McComb" that'd be a MUD record for me
+reply Not to mention, playing around with the colors during generation. I'd like to invert the whole thing for _night viewing_ hehe
+reply Oh! I probably built my own connection "obv knows the Moo, maybe was a part of _the Moo_"
+reply That's actually one of my interests, making useful `things` for tt++ that leans on your db, querying X, pathing Y, but doesn't make a lot of decisions so it's easy to integrate w/ your stack
+reply Wow, that's a weird thought haha
+reply You've prob seen that fella who has done a lot of stuff with your sqlite.db and whatnot, but I do not like their work! 
+reply abso-linking this on my page https://discworld.starturtle.net/external/atlas/amlist.htm
+reply aol instant messenger, you might wear your personality in your aim profile
+reply aw i love these old map! glad you linked me
+reply everything is so coupled together, the UI and the functioniality
+reply hm, mind if I pick your brain about something? Guess I won't ask to ask and will just ask: these lovely maps you've generated, the ones we use in the atlas wiki.. 
+reply large print mediums++
+reply not even questioning the badteeth huh
+reply thanks for the chatter cowfan quowman
+reply that's running out of my office with crap internet so i hope it loads quickly haha
+ride to "name hunters"
+ride to am-bank on donk
+ride to am-changer on donk
 ride to am-drum on donk
-buy LSov
-buy 5 Ls
-syntax buy
-buy from Lancre with A$1
-buy from lancre
-buy from Lancre with $20
-buy from Lancre with A
-buy from Lancre with Ankh-Morpork
-buy from Lancre with 1 crown
-money
-buy from Lancre with dollars
-buy from Lancre with 2 ten-dollars
+ride to am-stables on donk
+ride to am-swstables on donk
+ride to am-vault on donk
+ride to drum on donk
+ride to hunters on donik
+ride to hunters on donk
+ride to lanfear on donk
+ride to name hunters
+ride to name hunters on donk
+ride to oc-north on donk
+ride to oc-stables on donk
+ride to oc-west on donk
+ride to st-stables on donk
+ride to st-west on donk
 ride to stables on donk
-help changer
-war Ug!!
-alias 1
-talker
-talker list
-alias hub $ifarg:HublandishBarbarians $*$ $else$talker history HublandishBarbarians$endif$
-HublandishBarbarians Special barbarian only Ug!
-HublandishBarbarian Special barbarian only Ug!
-help talker
-talker channels
-alias war
-alias hub
-hub
-hub Special barbarian only Ug
-hub Ug!
-unalisa hub
-unalias hub
-hub Special barbarian only Ug!
-hub Hubug
-dry donk
-buy AJ
-buy AH
-1 Anyone had fun with a tent timing out after the described "few days" ?
-1 Suppose I misread that and it's only the items dropped in/outside that time out after a few days
-1 I just bought my first one, so I'm poorly reading the Users Manual
+ride to sto-west on donk
+ride to vaults on donk
+ring towel
 rls
-look se
-look nw
-look north
-help camp
-leeave
-shore up a tent
-syntax shore
-collapse tent
-look e
+rode to oc-stables on donk
+rows
+rows 160
+rows 200
+rows 220
+s
+sa C
+sa Nadha raskizoproro vhaovnki.
+save
+say A
+say B
+say C
+say E
+say Teach me spoken Uberwaldean please.
+say Teach me written Uberwaldean please.
+score
+se
 search
-look sw
-look lumberjack
-nod lumberjack
-bow goatherd
-look w
-look n
-look s
-go-go
-get silk trousers from vault
-get silk from backpack
-get paint 1 from forager's belt
-put paint in forager's belt
-erect tent
-help bedroll
-drop bedroll
-enter bedroll
+sell
+sell 2 Lancre sovereigns
+sell 40 Lancre crowns
+sell cloaks
+sell earring
+sell earring 2
+sell gold bar
+sell hay
+sell medallion
+sell necklace
+sell necklaces
+sell ring
+sell rings
+sell robes
+sell trousers
+sell weapons
+sep10
+sheath
+shore tent
+shore up a tent
+shore up tent
+skills
+skills fighting
+skills raw
+sleep
+smile
+smile 
+smile renzo
+sq
+st-paint
+stable my mount
+stats
+stop
+su
+sw
+syntax buy
+syntax feint
+syntax guard
+syntax locate
+syntax prompt
+syntax remote
+syntax shore
+syntax track
+syntax vurdere
+syntax warpaint
+syntax wrap
+t
+tactics
+talker
+talker channels
+talker list
+talker off
+tape
+teach bonus fi.me.he
+teach me fi.me.he from lanfear
+teach me max fi.me.he from lanfear
+teach me written Uberwaldaen please
+tell
+tell Melancholic given your cryptic email address, I'd reckon we were born a year apart, a zip code apart lol
+tell Melancholic small disc!
+tell Quow moo
+tell Stamen oi
+tell quow merely wondered, as I'm reading "My Tiny Life", or maybe it was when I was reading some old text elsewhere -- you were present in LambdaMOO aye?
+tent
+time
+title
+title quest
+track
+track Donk
+twirl Khepresh
+twirl lamia
+u
+ug Ugg
+unalias 52
+unalias 5w
+unalias hub
+unalias nodachi
+unalias p1
+unalisa hub
+unkeep backpack
+unkeep money
+unkeep vest
 unroll bedroll
-look bedrol
-look bedroll
-get into bedroll
-get in bedroll
-lie down on bedroll
-lie on bedrll
-lie on bedroll
-look here
-war Anyone compared sizes on any tents?
+unsheath
+unstable my mount
+up
+uptime
+vurdere
+vurdere hauberk
+vurdere hauberk against gauntlets
+w
+w!
+w!w!
+w#w#w#w#w
+w;w
+w;w;w
+w;w;w;w;w
+wake
+war
+war " If you already have a tent hat, you should be able to continue using it. "
 war :chuggles
-war Have my first one, it's for sure a [cramped tent]
-whois felurian
-finger felurian
-war Are you that other Ohio person too? The Columbusian
-war Big fan of warriors, ug?
-war :ughs
-finger fernir
-war Is Felurian not Fernir?
-war Hm. Okay then! i said the Ohio thing after your last msg in here, but didn't imply it was to you Felurian, re: Your heart is in Ohio
-war Fernir chimed in and so I see what happened now
 war :nodnods
-get bottles from backpack
-drop bottles
-1 Timecheck (10p)
-look in backpcak
-1 re: losing tent on restarts. I see uptime is 15 days. Any clue what the average uptime is?
-1 Baby steps towards a real home
-finger Julnar
-get vest from backpack
-get tankard from backpack
-drop tankard
-get bug from backpack
-look bug
-war Yes I want that badly. is that at the Winter camp?
-war I need to get a route there, I can get my mount close to it I think
+war :ughs
+war Also I want to put a shelf in that yurt
+war Anyone compared sizes on any tents?
+war Are you that other Ohio person too? The Columbusian
+war Before I goof again, which camp would be open right now, and would a tent be there? I can't exactly tell what's what with calendar output
+war Big fan of warriors, ug?
+war Fernir chimed in and so I see what happened now
+war Have my first one, it's for sure a [cramped tent]
+war Hm. Okay then! i said the Ohio thing after your last msg in here, but didn't imply it was to you Felurian, re: Your heart is in Ohio
+war I figured the item was not new, but the item now has a rich help file and some cooler .. properties
 war I have a tent for the night, if there's just 1, go get it Felurian. I got mine at the Hunter camp near Lancre
+war I need to get a route there, I can get my mount close to it I think
+war I suspect that's the one you're thinkin of? I'm noob
+war I want to go get myself a yurt.. anyone recall the price?
+war I'm gonna see what it's like to leave things out and trust the world
+war Is Felurian not Fernir?
 war Some good details in the dev blog
 war Someone was collecting 'em all one day. Don't forget the wizard hat for sale in.. AM?
 war They are permanent, technically, with a little elbow grease
-war I'm gonna see what it's like to leave things out and trust the world
-war Also I want to put a shelf in that yurt
-war " If you already have a tent hat, you should be able to continue using it. "
-war I suspect that's the one you're thinkin of? I'm noob
-get satchel from backpack
-lis
-kget cards from satchel
-get cards from satchel
-look cards
-war I figured the item was not new, but the item now has a rich help file and some cooler .. properties
-war Yeah I think it's great. Also your horse is gonna follow you right into even this cramped, Lancre tent heh
-war http://discworld.starturtle.net/lpc/blog/blog.c?action=filter&blog=recent%20developments&id=1000
-finger Felurian
-war Wonder if I could put a sign on my tent, or something similar
-help squelch
-heath
-dry self with towel
-help weight
-help weigh
-help sign
-help signs
-look map 1
-read map 1
-exam map 1
-read map 2
-read map 3
-look map 3
-pin map
-help pin
-put map on wall
-look wall
-tape
-help tape
-get shirt from backpack
-get t-shirt from backpack
-drop t-shirt
-get hoof pick from backpack
-get horseshoes from backpack
-put horseshoes in saddlebags
-get book from backpack
-weigh vest
-wear vest
-put hoof pick in vest
-look in vest
-repair vest
-remove fest
-acc
-get mask from backpack
-look mask
-wear badteeth
-wear mask
-lok badteeth
-look tankard
-exit
-ibnv
-remove vest
-put poster in backpack
-put book in backpack
-put shoes in saddle
-put shoes in bags
-put pick in bags
-look in bags
-put map in backpack
-get maps from backpack
-put maps in satchel
-put cards in satchel
-put bug in satchel
-unkeep vest
-drop vest
-uptime
-1 My tent is still standing, phew. Good morning y'all
-1 :gives Noshoes permission to tent knock anytime
-1 :lights an incense and leans into Sunday
-1 Dink, you related to my horse, Donk?
-finger dink
-finger Dink
-laugh noshoes
-1 Just when they gave homes to the poor, someone wants to go and give bears a welcome mat
-1 Oh I'm for sure going to be inhaling particulates today
-1 :keeps a tent flap open
-who war
-1 What do the moving pictures on your eyelids tell you, Valter
-1 :hugs Valter
-finger gznang
-1 Laundry day exceptions?
-1 and so, katy perry is mostly misunderstood?
-1 b-b-b-bad? 
-1 we talkin to the bone levels here?
-1 pretend that my teeth are villains
-finger airk
-1 You may enjoy this search engine for random searches. Been gettin buzz off and on the past few years: https://search.marginalia.nu/
-1 Very good for old web, do a "Discworld MUD" search, end up on Airk's page http://www.gothmudders.com/airk/index2.htm
-1 Valter, I can enjoy reality tv sometimes, which is a way of me saying I'm glad you're here
-1 Who taught you backgammon?
-1 Ah. I think it was my dad who taught me
-1 Not today, Valter -- I'm here and not here, really
-look in satchel
-get poster
-put poster in satchel
-hang poster
-look poster
-drop poster
-look satchel
-drop satchel
-time
-1 :cheers for Estie
-finger Estie
-1 Waiting for the sun to go down so my skin can relax and brain can go fuzzy
-commands
-help storm
-kill all
-ws
-bow estie
-1 Heh. I recently started sending everything on this computer to a cheap backblaze b2 
-sleep
-wake
-exit tent
-w#w#w#w#w
-w;w;w;w;w
-alias 5w w#w#w#w#w
-unalias 52
-unalias 5w
-#action
-#unhigh
-#fuf
-#unfif
-#unhighlight
-#high
-keep all worn
-keep all
-look in backpack
-loto
-kill farmer
-wp me
-remove mask
-put mask in backpack
-locate paint
-get paint from forager's belt
-syntax warpaint
-warpaint me with random
-clean face
-wipe face
-put paint in pouch
-put paint in backpack
-nod clanger
-reply not even questioning the badteeth huh
-tell
-reply It's silly is all, nothing to really get. An aesthetic and wordplay
-reply I was big into Myspace and aim profiles :P
-reply aol instant messenger, you might wear your personality in your aim profile
-t
-finger clanger
-syntax remote
-imp'
-finger badteeth
-1 There's actual features I like on ff, esp sending tabs to other devices that auto-open there
-get medallion from backpack
-sell medallion
-get earring from backpack
-wear earring
-sell earring
-sell earring 2
-con rook
-get paint from backpack
-kill rook
-remove fluffy
-1 Love those wild and crazy guys
-kl
-1 I .. can.. have a village of tents?
-finger ghastley
-help tent
-b
-hold paint
-wp
-wp-me
-warpaint me drawing random
-help warpaint
-warpaint me with paint
-drop paint
-unstable my mount
-behead
-behead with sword
-nod crone
-con crone
-look crone
-con fox
-alias dig
-dig
-dig up corpse
-get gold from dwarf
-look in corpse
-get gold bar from corpse
-get gold from corpse
-get gold bear from corpse
-get necklace from corpse
-get wooden axe from backpack
-drop axe
-look burner
-con burner
-get gold bar from backpack
-sell gold bar
-sell necklace
-alias loot
-con troll
-look troll
-con dwarf
-kill dwarf
-look dwarf
-get gold from backpack
-get gold jewelery from backpack
-get neklaces from backpack
-get necklaces from backpack
-sell necklaces
-remove cloak
-get towel from kit
-dry me with towel
-put towel in kit
-leave
-look me
-finger fenir
-finger Fernir
-shore tent
-finger sojan
-laugh akera
-finger marley
-1 :has entered /r/pol
-finger maley
-finger MarleY
-enter canvas
-enter
-in
-tent
-1 There you are. "Do I know you?" No, but that's where you are, you're there
-monry\
-look tent
-finger mauve
-ride to hunters on donk
-buy AE
-buy AF
-rode to oc-stables on donk
-alias wp-me
-alias st-paint
-st-paint
-alias rt-paint
-alias wp
-alias wp-go
-con strong
-con soldier
-remove ring
-wear ring
-imp sold
-imp soldier
-1 go to sleep in tent, log out. log in, outside of tent. Need to see a specialist on the disc about sleep walking
-1 What about the one in OC?
-1 Seems friendly
-finger goose
-refer mothergoose
-refer new
-prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^GRAY%^$temp$%^GAINSBORO%^> "
-1 Ya I like atlasobscura too
-finger Bitterblue
-finger janhaku
-1 Since the genesis of Valter
-remove saddle from donk
-drop saddle
-get saddle from donk
-get cloth from donk
-get saddle
-get bags from donk
-drop bags
-get kit
-groom donk with kit
-help horse
-a
-groom donk
-1 rat romit
-get cloth
-put cloth on donk
-put saddle on donk
-get bags
-put bags on donk
-1 Have you ever seen the cops ep w/ the snake charmer? https://www.youtube.com/watch?v=Cg7VNv-tIEM
-finger cops
-drop kit
-con gnoll
-look gnoll
-kill gnoll
-wp-go
-help prompt
-prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ $combat_attitude$ $combat_response %^GRAY%^$temp$%^GAINSBORO%^> "
-prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ $combat_attitude$ $combat_response$ %^GRAY%^$temp$%^GAINSBORO%^> "
-help concentrate
-nut
-off
-tactics
-help tactics
-options tactics
-options
-options combat 
-options combat tactics
-combat
-alias combat options combat tactics
-ac combat
-ac combat combat
-ma combat combat
-ms ww combat
-ma ww combat
-ac alias
-lsa
-ma
-ac
-kil sailor
-options combat
-options combat monitor
-options combat monitor string test
-options combat monitor string = foo
-bow estes
-options combat monitor string
-options combat monitor string =
-options combat monitor string = $hp$/$maxhp$
-loiot
-kill zon
-mip
-kick sailor
-1 Anyone got a custom combat monitor string they would share so I can just see what you're into? :P
-1 I would never!
-help combat
-options combat monitor string = default
-options combat monitor string = defaultto slow.
-     > monitor
-options combat monitor string = "%^HOLYWOOD%^HP $hp$/$maxhp$ GP $gp$/$maxgp$ XP $xp$"
-con zoon
-help skills
-help hay
-buy hay
-feed hay to donk
-drop hay
-get hay from sack
-put hay in backpack
-refer help
-refer who
-refer badteeth
-kill peasant
-options combat monitor string = %^HOLYWOOD%^HP $hp$/$maxhp$ GP $gp$/$maxgp$ XP $xp$
-options combat monitor string = %^HOLYWOOD%^$hp$/$maxhp$ $gp$/$maxgp$ $xp$
-help monitor
-options combat monitor string = %^HOLYWOOD%^$hp$/$maxhp$ $gp$/$maxgp$ $xp$$reset$
-finger jackloner
-finger tulip
-who Tulip
-whois tulip
-1 lanfera
-1 MT lol
-finger ptodium
-1 wifefam++
-options combat monitor string = %^HOLYWOOD%^$hp$/$maxhp$ %^PETULIAN%^$gp$/$maxgp$ %^PALEMAGENTA%^$xp$$reset$
-nnw
-sell ring
-get rings
-ride to am-swstables on donk
-help convert
-help money
-help currency
-get kit from backpack
-get torch
-drop toch
-drop torch
-ride to am-changer on donk
-sell 2 Lancre sovereigns
-sell 40 Lancre crowns
-ride to lanfear on donk
-read sign
-learn fi.we.hs from lanfear
-learn fi.me.hs from lanfear
-learn fighting.melee.heavy-sword from lanfear
-up
-look in chest
-lt
-backward
-refer lanfear
-help teach
-teach bonus fi.me.he
-teach me fi.me.he from lanfear
-learn
-help learn
-teach me max fi.me.he from lanfear
-learn fighting.melee.heavy from lanfear
-look jar
-m lancre
-money lancre
-m a
-money a
-money ankh-morpork
-unkeep money
-put 1 ten-dollars in jar
-put ten-dollars in jar
-get 3 ten-dollars from jar
-ride to oc-stables on donk
-smile renzo
-skills
-skills raw
-stats
-finger carol
-buy towel
-drop towel
-finget storky
-finger story
-finger storky
-finger fyda
-1 :who meeeees
-1 You are a thing and I love you
-kill zoons
-drop knife
-ld
-who warrior
-lookoff
-5w
-#help config
-help line
-#help line
-#help class
-w;w;w
-w!w!
-w!
-ug Ugg
 war Ug
-war
-help command
-help parser
-help repeat
-#config
-#config {repeat char} ;
-#config {repeat char} {\;}
-#config {repeat char} {;}
-w;w
-alias loop
-alias loop3
-alias loop2
-vurdere
-eq
-vurdere hauberk
-alias loop3 loop2;vurdere hauberk;wc
-feint
-syntax feint
-feint at myself
-feint at me
-feint at dwarf
-guard leave
-guard out
-syntax guard
-guard exit
-guard
-guard exit from zoon
-guard s
-guard south
-loop
-put knife in boots
-alias loop3 unsheath;unsheath2;judge weapon 1 against weapon 2;sheath;sheath2;search;wc
-look badteeth
-alias chill
-finger stamen
-tell Stamen oi
-alias loop3 unsheath;unsheath2;judge weapon 1 against weapon 2;sheath;sheath2;vurdere hauberk;search;wc
-syntax vurdere
-vurdere hauberk against gauntlets
-alias loop3 unsheath;unsheath2;judge weapon 1 against weapon 2;sheath;sheath2;vurdere hauberk against gauntlets;search;wc
-track Donk
-syntax track
-writ
-1 It's really nice, I don't even use it and I think it's a great achievement
-1 well, prob don't measure the LOC but it's a fun metric no doubt
-1 Fair no doubt
-1 You don't sound bad at all
-1 that's so powerful too, "first class functions"
-1 yep, may have an even dorkier name say in maths but it works for programmign heh
-1 idk if it is, i mean, lambda calculus is kinda all about the concept
-1 but may not be a _term_ like software has
-finger Arilulaliley
-1 Quows stack comes in at ~33k lines. though cloc only sees the xml and not the embedded lua, so I don't get a real accurate metric here hehe
-1 yeah most of those are ~600 lines, that minimap.xml is 28k though
-1 I only cloc'd it because I also wanted to see what this dude's ambitious tintin++ stack of dw scripts comes out to
-1 Oh totally Rienen
-1 Oh totally Rienne
-1 This is a bit too custom tailored for me, but it's been nice to study parts: https://code.tubul.net/tt_dw
-1 I definitely appreciate the work! I do think quow's sqlite db should have a tool to interact with it, and then, used however/whever stdout is accepted hehe
-1 gotta wrap it all useful like :P
-1 take quows sqlite db: add views, maybe but prob not indexes, and some very convenient queries to serve ur TUI needs
-1 us tintin folks live in da shell
-1 we get our fancy readline, respecting our inputrc and bindings, even when mudd'n hehe
-1 Lanfear, I can tell you already got it goin' on
-1 does quow have a patreon :P
-finger quoe
-finger quow
-get cloak from backpack
-wear clock
-wear cloak
-1 no doubt no doubt
-finger lanfear
-1 I mean, even Lanfear has a tip jar
-1 (I put 50 bucks in it yesterday)
-1 Arilulaliley I'm not a parser expert but I am an expert in doing dumb stuff.. so I just use `keep` on everything at once heh
-1 "keep all in backpack"
-keep all in backpack
-1 Is there a big home owning upkeep? Is it a PITA like IRL?
-1 I am so thankful for these tents hehehe
-stop
-kill sail
-prompt "$newline$%^GAINSBORO%^<$hurtcolour$$hp$/$maxhp$%^GAINSBORO%^hp %^CHRYSOPHRASE%^$gp$/$maxgp$%^GAINSBORO%^gp %^YELLOW%^$xp$%^GAINSBORO%^xp %^BLUE%^$burden$ %^LIGHTGRAY%^$combat_attitude$ $combat_response$ %^GRAY%^$temp$%^GAINSBORO%^> "
-alias ka
+war Ug! Welcome!
+war Ug!!
+war Wonder if I could put a sign on my tent, or something similar
+war Yeah I think it's great. Also your horse is gonna follow you right into even this cramped, Lancre tent heh
+war Yes I want that badly. is that at the Winter camp?
+war http://discworld.starturtle.net/lpc/blog/blog.c?action=filter&blog=recent%20developments&id=1000
+warpaint me drawing random
+warpaint me with paint
+warpaint me with random
+wc
 wc;ks
 wcks
-kill sailors
-alias ks wc;kill sailors
-get oats from backpack
-buy oats
-drop sack
-look don
-buy 3 towels
-get oats from bag
-feed oats to donk
-ride to drum on donk
-get towel from backpack
-put towel in back
-put towel in backpack
-u
-help here
-remove fluffy cloak
-put cloak in backpack
-1 mud wiki plz load. is there a mirror? 
-1 good call, I think I'm gonna trigger a new recursive update there later haha
-1 I only this year started doing that with archive.org, checkin the box to recurse the page
-1 Ya, I think they're manual at the moment, and the tar is a few years old
-say Teach me written Uberwaldean please.
-read blackboard
-read book
-smile 
-sa Nadha raskizoproro vhaovnki.
-say A
-pet donk
-read board
-sa C
-bow Kompt
-teach me written Uberwaldaen please
-say Teach me spoken Uberwaldean please.
-yes
-say E
-say B
-say C
-smile
-bow yoyo
-d
-ride to am-stables on donk
-1 Ello Valter
-1 as long as I'm procrastinating, I'm doing okay
-1 oh, procrastinating and staying distracted
-1 Rootin for ya to find a house that works
-1 Coming from Valter this is hehehe
-1 Moving on
-1 Y'all lookin at homes in your area?
-1 Or is your radius pretty wide heh
-1 Feel that, if you like the chilly, go enjoy Minneapolis
-1 It's one of my favs
-1 Wait, you said relatively close! I just jumped the gun
-friends
-who yase
-whois yase
-finger yase
-1 I'm in Traverse City, and mostly consider leaving for Minneaplis if anywhere
-1 I moved here from Ohieeeee
-1 Findlay, just south of Toledo
-1 Hi 419
-1 Wouldn't surprise me!!
-1 So funny. Yeah I kept my 419 
-tell Melancholic given your cryptic email address, I'd reckon we were born a year apart, a zip code apart lol
-tell Melancholic small disc!
-reply Nice nice. Well _technically_ I did all my school in McComb Ohio, only mentioning it because .. god, if you know about "McComb" that'd be a MUD record for me
-reply !!!
-finger Melancholic
-reply Wow, that's a weird thought haha
-reply "The hospital I was born in has been destroyed/ruined/torn apart" lol
-1 I'd tell the disc to choose what's for dinner but I just decided to call in chinese takeout
-1 Well part 2 is looking at 1995qualitymenu.jpg and see if I'll try something Different
-1 Are all takeout chinese joints using menus that are just a camera pic and poor quality? lol
-1 Ultimately it'll be a stir fry Melancholic
-1 Pick something Melancholic https://cesspit.dungeon.red/i/UDUYXP.png
-1 If I think of that music I'm also going to go back to some stuff like Joanna Newsom <333
-1 Peach, plum, pear
-1 hahahah Melancholic
-1 Yes, my tastes have changed :P
-1 I don't know if you can really stick with Joanna long.. you just revisit for nostalgia and enjoy that
-1 right?
-1 My mid 2000's last.fm is actually not only diff, some of it is _embarrassing_ ok
-1 That also takes me back Melancholic
-1 Crystal Castles?
-1 I think I just abused 1 blonde redhead album
-1 Well obv :( sorry to remind you
-1 We can still listen to Alice if we want to
-1 But just Alice
-1 I'm gonna link a song/video I used to play a lottt: https://www.youtube.com/watch?v=SWSz_PAfgNc
-1 This song is gonna make me stand up from desk for a bit
-1 Just to move
-1 To sway
-1 I am just summoned back at least 16 years (evidently) bc of current 1's choice of music chater hehe
-1 Since you linked YTM I will def click
-1 I'd avoid any other service that might shoot me an ad :P 
-1 Sarah, this is club music. Club music is great, weren't you talkin  about NMH a bit ago haha
-1 Oh okie right right yos
-1 Link me vampire music, Valter
-1 I will switch moods to dark tunes
-1 Idk, whatever you'd want in the background when you're playing VTES or anything from whitewolf
-1 Haha Paracelsus
-war Ug! Welcome!
-war I want to go get myself a yurt.. anyone recall the price?
-1 Madonna is notoriously kinda weird/awful, right?
-1 She had a homeless brother here for years, only passed just last year
-1 She's no weirder than any other actor, that when visiting a town for the film fest, has every volunteer instructed to Not make eye contact with her. Just that stuff
-1 Any other artist*
-1 Her having a brother here had extra gossip I'm sure.. 
-1 Hahaha
-1 tbh, I misread "weird" re: madonna as "kinda shitty to casual people" 
-1 Which is a ton of famous people right heh
-1 Only if you want to exist in a city
-1 Hehe
-1 See ya Melancholic
-1 Oops misread 
-who pithon
-finger Stamen
-finger pithon
-finger Plevoir
-/lc
-locate license
-1 Crunch once, shame on chair.. 
-ride to sto-west on donk
-ride to st-west on donk
-dry donk with towel
-dry donk with towel 2
-put towels in backpack
-get towels from backpack
-drop towels
-1 Nice try convincing us you don't have supernatural vision
-con child
-kill child
-con judge
-kill judge
-con courtier
-kill coutier
-kill courtier
-hth
-con priest
-con merchant
-kill merchant
-con brawler
-con thief
-con carter
-ka
-con warrior
-down
-jn
-jw
-read poster
-look west
-map
-maps
-je
-look east
-list
-track
-get money
-md
-ride to st-stables on donk
-mount
-loop3
-1 howdy
-1 Well, there's extra XP to be gained if you hunt w/ a horse, cuz it'll help you smash much quicker :P
-destable my mount
-look donk
-ada
-stable my mount
-wc
-kill sailor
-options combat monitor string = %^PETULIAN%^$hp$/$maxhp$ %^%HOLYWOOD^$gp$/$maxgp$ %^PALEMAGENTA%^$xp$$reset$
-options combat monitor string = %^PETULIAN%^$hp$/$maxhp$ %^HOLYWOOD%^$gp$/$maxgp$ %^PALEMAGENTA%^$xp$$reset$
-p2
-options combat monitor string = %^PETULIAN%^$hp$/$maxhp$ %^HOLYWOOD%^$gp$/$maxgp$ %^FLAMINGO%^$xp$$reset$
-p1
-g
-ww
-kill zoon
-get rings from backpack
-inv
-sell rings
-sell weapons
-get weapons from backpack
-lib
-score
-sheath
-unsheath
-ks
-imp
-loot
-ne
-nw
-w
-se
-sw
-e
-n
-1
-finger Haloj
-wrap
-wrap to 80
-syntax wrap
-help wrap
-alias wrap
-wrap 80
-cols 80
-skills fighting
-shore up tent
-chillhard
+wear backpack
+wear badteeth
+wear cloak
+wear clock
+wear earring
+wear mask
+wear ring
+wear vest
+weather
+weigh vest
+who
+who Tulip
+who asha
+who badteeth
 who barb
 who barbarian
-who
-m
-s
-dm
-kout
-out
-enter tent
-lie on the bedroll
-save
-quit
-
-badteeth
-y
-chill
-#alias chill
-reload
-#ticker
+who him
+who him hung
+who lamia
+who pithon
+who war
+who warrior
+who warriors
+who yase
+whois felurian
+whois tulip
+whois yase
+wipe face
+wkw
 woke
-l
+wp
+wp me
+wp-go
+wp-me
+wrap
+wrap 80
+wrap to 80
+writ
+ws
+ww
+y
+yes
