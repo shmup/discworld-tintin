@@ -27,11 +27,12 @@ def render_screen(stdscr, data, changes):
   sorted_keys = [key for key in sorted(data) if key not in ignore_keys]
   max_length = max(len(f"{key}: {data[key]}") for key in sorted_keys) + 1
 
+  stdscr.erase()
+
   for idx, key in enumerate(sorted_keys):
     line = f"{key}: {data[key]}".ljust(max_length)
     stdscr.addstr(idx, 0, line, curses.color_pair(1) if key in changes else 0)
 
-  stdscr.clrtobot()
   stdscr.refresh()
 
 
