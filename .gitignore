@@ -6,3 +6,4 @@ scripts/mapping.tin
 scripts/quow
 scripts/util
 input.txt
+store.json
