@@ -1,0 +1,50 @@
+#class zmp.clacks kill
+#class zmp.clacks open
+
+#event {IAC SB ZMP clacks.overhead} {
+    #if {&{zmp_clacks_flags}} {
+        #if {&{zmp_clacks_content}} {
+            #var zmp_clacks_content {$zmp_clacks_content %0};
+        };
+        #else {
+            #var zmp_clacks_content %0;
+        };
+    };
+    #else {
+        #var zmp_clacks_flags %0;
+    };
+}
+#event {IAC SB ZMP clacks.overhead IAC SE} {
+    #nop N: do not log the message;
+    #if { {$zmp_clacks_flags} != {%*N%*} } {
+        /zmp_debug <148>ZMP RECV clacks.overhead $zmp_clacks_flags $zmp_clacks_content;
+    };
+
+    #nop U: turn the message around at the end of the line and send it back again;
+    #if { {$zmp_clacks_flags} == {%*U%*} } {
+        #nop wait a bit to prevent flooding though;
+        #var clacks_flags $zmp_clacks_flags;
+        #var clacks_content $zmp_clacks_content;
+        #delay {10}
+        {
+            /zmp.clacks.overhead {$clacks_flags} {$clacks_content};
+        };
+    };
+
+    #nop G: send the message on;
+    #nop This is the end of the line, so there's no sending on (see U though);
+
+    #unvar zmp_clacks_flags;
+    #unvar zmp_clacks_content;
+}
+
+#alias {/zmp.clacks.overhead} {
+    #nop N: do not log the message;
+    #if { {%1} !== {%*N%*} } {
+        /zmp_debug <118>ZMP SEND clacks.overhead %1 %2;
+    };
+
+    #send {\xFF\xFA\x5Dclacks.overhead\x00%1\x00%2\x00\xFF\xF0\};
+}
+
+#class zmp.clacks close

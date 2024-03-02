@@ -1,0 +1,53 @@
+#class zmp.char kill
+#class zmp.char open
+
+#event {IAC SB ZMP char.login} {
+    /zmp_debug <048>ZMP RECV char.login %0;
+}
+#event {IAC SB ZMP char.login IAC SE} {
+    /zmp_debug <148>ZMP RECV char.login $altname;
+}
+
+#unvar zmp_char_info;
+#event {IAC SB ZMP char.info} {
+    /zmp_debug <048>ZMP RECV char.info %0;
+    #if {&{zmp_char_info}} {
+        #var char_info[$zmp_char_info] {%0};
+        #unvar zmp_char_info;
+    };
+    #else {
+        #var zmp_char_info {%0};
+        #if { {%0} != {{name|capname|guild|guildspec|role}} } {
+            #if {!&{char_info[$zmp_char_info]}} {
+                #showme {<118>ZMP: Unknown char.info "$zmp_char_info"};
+            };
+        };
+    };
+}
+#event {IAC SB ZMP char.info IAC SE} {
+    #unvar zmp_char_info;
+    /zmp_debug <148>ZMP RECV char.info $char_info;
+}
+
+#unvar zmp_char_vital;
+#event {IAC SB ZMP char.vitals} {
+    /zmp_debug <048>ZMP RECV char.vital %0;
+    #if {&{zmp_char_vital}} {
+        #var vitals[$zmp_char_vital] {%0};
+        #unvar zmp_char_vital;
+    };
+    #else {
+        #var zmp_char_vital {%0};
+        #if { {%0} != {{hp|maxhp|gp|maxgp|xp|alignment|burden}} } {
+            #if {!&{vitals[$zmp_char_vital]}} {
+                #showme {<118>ZMP: Unknown char.vitals "$zmp_char_vital"};
+            };
+        };
+    };
+}
+#event {IAC SB ZMP char.vitals IAC SE} {
+    #unvar zmp_char_vital;
+    /zmp_debug <148>ZMP RECV char.vitals $vitals;
+}
+
+#class zmp.char close

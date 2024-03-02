@@ -1,0 +1,44 @@
+#class zmp.misc kill
+#class zmp.misc open
+
+#event {IAC SB ZMP zmp.ident} {
+    #list zmp_ident ins -1 %0;
+}
+#event {IAC SB ZMP zmp.ident IAC SE} {
+    #if {&{zmp_ident} && "$zmp_ident" != ""} {
+        /zmp_debug <148>ZMP RECV zmp.ident $zmp_ident[1] $zmp_ident[2] $zmp_ident[3];
+        #showme {The server says it's $zmp_ident[1] $zmp_ident[2] $zmp_ident[3]};
+    };
+    #unevent {IAC SB ZMP zmp.ident};
+    #unvar {zmp_ident}
+}
+
+#event {IAC SB ZMP zmp.ping IAC SE} {
+    #format {temp} {%t} {%F %T};
+    #send {\xFF\xFA\x5Dzmp.time\x00$temp\xFF\xF0\};
+    #unvar {temp};
+}
+
+#event {IAC SB ZMP zmp.time} {
+    /zmp_debug <148>ZMP RECV zmp.time %0;
+}
+
+#event {IAC SB ZMP zmp.input} {
+    /zmp_debug <148>ZMP RECV zmp.input %0;
+}
+
+#alias {/zmp.ping} {
+    /zmp_debug <118>ZMP SEND zmp.ping;
+    #send {\xFF\xFA\x5Dzmp.ping\x00\xFF\xF0\}
+}
+
+#alias {/zmp.ident} {
+    #local client {$info[SYSTEM][CLIENT_NAME] (with tt_dw)};
+    #local version {$info[SYSTEM][CLIENT_VERSION]};
+    #local desc {Multi-platform console client (with Discworld MUD scripts)};
+
+    /zmp_debug <118>ZMP SEND zmp.ident ($client) ($version) ($desc);
+    #send {\xFF\xFA\x5Dzmp.ident\x00$client\x00$version\x00$desc\x00\xFF\xF0\};
+}
+
+#class zmp.misc close

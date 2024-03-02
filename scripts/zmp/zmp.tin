@@ -1,0 +1,18 @@
+#read scripts/zmp/general.tin
+#read scripts/zmp/clacks.tin
+#read scripts/zmp/misc.tin
+#read scripts/zmp/map.tin
+#read scripts/zmp/char.tin
+
+#alias {/zmp.debug} {
+    #alias {/zmp_debug} {
+        #showme {%%0};
+    };
+}
+#alias {/zmp.no-debug} {
+    #alias {/zmp_debug} {
+        #var zmp_nop {%%0};
+    };
+}
+
+/zmp.debug

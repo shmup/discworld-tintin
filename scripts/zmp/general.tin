@@ -1,0 +1,59 @@
+#class zmp.general kill
+#class zmp.general open
+
+#alias {/zmp.check} {
+    /zmp_debug <118>ZMP SEND zmp.check %0;
+    #send {\xFF\xFA\x5Dzmp.check\x00%1\xFF\xF0\}
+}
+
+#alias {/zmp.support} {
+    /zmp_debug <118>ZMP SEND zmp.support %0;
+    #send {\xFF\xFA\x5Dzmp.support\x00%1\xFF\xF0\}
+}
+#alias {/zmp.no-support} {
+    /zmp_debug <118>ZMP SEND zmp.no-support %0;
+    #send {\xFF\xFA\x5Dzmp.no-support\x00%1\xFF\xF0\}
+}
+
+#nop trimmed down ZMP example script down from here;
+#event {IAC WILL ZMP} {
+    /zmp_debug {<118>IAC WILL ZMP};
+    #send {\xFF\xFD\x5D\};
+
+    /zmp.ident;
+    /zmp.check clacks.overhead;
+
+    #unevent {IAC WILL ZMP}
+}
+
+#event {IAC SB ZMP zmp.check} {
+    /zmp_debug <148>ZMP RECV zmp.check %0;
+
+    #if { {%0} == {{zmp.ident|zmp.ping|zmp.time|zmp.check|room.info|room.map|room.writtenmap|clacks.overhead|char.vitals|char.login|char.info}} } {
+        /zmp.support %0;
+        #return;
+    };
+
+    #if {"%0" == "Char.Vitals"  || "%0" == "Window.Frame.map"} {
+        #nop #showme {<018>ZMP: Server asked about deprecated feature "%0"};
+        #return;
+    };
+
+    #showme {<118>ZMP: Server asked about unknown feature "%0"};
+    /zmp.no-support %0;
+}
+
+#event {IAC SB ZMP zmp.support} {
+    /zmp_debug <148>ZMP RECV zmp.support %0;
+    #list zmp.supported add %0;
+    #if {"%0" == "clacks.overhead"} {
+        #nop A man is not dead while his name is still spoken.;
+        /zmp.clacks.overhead {GNU} {Terry Pratchett};
+    };
+}
+#event {IAC SB ZMP zmp.no-support} {
+    #list zmp.unsupported add %0;
+    /zmp_debug <148>ZMP RECV zmp.no-support %0;
+}
+
+#class zmp.general close

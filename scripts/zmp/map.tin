@@ -1,0 +1,72 @@
+#class zmp.map kill
+#class zmp.map open
+
+#event {IAC SB ZMP room.info} {
+    /zmp_debug <048>ZMP RECV room.info %0;
+    #if {&{zmp[room][done]}} {
+        #unvar zmp[room];
+        #unvar map[family];
+    };
+    #if {&{zmp[room][info]}} {
+        #var zmp[room][$zmp[room][info]] {%0};
+        #unvar zmp[room][info];
+    };
+    #else {
+        #var zmp[room][info] {%0};
+    };
+    #unvar zri;
+}
+#event {IAC SB ZMP room.info IAC SE} {
+    /zmp_debug <148>ZMP RECV room.info $zmp[room];
+    #if {&{zmp[room][done]}} {
+        #unvar zmp[room];
+    };
+    #var zmp[room][done] yes;
+    #nop library move was OK: forget undo direction;
+    #unvar lib[prev];
+    #if {&{map[area]} && $map[active] && !&{map[queue]}} {
+        #if {"@r_name{}" == ""}  {
+            #unvar map[saved];
+            #map set roomname $zmp[room][name];
+        };
+    };
+    #unvar roomname;
+}
+
+#event {IAC SB ZMP room.map} {
+    #format l {%L} {%0};
+    /zmp_debug <048>ZMP RECV room.map {$l bytes};
+    #if {&{zmp[map][done]}} {
+        #unvar zmp[map];
+    };
+    #line subs {braces escape} {#var zmp[map][content] ⦙%0⦙};
+    #replace zmp[map][content] {⦙}    {};           #nop strip delimeters;
+    #replace zmp[map][content] {{\x7D|\x7B}} {|};  #nop replace curly braces;
+}
+#event {IAC SB ZMP room.map IAC SE} {
+    /zmp_debug <148>ZMP RECV room.map;
+    #if {&{zmp[map][done]}} {
+        #unvar zmp[map];
+    };
+    #var zmp[map][done] yes;
+}
+
+#event {IAC SB ZMP room.writtenmap} {
+    #format l {%L} {%0};
+    /zmp_debug <048>ZMP RECV room.writtenmap {$l chars};
+    #if {&{zmp[writtenmap][done]}} {
+        #unvar zmp[writtenmap];
+    };
+    #var zmp[writtenmap][content] {%0};
+    #replace zmp[writtenmap][content] {\\;} {;};
+}
+#event {IAC SB ZMP room.writtenmap IAC SE} {
+    /zmp_debug <148>ZMP RECV room.writtenmap;
+    #if {&{zmp[writtenmap][done]}} {
+        #unvar zmp[writtenmap];
+    };
+    #var zmp[writtenmap][done] yes;
+    #unvar writtenMap; #nop need to re-parse map;
+}
+
+#class zmp.map close

@@ -41,7 +41,7 @@
 
 /* █▓▒░ IDLE ░▒▓█ */
 #alias {woke}    {#unticker chill; #ticker;}
-#alias {chill}   {#ticker chill loop3 240; #ticker;}
+#alias {chill}   {#ticker chill loop3 200; #ticker;}
 
 /* █▓▒░ QUOW ░▒▓█ */
 #alias {db} {#system xdg-open "https://quow.co.uk/cow.php?t=Items&s=%0"};
@@ -66,7 +66,7 @@
 
 /* █▓▒░ BASIC TRIGGERS ░▒▓█ */
 #action {The light surrounding you flickers and winks out.} {woke};
-#nop #read scripts/zmp.tin;
+#read scripts/zmp/zmp.tin;
 
 #nop You attempt to launch a powerful attack.
 #nop You launch a powerful attack.
@@ -84,8 +84,6 @@
 #high {^The dun horse deals the %1} {light cyan}
 #high {^With one last attack, you %1} {red}
 #high {^Finishing your wildswing attack, you %1} {red}
-
-
 
 #if {"@discworld{}" !== ""} {
  reconnect;
