@@ -3,6 +3,7 @@
 
 #event {IAC SB ZMP room.info} {
     /zmp_debug <048>ZMP RECV room.info %0;
+    #system {scripts/parser.py room %0};
     #if {&{zmp[room][done]}} {
         #unvar zmp[room];
         #unvar map[family];
@@ -14,7 +15,6 @@
     #else {
         #var zmp[room][info] {%0};
     };
-    #unvar zri;
 }
 #event {IAC SB ZMP room.info IAC SE} {
     /zmp_debug <148>ZMP RECV room.info $zmp[room];

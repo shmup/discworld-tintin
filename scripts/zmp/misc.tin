@@ -33,9 +33,9 @@
 }
 
 #alias {/zmp.ident} {
-    #local client {$info[SYSTEM][CLIENT_NAME] (with tt_dw)};
+    #local client {$info[SYSTEM][CLIENT_NAME] (with discworld++)};
     #local version {$info[SYSTEM][CLIENT_VERSION]};
-    #local desc {Multi-platform console client (with Discworld MUD scripts)};
+    #local desc {console client (with Discworld MUD scripts)};
 
     /zmp_debug <118>ZMP SEND zmp.ident ($client) ($version) ($desc);
     #send {\xFF\xFA\x5Dzmp.ident\x00$client\x00$version\x00$desc\x00\xFF\xF0\};
