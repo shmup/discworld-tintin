@@ -1,5 +1,7 @@
 #split 0 1;
 
+#log APPEND discworld.log;
+
 #unaction {%*};
 #unhighlight {%*};
 
@@ -42,6 +44,8 @@
 /* █▓▒░ IDLE ░▒▓█ */
 #alias {woke}    {#unticker chill; #ticker;}
 #alias {chill}   {#ticker chill loop3 200; #ticker;}
+#alias {woke2}    {#unticker chill2; #ticker;}
+#alias {chill2}   {#ticker chill2 loop2 200; #ticker;}
 
 /* █▓▒░ QUOW ░▒▓█ */
 #alias {db} {#system xdg-open "https://quow.co.uk/cow.php?t=Items&s=%0"};
@@ -66,24 +70,18 @@
 
 /* █▓▒░ BASIC TRIGGERS ░▒▓█ */
 #action {The light surrounding you flickers and winks out.} {woke};
-#read scripts/zmp/zmp.tin;
+#nop #read scripts/zmp/zmp.tin;
 
-#nop You attempt to launch a powerful attack.
-#nop You launch a powerful attack.
-#nop You lose the moment.
-#nop #high {%The dun horse %1} {light cyan}
-#nop #high {^You{|r} %1} {light cyan}
-#nop #high {^You kill the %1} {red}
-#high {^You prepare to launch %1} {red}
-#high {^You attempt to launch %1} {red}
-#high {^You launch %1} {red}
+#high {^You prepare to %1} {orange}
+#high {^You attempt to %1} {pink}
+#high {^You launch %1} {lime}
 #high {^You kill the %1} {red}
-#high {^Launching a powerful attack %1} {red}
-#high {^Unleashing a whirlwind %1} {red}
-#high {^Swinging your weapon around %1} {red}
-#high {^The dun horse deals the %1} {light cyan}
+#high {^Launching a powerful attack %1} {lime}
+#high {^Unleashing a whirlwind %1} {lime}
+#high {^Finishing your wildswing attack, you %1} {lime}
+#high {^Swinging your weapon around %1} {lime}
+#high {^The dun horse deals the %1} {red}
 #high {^With one last attack, you %1} {red}
-#high {^Finishing your wildswing attack, you %1} {red}
 
 #if {"@discworld{}" !== ""} {
  reconnect;
